@@ -1,0 +1,78 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="4">
+        <Line>"${ProjDirPath}/Static_Code/PDD"</Line>
+        <Line>"${ProjDirPath}/Static_Code/IO_Map"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/Cpu.c" FileDate="2016-01-09, 13:57:25" FileAge="1452340645578" FileType="45637" CompNumb="3" />
+      <File Name="Documentation/doxygen/ADC_component.txt" FileDate="2016-01-09, 13:50:55" FileAge="1452340255001" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/doxygen/PIT_component.txt" FileDate="2016-01-08, 22:21:42" FileAge="1452284502399" FileType="45637" CompNumb="6" />
+      <File Name="Documentation/doxygen/GPIOA_component.txt" FileDate="2016-01-08, 21:56:22" FileAge="1452282982333" FileType="45637" CompNumb="4" />
+      <File Name="Static_Code/PDD/SysTick_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390086" FileType="1048576" />
+      <File Name="Static_Code/PDD/CRC_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390018" FileType="1048576" />
+      <File Name="Documentation/AccTester_Settings.xml" FileDate="2016-01-09, 13:50:55" FileAge="1452340255124" FileType="3072" />
+      <File Name="Static_Code/PDD/ADC_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390009" FileType="1048576" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.icf" FileDate="2016-01-08, 14:26:52" FileAge="1452256012458" FileType="8" CompNumb="3" />
+      <File Name="Generated_Code/PE_LDD.h" FileDate="2016-01-08, 21:56:22" FileAge="1452282982373" FileType="45637" CompNumb="3" />
+      <File Name="Generated_Code/PE_LDD.c" FileDate="2016-01-08, 14:26:52" FileAge="1452256012285" FileType="45637" CompNumb="3" />
+      <File Name="Static_Code/PDD/GPIO_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390035" FileType="1048576" />
+      <File Name="Static_Code/PDD/SIM_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390077" FileType="1048576" />
+      <File Name="Static_Code/PDD/MCM_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390054" FileType="1048576" />
+      <File Name="Static_Code/PDD/PMC_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390063" FileType="1048576" />
+      <File Name="Static_Code/PDD/KBI_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390050" FileType="1048576" />
+      <File Name="Documentation/AccTester_SIGNALS.txt" FileDate="2016-01-10, 16:48:23" FileAge="1452437303854" FileType="3072" />
+      <File Name="Generated_Code/PORT.h" FileDate="2016-01-08, 14:26:52" FileAge="1452256012362" FileType="45637" CompNumb="5" />
+      <File Name="Documentation/AccTester.txt" FileDate="2016-01-08, 21:56:22" FileAge="1452282982639" FileType="3072" />
+      <File Name="Generated_Code/SysTick.h" FileDate="2016-01-08, 14:31:48" FileAge="1452256308523" FileType="45637" CompNumb="7" />
+      <File Name="Static_Code/PDD/PORT_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390068" FileType="1048576" />
+      <File Name="Static_Code/IO_Map/SKEAZN642.h" FileDate="2016-01-08, 13:59:49" FileAge="1452254389998" FileType="1048576" CompNumb="3" />
+      <File Name="Generated_Code/PORT.c" FileDate="2016-01-08, 14:26:52" FileAge="1452256012356" FileType="45637" CompNumb="5" />
+      <File Name="Documentation/doxygen/SPI0_component.txt" FileDate="2016-01-08, 22:21:42" FileAge="1452284502450" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/SysTick.c" FileDate="2016-01-08, 14:31:48" FileAge="1452256308529" FileType="45637" CompNumb="7" />
+      <File Name="Static_Code/PDD/UART_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390091" FileType="1048576" />
+      <File Name="Static_Code/PDD/PDD_Types.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390004" FileType="1048576" CompNumb="3" />
+      <File Name="Sources/main.c" FileDate="2016-01-08, 22:08:55" FileAge="1452283735865" FileType="128" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2016-01-08, 14:26:52" FileAge="1452256012301" FileType="45637" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2016-01-08, 14:26:52" FileAge="1452256012321" FileType="45637" />
+      <File Name="Documentation/doxygen/PORT_component.txt" FileDate="2016-01-08, 14:26:52" FileAge="1452256012351" FileType="45637" CompNumb="5" />
+      <File Name="Static_Code/PDD/FTM_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390029" FileType="1048576" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2016-01-08, 14:26:52" FileAge="1452256012309" FileType="45637" />
+      <File Name="Static_Code/PDD/RTC0_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390072" FileType="1048576" />
+      <File Name="Generated_Code/GPIOA.h" FileDate="2016-01-08, 21:56:22" FileAge="1452282982315" FileType="45637" CompNumb="4" />
+      <File Name="Static_Code/PDD/FTMRH_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390023" FileType="1048576" />
+      <File Name="Static_Code/PDD/I2C_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390039" FileType="1048576" />
+      <File Name="Generated_Code/GPIOA.c" FileDate="2016-01-08, 21:56:22" FileAge="1452282982303" FileType="45637" CompNumb="4" />
+      <File Name="Documentation/doxygen/SysTick_component.txt" FileDate="2016-01-08, 14:31:48" FileAge="1452256308540" FileType="45637" CompNumb="7" />
+      <File Name="Generated_Code/PIT.h" FileDate="2016-01-08, 22:21:42" FileAge="1452284502376" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2016-01-08, 21:56:22" FileAge="1452282982382" FileType="45637" CompNumb="3" />
+      <File Name="Static_Code/PDD/IRQ_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390045" FileType="1048576" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2016-01-08, 13:59:50" FileAge="1452254390123" FileType="45637" CompNumb="3" />
+      <File Name="Generated_Code/ADC.h" FileDate="2016-01-09, 13:50:54" FileAge="1452340254954" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/doxygen/AccTester_project.txt" FileDate="2016-01-08, 21:56:22" FileAge="1452282982366" FileType="45637" CompNumb="3" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2016-01-08, 14:26:52" FileAge="1452256012294" FileType="45637" />
+      <File Name="Documentation/doxygen/RoutingReport_component.txt" FileDate="2016-01-08, 13:59:50" FileAge="1452254390126" FileType="45637" CompNumb="3" />
+      <File Name="Static_Code/PDD/CMP_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390014" FileType="1048576" />
+      <File Name="Generated_Code/PIT.c" FileDate="2016-01-08, 22:21:42" FileAge="1452284502385" FileType="45637" CompNumb="6" />
+      <File Name="Sources/Events.h" FileDate="2016-01-08, 21:56:22" FileAge="1452282982391" FileType="131328" />
+      <File Name="Generated_Code/ADC.c" FileDate="2016-01-09, 13:50:54" FileAge="1452340254982" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/SPI0.h" FileDate="2016-01-08, 22:21:42" FileAge="1452284502355" FileType="45637" CompNumb="9" />
+      <File Name="Static_Code/PDD/SPI_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390082" FileType="1048576" />
+      <File Name="Sources/Events.c" FileDate="2016-01-10, 16:27:25" FileAge="1452436045060" FileType="131328" />
+      <File Name="Generated_Code/SPI0.c" FileDate="2016-01-08, 22:21:42" FileAge="1452284502434" FileType="45637" CompNumb="9" />
+      <File Name="Static_Code/PDD/WDOG_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390095" FileType="1048576" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2016-01-08, 13:59:49" FileAge="1452254389844" FileType="16384" CompNumb="3" />
+      <File Name="ProjectInfo.xml" FileDate="2016-01-10, 16:48:24" FileAge="1452437304029" FileType="45637" />
+      <File Name="Static_Code/PDD/PIT_PDD.h" FileDate="2016-01-08, 13:59:50" FileAge="1452254390058" FileType="1048576" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2016-01-08, 14:26:52" FileAge="1452256012425" FileType="45637" CompNumb="3" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>11</CodeGenReference>
+</CodeGenerationInfo>

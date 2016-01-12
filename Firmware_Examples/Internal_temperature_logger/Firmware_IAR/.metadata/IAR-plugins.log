@@ -1,0 +1,6 @@
+21:36:56,820 [Worker-0] INFO com.iar.cdt.generic.toolchain.info.SdkToolchainInfo  - Using toolchain at C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin, version 7.40.7.9843
+21:36:56,825 [Worker-0] INFO com.iar.cdt.arm.toolchain.tables.ArmCoreFpuRegistry  - Enabling Cortex-*F workaround (ECL-1993) for EWARM 7.40.7
+21:37:22,174 [main] ERROR com.iar.ide.common  - File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu ()
+21:37:27,598 [main] ERROR com.iar.cdt.arm.toolchain  - Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used. ()
+21:37:28,138 [main] ERROR com.iar.ide.common  - File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu ()
+21:37:28,142 [main] ERROR com.iar.cdt.arm.toolchain  - Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used. ()

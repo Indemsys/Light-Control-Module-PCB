@@ -1,0 +1,868 @@
+!SESSION 2016-01-08 13:58:14.750 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-08 13:58:18.933
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-08 13:58:18.936
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-08 13:58:23.232
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-08 13:58:24.208
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-08 13:58:56.791
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-01-08 13:59:46.278
+!MESSAGE Indexed 'AccTester' (0 sources, 0 headers) in 0,002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 13:59:52.523
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 13:59:58.909
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 13:59:59.191
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 13:59:59.195
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 13:59:59.302
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 13:59:59.306
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:26:53.048
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:26:53.051
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:26:53.068
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:26:53.071
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:26:53.333
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:26:53.337
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:31:49.080
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:31:49.084
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:31:49.098
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:31:49.102
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:31:49.202
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:31:49.205
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:33:17.769
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:33:17.772
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:33:19.062
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:33:19.066
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:33:51.587
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:33:51.591
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:33:51.716
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:33:51.720
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:34:39.686
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:34:39.690
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:34:39.762
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:34:39.765
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:35:44.877
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:35:44.882
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:35:44.943
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:35:44.947
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:36:09.960
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:36:09.964
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:36:10.127
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:36:10.130
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:38:31.855
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:38:31.859
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:38:31.899
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:38:31.903
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:38:32.043
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:38:32.046
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-01-08 14:39:02.385
+!MESSAGE Error: Cannot run program "rm": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "rm": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.CommandBuilder.build(CommandBuilder.java:105)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.StepBuilder.build(StepBuilder.java:94)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.cleanWithInternalBuilder(CommonBuilder.java:1209)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1098)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:39:02.549
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:39:02.554
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:39:08.812
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:39:08.816
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:39:08.989
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:39:08.993
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:39:09.270
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:39:09.274
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:40:00.725
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:40:00.729
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:40:01.488
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:40:01.497
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 14:40:28.084
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 14:40:28.088
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.jlink 4 0 2016-01-08 14:40:56.163
+!MESSAGE Missing mandatory device name. Fill-in the 'Device name:' field in the Debugger tab.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 5012 2016-01-08 14:41:38.584
+!MESSAGE Error while launching command: arm-none-eabi-gdb --version
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2016-01-08 14:52:55.784
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1556)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 88 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-01-08 14:52:55.789
+!MESSAGE Exception occurred while unrendering: org.eclipse.e4.ui.model.application.ui.basic.impl.TrimmedWindowImpl@19e046 (elementId: IDEWindow, tags: [topLevel, shellMaximized], contributorURI: platform:/plugin/org.eclipse.ui.workbench) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (label: %trimmedwindow.label.eclipseSDK, iconURI: null, tooltip: null, context: null, variables: [], x: 75, y: 75, width: 1024, height: 768)
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1556)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 88 more
+!SESSION 2016-01-08 16:59:46.303 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-08 16:59:49.963
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-08 16:59:49.967
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-08 16:59:55.641
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-08 16:59:55.871
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 17:01:32.385
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 17:01:36.928
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+!SESSION 2016-01-08 21:31:13.388 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-08 21:31:18.927
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-08 21:31:18.931
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-08 21:31:28.154
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-08 21:31:28.792
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 21:31:47.257
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 21:31:52.843
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 21:31:53.377
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 21:31:53.381
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 21:56:23.019
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 21:56:23.023
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 21:56:23.038
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 21:56:23.042
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 21:56:23.177
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 21:56:23.181
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 21:56:23.199
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 21:56:23.202
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:04:21.304
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:04:21.308
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:04:21.329
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:04:21.333
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:04:21.390
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:04:21.393
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2016-01-08 22:05:59.429
+!MESSAGE Trying to execute the disabled command org.eclipse.ui.file.save
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eclipse.ui.file.save
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:490)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:343)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:159)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:462)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:09:23.754
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:09:23.764
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:09:23.879
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:09:23.889
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:13:11.889
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:13:11.897
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:13:11.933
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:13:11.938
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:13:12.043
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:13:12.047
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:21:43.128
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:21:43.132
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:21:43.193
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:21:43.196
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:21:43.342
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:21:43.345
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-08 22:27:40.151
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-08 22:27:40.154
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+!SESSION 2016-01-09 13:44:53.482 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-09 13:44:58.397
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-09 13:44:58.400
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-09 13:45:08.417
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-09 13:45:09.266
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+!SESSION 2016-01-10 16:46:55.380 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-10 16:47:05.947
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-10 16:47:06.028
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-10 16:47:21.676
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-10 16:47:22.902
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 16:47:42.460
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 16:47:48.058
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 16:47:48.730
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 16:47:48.734
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 16:48:24.936
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 16:48:24.940
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 16:48:24.966
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 16:48:24.970
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 16:48:25.010
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 16:48:25.014
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:02:59.453
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:02:59.457
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:02:59.496
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:02:59.500
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:02:59.634
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:02:59.637
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:32:08.158
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:32:08.162
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:32:08.223
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:32:08.227
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:32:08.404
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:32:08.407
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:33:22.142
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:33:22.146
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:33:22.213
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:33:22.216
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 17:33:22.361
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 17:33:22.365
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 18:21:57.684
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 18:21:57.687
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 18:21:57.749
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 18:21:57.752
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-10 18:21:57.898
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-10 18:21:57.902
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+!SESSION 2016-01-11 18:54:57.024 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-11 18:55:12.491
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-11 18:55:12.568
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-11 18:55:27.780
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-11 18:55:28.932
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+!SESSION 2016-01-11 21:36:38.609 -----------------------------------------------
+eclipse.buildId=3.0.0.
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-11 21:36:49.750
+!MESSAGE Both 'com.iar.ide.debugger.driver' and 'com.iar.ide.debugger.driver' register a package for 'platform:/resource/com.iar.ide.debugger.driver/model/dbgdriverservice.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-01-11 21:36:49.787
+!MESSAGE Both 'com.iar.importer.core' and 'com.iar.importer.core' register a package for 'http://www.iar.com/ewsample.xsd'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-11 21:37:02.308
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2016-01-11 21:37:03.338
+!MESSAGE External elements location C:\Freescale\KDS_3.0.0\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.iar.ide.common 4 0 2016-01-11 21:37:22.175
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-11 21:37:27.599
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.
+
+!ENTRY com.iar.ide.common 4 0 2016-01-11 21:37:28.138
+!MESSAGE File does not exist: C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\devices\Freescale\K70\SKEAZN64xxx2.menu
+
+!ENTRY com.iar.cdt.arm.toolchain 4 0 2016-01-11 21:37:28.143
+!MESSAGE Device Freescale SKEAZN64xxx2 was not found, and no device with the same name is present in the stage. The default device will be used.

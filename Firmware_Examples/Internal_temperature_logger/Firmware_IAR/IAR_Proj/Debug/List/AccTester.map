@@ -1,0 +1,373 @@
+###############################################################################
+#
+# IAR ELF Linker V7.40.7.9843/W32 for ARM                 12/Jan/2016  11:14:11
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Exe\AccTester.out
+#    Map file     =  
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\List\AccTester.map
+#    Command line =  
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\ADC.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\Cpu.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\Events.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\GPIOA.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\Indicator.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\main.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\PE_LDD.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\PIT.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\PORT.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\SEGGER_RTT.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\SEGGER_RTT_printf.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\SPI0.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\SysTick.o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj\Vectors.o
+#        -o
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Exe\AccTester.out
+#        --map
+#        C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\List\AccTester.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\config\linker\Freescale\KEAZN64xxx2.icf" --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000400 to 0x0000040f] { section FlashConfig };
+"P2":  place in [from 0x00000000 to 0x000003ff] |
+                [from 0x00000410 to 0x0000ffff] { ro };
+"P3":  place in [from 0x1ffffc00 to 0x1fffffff] |
+                [from 0x20000000 to 0x20000bff] { rw, block CSTACK, block HEAP };
+
+  Section                Kind        Address    Size  Object
+  -------                ----        -------    ----  ------
+"A1":                                           0xc0
+  .intvec                const    0x00000000    0xc0  Vectors.o [1]
+                                - 0x000000c0    0xc0
+
+"P2", part 1 of 2:                               0xc
+  .rodata                const    0x000000c0     0x0  zero_init3.o [5]
+  .rodata                const    0x000000c0     0x0  copy_init3.o [5]
+  Initializer bytes      const    0x000000c0     0xc  <for P3 s0>
+                                - 0x000000cc     0xc
+
+"P1":                                           0x10
+  FlashConfig            const    0x00000400    0x10  Cpu.o [1]
+                                - 0x00000410    0x10
+
+"P2", part 2 of 2:                            0x2288
+  .text                  ro code  0x00000410   0xeba  xprintffull_nomb.o [3]
+  .text                  ro code  0x000012ca    0x14  strchr.o [5]
+  .text                  ro code  0x000012de    0x10  strlen.o [5]
+  .text                  ro code  0x000012ee    0x18  memchr.o [5]
+  .text                  ro code  0x00001306    0x6a  I64DivMod.o [5]
+  .text                  ro code  0x00001370    0x5c  ABImemcpy.o [5]
+  .text                  ro code  0x000013cc    0x44  xdnorm.o [4]
+  .text                  ro code  0x00001410    0x32  DblCmpLe.o [4]
+  .text                  ro code  0x00001442    0x32  DblCmpGe.o [4]
+  .text                  ro code  0x00001474   0x11c  xdscale.o [4]
+  .text                  ro code  0x00001590    0x52  DblToI32.o [4]
+  .text                  ro code  0x000015e4    0x34  I32ToDbl.o [4]
+  .text                  ro code  0x00001618   0x1b4  DblAddSub.o [4]
+  .text                  ro code  0x000017cc    0xe0  I32DivModFast.o [5]
+  .text                  ro code  0x000018ac   0x184  DblMul.o [4]
+  .text                  ro code  0x00001a30    0xc2  DblDiv.o [4]
+  .text                  ro code  0x00001af2    0x20  div.o [3]
+  .text                  ro code  0x00001b14     0x2  I64DivZer.o [5]
+  .text                  ro code  0x00001b18     0x2  IntDivZer.o [5]
+  .text                  ro code  0x00001b1c   0x398  Indicator.o [1]
+  .text                  ro code  0x00001eb4    0x32  FltToDbl.o [4]
+  .text                  ro code  0x00001ee8    0x48  snprintf.o [3]
+  .text                  ro code  0x00001f30    0x3c  vsnprint.o [3]
+  .text                  ro code  0x00001f6c   0x14c  SEGGER_RTT.o [1]
+  .text                  ro code  0x000020b8    0x62  DblToFlt.o [4]
+  .text                  ro code  0x0000211c   0x160  Cpu.o [1]
+  .text                  ro code  0x0000227c    0x54  GPIOA.o [1]
+  .text                  ro code  0x000022d0    0x2c  PORT.o [1]
+  .text                  ro code  0x000022fc    0x6c  PIT.o [1]
+  .text                  ro code  0x00002368    0x28  SysTick.o [1]
+  .text                  ro code  0x00002390    0x70  ADC.o [1]
+  .text                  ro code  0x00002400    0x4c  SPI0.o [1]
+  Initializer bytes      const    0x0000244c    0x78  <for Absolute sections 1-1>
+  .rodata                const    0x000024c4    0x3c  Indicator.o [1]
+  .text                  ro code  0x00002500    0x3c  zero_init3.o [5]
+  .text                  ro code  0x0000253c    0x30  copy_init3.o [5]
+  .text                  ro code  0x0000256c    0x28  Events.o [1]
+  .text                  ro code  0x00002594    0x28  data_init.o [5]
+  .iar.init_table        const    0x000025bc    0x38  - Linker created -
+  .text                  ro code  0x000025f4    0x1c  xsnprout.o [3]
+  .text                  ro code  0x00002610    0x1a  cmain.o [5]
+  .text                  ro code  0x0000262a     0xc  main.o [1]
+  .text                  ro code  0x00002636     0x8  exit.o [3]
+  .text                  ro code  0x00002640     0xa  cexit.o [5]
+  .text                  ro code  0x0000264c     0xc  XXexit.o [5]
+  .rodata                const    0x00002658    0x18  xprintffull_nomb.o [3]
+  .rodata                const    0x00002670     0xc  SEGGER_RTT.o [1]
+  .text                  ro code  0x0000267c     0xc  cstartup_M.o [5]
+  .rodata                const    0x00002688     0x8  Indicator.o [1]
+  .rodata                const    0x00002690     0x8  Indicator.o [1]
+                                - 0x00002698  0x2288
+
+Absolute sections:                              0x78
+  Absolute sections 1-1           0x1ffffc00    0x78  <Init block>
+    .data                inited   0x1ffffc00    0x78  SEGGER_RTT.o [1]
+                                - 0x1ffffc78    0x78
+
+"P3":                                          0x3d8
+  P3 s0                           0x20000000     0xc  <Init block>
+    .data                inited   0x20000000     0xc  Indicator.o [1]
+  .bss                   zero     0x2000000c   0x100  SEGGER_RTT.o [1]
+  .bss                   zero     0x2000010c    0x84  Indicator.o [1]
+  .bss                   zero     0x20000190    0x14  Indicator.o [1]
+  .bss                   zero     0x200001a4    0x10  SEGGER_RTT.o [1]
+  .bss                   zero     0x200001b4     0x4  Indicator.o [1]
+  .bss                   zero     0x200001b8     0x4  Indicator.o [1]
+  .bss                   zero     0x200001bc     0x4  Indicator.o [1]
+  .bss                   zero     0x200001c0     0x4  Indicator.o [1]
+  .bss                   zero     0x200001c4     0x4  Indicator.o [1]
+  .bss                   zero     0x200001c8     0x4  Indicator.o [1]
+  .bss                   zero     0x200001cc     0x4  Indicator.o [1]
+  .bss                   zero     0x200001d0     0x4  Indicator.o [1]
+  .bss                   zero     0x200001d4     0x4  Indicator.o [1]
+  CSTACK                          0x200001d8   0x200  <Block>
+    CSTACK               uninit   0x200001d8   0x200  <Block tail>
+                                - 0x200003d8   0x3d8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1cc:
+          0x2000000c  0x1cc
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x78:
+          0x0000244c   0x78
+    1 destination range, total size 0x78:
+          0x1ffffc00   0x78
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xc:
+          0x000000c0    0xc
+    1 destination range, total size 0xc:
+          0x20000000    0xc
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data  rw data
+                                                    (abs)
+    ------              -------  -------  -------  -------
+C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj: [1]
+    ADC.o                   112
+    Cpu.o                   352       16
+    Events.o                 40
+    GPIOA.o                  84
+    Indicator.o             920       88      200
+    PIT.o                   108
+    PORT.o                   44
+    SEGGER_RTT.o            332      132      272      120
+    SPI0.o                   76
+    SysTick.o                40
+    Vectors.o                        192
+    main.o                   12
+    ------------------------------------------------------
+    Total:                2 120      428      472      120
+
+command line: [2]
+    ------------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    div.o                    32
+    exit.o                    8
+    snprintf.o               72
+    vsnprint.o               60
+    xprintffull_nomb.o    3 770       24
+    xsnprout.o               28
+    ------------------------------------------------------
+    Total:                3 970       24
+
+m6M_tl.a: [4]
+    DblAddSub.o             436
+    DblCmpGe.o               50
+    DblCmpLe.o               50
+    DblDiv.o                194
+    DblMul.o                388
+    DblToFlt.o               98
+    DblToI32.o               82
+    FltToDbl.o               50
+    I32ToDbl.o               52
+    xdnorm.o                 68
+    xdscale.o               284
+    ------------------------------------------------------
+    Total:                1 752
+
+rt6M_tl.a: [5]
+    ABImemcpy.o              92
+    I32DivModFast.o         224
+    I64DivMod.o             106
+    I64DivZer.o               2
+    IntDivZer.o               2
+    XXexit.o                 12
+    cexit.o                  10
+    cmain.o                  26
+    copy_init3.o             48
+    cstartup_M.o             12
+    data_init.o              40
+    memchr.o                 24
+    strchr.o                 20
+    strlen.o                 16
+    zero_init3.o             60
+    ------------------------------------------------------
+    Total:                  694
+
+    Gaps                     16
+    Linker created                    56      512
+----------------------------------------------------------
+    Grand Total:          8 552      508      984      120
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x000025bc          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000025f4          --   Gb  - Linker created -
+?main                   0x00002611         Code  Gb  cmain.o [5]
+ADC_Init                0x00002391   0x70  Code  Gb  ADC.o [1]
+ADC_Isr                 0x0000258d    0x8  Code  Gb  Events.o [1]
+ADC_isr_procedure       0x00001d83   0x44  Code  Gb  Indicator.o [1]
+ADC_prepere             0x00001cbf   0x10  Code  Gb  Indicator.o [1]
+Application             0x00001ce3   0xa0  Code  Gb  Indicator.o [1]
+CSTACK$$Base            0x200001d8          --   Gb  - Linker created -
+CSTACK$$Limit           0x200003d8          --   Gb  - Linker created -
+Clear_K1P               0x00001b5b    0xa  Code  Lc  Indicator.o [1]
+Clear_K2P               0x00001b65    0xa  Code  Lc  Indicator.o [1]
+Clear_K3P               0x00001b6f    0xa  Code  Lc  Indicator.o [1]
+Clear_LED               0x00001b33    0xa  Code  Lc  Indicator.o [1]
+Clear_display           0x00001ccf   0x14  Code  Gb  Indicator.o [1]
+Config                  0x00000400   0x10  Data  Gb  Cpu.o [1]
+Cpu_Interrupt           0x0000211d    0x2  Code  Gb  Cpu.o [1]
+GPIOA_Init              0x0000227d   0x54  Code  Gb  GPIOA.o [1]
+Get_unique_identificator
+                        0x00001b1d    0xc  Code  Gb  Indicator.o [1]
+INTTEMPER_adcr          0x200001c8    0x4  Data  Gb  Indicator.o [1]
+LoadInt                 0x000009cd   0x68  Code  Lc  xprintffull_nomb.o [3]
+NumToDisp               0x00001c1d   0x64  Code  Lc  Indicator.o [1]
+PE_low_level_init       0x0000217d   0xa2  Code  Gb  Cpu.o [1]
+PIT_Init                0x000022fd   0x6c  Code  Gb  PIT.o [1]
+PORT_Init               0x000022d1   0x2c  Code  Gb  PORT.o [1]
+RTT_printf              0x00001c9f   0x20  Code  Gb  Indicator.o [1]
+Region$$Table$$Base     0x000025bc          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000025f4          --   Gb  - Linker created -
+SEGGER_RTT_Write        0x00001f6f  0x144  Code  Gb  SEGGER_RTT.o [1]
+SPI0_Init               0x00002401   0x4c  Code  Gb  SPI0.o [1]
+Set_K1P                 0x00001b3d    0xa  Code  Lc  Indicator.o [1]
+Set_K2P                 0x00001b47    0xa  Code  Lc  Indicator.o [1]
+Set_K3P                 0x00001b51    0xa  Code  Lc  Indicator.o [1]
+Set_LED                 0x00001b29    0xa  Code  Lc  Indicator.o [1]
+Set_segments            0x00001b79   0xa4  Code  Gb  Indicator.o [1]
+Show_float              0x00001c81   0x1e  Code  Gb  Indicator.o [1]
+SysTick_ISR             0x0000256d   0x14  Code  Gb  Events.o [1]
+SysTick_ISR_procedure   0x00001dd5   0x76  Code  Gb  Indicator.o [1]
+SysTick_Init            0x00002369   0x28  Code  Gb  SysTick.o [1]
+TEMPER_adcr             0x200001c4    0x4  Data  Gb  Indicator.o [1]
+VAN_adcr                0x200001bc    0x4  Data  Gb  Indicator.o [1]
+VOLTAGE_adcr            0x200001c0    0x4  Data  Gb  Indicator.o [1]
+_GenldFullNoMb          0x00000ffd  0x29a  Code  Lc  xprintffull_nomb.o [3]
+_Init                   0x00001f6d    0x2  Code  Lc  SEGGER_RTT.o [1]
+_LdtobFullNoMb          0x00000b69  0x480  Code  Lc  xprintffull_nomb.o [3]
+_LitobFullNoMb          0x00000a35  0x12e  Code  Lc  xprintffull_nomb.o [3]
+_PrintfFullNoMb         0x00000411  0x5bc  Code  Gb  xprintffull_nomb.o [3]
+_PutcharsFullNoMb       0x00001297   0x30  Code  Lc  xprintffull_nomb.o [3]
+_SEGGER_RTT             0x1ffffc00   0x78  Data  Lc  SEGGER_RTT.o [1]
+_SNProut                0x000025f5   0x1c  Code  Gb  xsnprout.o [3]
+__aeabi_cdcmple         0x00001411         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x00001443         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f             0x000020b9         Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x00001591         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x000015b5         Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x00001619         Code  Gb  DblAddSub.o [4]
+__aeabi_ddiv            0x00001a31         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x000018ad         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000016df         Code  Gb  DblAddSub.o [4]
+__aeabi_f2d             0x00001eb5         Code  Gb  FltToDbl.o [4]
+__aeabi_i2d             0x000015e5         Code  Gb  I32ToDbl.o [4]
+__aeabi_idiv            0x000017f9         Code  Gb  I32DivModFast.o [5]
+__aeabi_idiv0           0x00001b19         Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod         0x000017f9         Code  Gb  I32DivModFast.o [5]
+__aeabi_ldiv0           0x00001b15         Code  Gb  I64DivZer.o [5]
+__aeabi_memcpy          0x00001371         Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x000015f9         Code  Gb  I32ToDbl.o [4]
+__aeabi_uidiv           0x000017ff         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x000017ff         Code  Gb  I32DivModFast.o [5]
+__aeabi_uldivmod        0x00001307         Code  Gb  I64DivMod.o [5]
+__cmain                 0x00002611         Code  Gb  cmain.o [5]
+__exit                  0x0000264d         Code  Gb  XXexit.o [5]
+__iar_Dnorm             0x000013cd   0x44  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x00001475  0x11c  Code  Gb  xdscale.o [4]
+__iar_Memchr            0x000012ef   0x18  Code  Gb  memchr.o [5]
+__iar_Strchr            0x000012cb   0x14  Code  Gb  strchr.o [5]
+__iar_copy_init3        0x0000253d   0x30  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x000015b9         Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x00002595   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x0000267d         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x000015fd         Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x00002501   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0000211f   0x5e  Code  Gb  Cpu.o [1]
+__vector_table          0x00000000   0xc0  Data  Gb  Vectors.o [1]
+_acDownBuffer           0x200001a4   0x10  Data  Lc  SEGGER_RTT.o [1]
+_acUpBuffer             0x2000000c  0x100  Data  Lc  SEGGER_RTT.o [1]
+_call_main              0x0000261d         Code  Gb  cmain.o [5]
+_exit                   0x00002641         Code  Gb  cexit.o [5]
+_main                   0x00002627         Code  Gb  cmain.o [5]
+ciphs                   0x20000000    0xc  Data  Gb  Indicator.o [1]
+disp_buf                0x200001b8    0x4  Data  Gb  Indicator.o [1]
+div                     0x00001af3   0x20  Code  Gb  div.o [3]
+exit                    0x00002637    0x8  Code  Gb  exit.o [3]
+int_temperature         0x200001cc    0x4  Data  Gb  Indicator.o [1]
+main                    0x0000262b    0xc  Code  Gb  main.o [1]
+meas_done               0x200001d0    0x4  Data  Gb  Indicator.o [1]
+nstr                    0x20000190   0x14  Data  Gb  Indicator.o [1]
+pos                     0x200001b4    0x4  Data  Gb  Indicator.o [1]
+rtt_str                 0x2000010c   0x84  Data  Gb  Indicator.o [1]
+snprintf                0x00001ee9   0x48  Code  Gb  snprintf.o [3]
+strlen                  0x000012df   0x10  Code  Gb  strlen.o [5]
+tdiv                    0x200001d4    0x4  Data  Gb  Indicator.o [1]
+vsnprintf               0x00001f31   0x3c  Code  Gb  vsnprint.o [3]
+
+
+[1] = C:\Embedded\Projects\Light_Control_Module\Light-Control-Module-PCB\Firmware_Examples\Internal_temperature_logger\Firmware_IAR\IAR_Proj\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+
+  8 552 bytes of readonly  code memory
+    508 bytes of readonly  data memory
+    984 bytes of readwrite data memory (+ 120 absolute)
+
+Errors: none
+Warnings: none

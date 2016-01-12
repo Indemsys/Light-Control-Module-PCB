@@ -1,0 +1,93 @@
+22:27:38 **** Incremental Build of configuration Debug for project AccTester ****
+Info: Internal Builder is used for build
+iccarm "..\\Generated_Code\\Vectors.c" -o "Generated_Code\\Vectors.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 192 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\Cpu.c" -o "Generated_Code\\Cpu.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 350 bytes of CODE  memory
+  16 bytes of CONST memory
+   2 bytes of DATA  memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\SPI0.c" -o "Generated_Code\\SPI0.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 76 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\Events.c" -o "Sources\\Events.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 32 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\ADC.c" -o "Generated_Code\\ADC.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 104 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\main.c" -o "Sources\\main.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 12 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\PE_LDD.c" -o "Generated_Code\\PE_LDD.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 32 bytes of CODE  memory
+ 40 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\PIT.c" -o "Generated_Code\\PIT.o" --no_wrap_diagnostics -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/PDD -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Static_Code/IO_Map -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Sources -IC:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Generated_Code -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 108 bytes of CODE memory
+
+Errors: none
+Warnings: none
+ilinkarm "Generated_Code\\ADC.o" "Generated_Code\\Cpu.o" "Sources\\Events.o" "Generated_Code\\GPIOA.o" "Sources\\Indicator.o" "Sources\\main.o" "Generated_Code\\PE_LDD.o" "Generated_Code\\PIT.o" "Generated_Code\\PORT.o" "Generated_Code\\SPI0.o" "Generated_Code\\SysTick.o" "Generated_Code\\Vectors.o" -o AccTester.out --config C:/Embedded/Projects/AccTester/Firmware_IAR/AccTester/Project_Settings/Linker_Files/ProcessorExpert.icf --no_wrap_diagnostics --semihosting 
+
+   IAR ELF Linker V7.40.7.9843/W32 for ARM
+   Copyright 2007-2015 IAR Systems AB.
+
+  1 402 bytes of readonly  code memory
+    226 bytes of readonly  data memory
+    264 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.03 (CPU)   0.03 (elapsed)
+
+22:27:39 Build Finished (took 1s.590ms)
+

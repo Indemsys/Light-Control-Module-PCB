@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PE_PROJECT_SETTINGS_DOCUMENTATION>
+  <PE_product_version v="version 10.5 for Freescale Microcontrollers" />
+  <PE_core_version v="Processor Expert Version 0521" />
+  <CPU_Bean name="Cpu" type="MKE02Z64LC2">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Cpu" />
+      <CPU_type v="SKEAZN64MLC2" />
+      <Initialization_priority v="interrupts enabled" />
+      <Watchdog_disable v="yes" />
+      <group name="Internal peripherals">
+        <EmptySection_DummyValue />
+      </group>
+      <group name="Low power mode settings">
+        <EmptySection_DummyValue />
+      </group>
+      <list name="Clock configurations" v="1">
+        <group name="Clock configuration 0">
+          <enumgroup name="Clock source setting" v="configuration 0">
+            <ICS_mode v="FEI" />
+            <ICS_output__MHz_ v="16" />
+            <ICSIRCLK_clock__MHz_ v="0.03125" />
+            <ICSFFCLK__kHz_ v="31.25" />
+            <OSCERCLK_clock__MHz_ v="0" />
+          </enumgroup>
+          <group name="System clocks">
+            <Core_clock v="16" />
+            <Bus_clock_prescaler v="Auto select" />
+            <Bus_clock v="16" />
+          </group>
+        </group>
+      </list>
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <Event_module_name v="Events" />
+    </Events>
+    <Compiler v="IAR ARM C Compiler" />
+    <CompilerProperties>
+      <Compiler v="IAR ARM C Compiler" />
+      <enumgroup name="Unhandled vectors" v="One handler for all">
+        <Unhandled_int_code>
+          <StrgList><![CDATA[/* This code can be changed using the CPU bean property "Build Options / Unhandled int code" */
+/* asm (HALT) */
+]]></StrgList>
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes" />
+      <FLASH_registers_initialization v="Enabled" />
+      <group name="User initialization">
+        <User_data_declarations>
+          <StrgList></StrgList>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+          <StrgList></StrgList>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+          <StrgList></StrgList>
+        </User_code_after_PE_initialization>
+      </group>
+      <boolgroup name="Generate ICF file" v="yes">
+        <Stack_size v="256" />
+        <Heap_size v="0" />
+        <Default_memory_for_interrupts v="INTERNAL FLASH" />
+        <Default_memory_for_code v="INTERNAL FLASH" />
+        <Default_memory_for_data v="INTERNAL RAM" />
+        <group name="Memory segments">
+          <Set_default_memory_segments v="Click to set default &amp;gt;" />
+          <list name="ROM/RAM segments" v="4">
+            <group name="MemoryArea0">
+              <boolgroup name="ROM/RAM Area" v="Enabled">
+                <Name v="m_interrupts" />
+                <Qualifier v="RX" />
+                <Address v="0" />
+                <Size v="192" />
+              </boolgroup>
+            </group>
+            <group name="MemoryArea1">
+              <boolgroup name="ROM/RAM Area" v="Disabled" />
+            </group>
+            <group name="MemoryArea2">
+              <boolgroup name="ROM/RAM Area" v="Enabled">
+                <Name v="m_text" />
+                <Qualifier v="RX" />
+                <Address v="1040" />
+                <Size v="64496" />
+              </boolgroup>
+            </group>
+            <group name="MemoryArea3">
+              <boolgroup name="ROM/RAM Area" v="Enabled">
+                <Name v="m_data" />
+                <Qualifier v="RW" />
+                <Address v="536869888" />
+                <Size v="4096" />
+              </boolgroup>
+            </group>
+          </list>
+        </group>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+  <Bean name="GPIOA" type="Init_GPIO">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="GPIOA" />
+      <Device v="GPIOA" />
+      <group name="Settings">
+        <boolgroup name="Pin 0" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 1" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="0" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 2" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 3" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 4" v="Do not initialize" />
+        <boolgroup name="Pin 5" v="Do not initialize" />
+        <boolgroup name="Pin 6" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 7" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 8" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 9" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 10" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 11" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 12" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 13" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 14" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 15" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 16" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 17" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 18" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 19" v="Initialize">
+          <Pin_direction v="Input" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 20" v="Do not initialize" />
+        <boolgroup name="Pin 21" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 22" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 23" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 24" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 25" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 26" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+        <boolgroup name="Pin 27" v="Initialize">
+          <Pin_direction v="Output" />
+          <Pin_input v="Disabled" />
+          <Output_value v="No initialization" />
+          <Pull_resistor v="No initialization" />
+        </boolgroup>
+      </group>
+      <group name="Pin selection/routing">
+        <boolgroup name="Pin 0" v="Enabled">
+          <Pin v="PTA0/KBI0_P0/FTM0_CH0/ACMP0_IN0/ADC0_SE0" />
+        </boolgroup>
+        <boolgroup name="Pin 1" v="Enabled">
+          <Pin v="PTA1/KBI0_P1/FTM0_CH1/ACMP0_IN1/ADC0_SE1" />
+        </boolgroup>
+        <boolgroup name="Pin 2" v="Enabled">
+          <Pin v="PTA2/KBI0_P2/UART0_RX/I2C0_SDA" />
+        </boolgroup>
+        <boolgroup name="Pin 3" v="Enabled">
+          <Pin v="PTA3/KBI0_P3/UART0_TX/I2C0_SCL" />
+        </boolgroup>
+        <boolgroup name="Pin 4" v="Disabled" />
+        <boolgroup name="Pin 5" v="Disabled" />
+        <boolgroup name="Pin 6" v="Enabled">
+          <Pin v="PTA6/FTM2_FLT1/ACMP1_IN0/ADC0_SE2" />
+        </boolgroup>
+        <boolgroup name="Pin 7" v="Enabled">
+          <Pin v="PTA7/FTM2_FLT2/ACMP1_IN1/ADC0_SE3" />
+        </boolgroup>
+        <boolgroup name="Pin 8" v="Enabled">
+          <Pin v="PTB0/KBI0_P4/UART0_RX/ADC0_SE4" />
+        </boolgroup>
+        <boolgroup name="Pin 9" v="Enabled">
+          <Pin v="PTB1/KBI0_P5/UART0_TX/ADC0_SE5" />
+        </boolgroup>
+        <boolgroup name="Pin 10" v="Enabled">
+          <Pin v="PTB2/KBI0_P6/SPI0_SCK/FTM0_CH0/ADC0_SE6" />
+        </boolgroup>
+        <boolgroup name="Pin 11" v="Enabled">
+          <Pin v="PTB3/KBI0_P7/SPI0_MOSI/FTM0_CH1/ADC0_SE7" />
+        </boolgroup>
+        <boolgroup name="Pin 12" v="Disabled" />
+        <boolgroup name="Pin 13" v="Enabled">
+          <Pin v="PTB5/FTM2_CH5/SPI0_PCS0/ACMP1_OUT" />
+        </boolgroup>
+        <boolgroup name="Pin 14" v="Enabled">
+          <Pin v="PTB6/I2C0_SDA/XTAL" />
+        </boolgroup>
+        <boolgroup name="Pin 15" v="Enabled">
+          <Pin v="PTB7/I2C0_SCL/EXTAL" />
+        </boolgroup>
+        <boolgroup name="Pin 16" v="Enabled">
+          <Pin v="PTC0/FTM2_CH0/ADC0_SE8" />
+        </boolgroup>
+        <boolgroup name="Pin 17" v="Enabled">
+          <Pin v="PTC1/FTM2_CH1/ADC0_SE9" />
+        </boolgroup>
+        <boolgroup name="Pin 18" v="Enabled">
+          <Pin v="PTC2/FTM2_CH2/ADC0_SE10" />
+        </boolgroup>
+        <boolgroup name="Pin 19" v="Enabled">
+          <Pin v="PTC3/FTM2_CH3/ADC0_SE11" />
+        </boolgroup>
+        <boolgroup name="Pin 20" v="Disabled" />
+        <boolgroup name="Pin 21" v="Enabled">
+          <Pin v="PTC5/FTM1_CH1/RTCO" />
+        </boolgroup>
+        <boolgroup name="Pin 22" v="Enabled">
+          <Pin v="PTC6/UART1_RX" />
+        </boolgroup>
+        <boolgroup name="Pin 23" v="Enabled">
+          <Pin v="PTC7/UART1_TX" />
+        </boolgroup>
+        <boolgroup name="Pin 24" v="Enabled">
+          <Pin v="PTD0/KBI1_P0/FTM2_CH2/SPI1_SCK" />
+        </boolgroup>
+        <boolgroup name="Pin 25" v="Enabled">
+          <Pin v="PTD1/KBI1_P1/FTM2_CH3/SPI1_MOSI" />
+        </boolgroup>
+        <boolgroup name="Pin 26" v="Enabled">
+          <Pin v="PTD2/KBI1_P2/SPI1_MISO" />
+        </boolgroup>
+        <boolgroup name="Pin 27" v="Enabled">
+          <Pin v="PTD3/KBI1_P3/SPI1_PCS0" />
+        </boolgroup>
+      </group>
+      <group name="Initialization">
+        <Call_Init_method v="yes" />
+      </group>
+    </Properties>
+    <Methods>
+      <Init v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="PORT" type="Init_PORT">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="PORT" />
+      <Device v="PORT" />
+      <group name="Settings">
+        <group name="PTA">
+          <boolgroup name="Pin 0" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 1" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 2" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 3" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 4" v="Do not initialize" />
+          <boolgroup name="Pin 5" v="Do not initialize" />
+          <boolgroup name="Pin 6" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 7" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+        </group>
+        <group name="PTB">
+          <boolgroup name="Pin 0" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 1" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 2" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 3" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 4" v="Initialize">
+            <Pullup v="No initialization" />
+            <High_drive v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 5" v="Initialize">
+            <Pullup v="No initialization" />
+            <High_drive v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 6" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 7" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+        </group>
+        <group name="PTC">
+          <boolgroup name="Pin 0" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 1" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 2" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 3" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 4" v="Do not initialize" />
+          <boolgroup name="Pin 5" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 6" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 7" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+        </group>
+        <group name="PTD">
+          <boolgroup name="Pin 0" v="Initialize">
+            <Pullup v="No initialization" />
+            <High_drive v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 1" v="Initialize">
+            <Pullup v="No initialization" />
+            <High_drive v="Enable" />
+          </boolgroup>
+          <boolgroup name="Pin 2" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+          <boolgroup name="Pin 3" v="Initialize">
+            <Pullup v="No initialization" />
+          </boolgroup>
+        </group>
+        <group name="Filters">
+          <group name="Filter division">
+            <Set_1 v="BUSCLK/2" />
+            <Set_2 v="BUSCLK/32" />
+            <Set_3 v="LPOCLK" />
+          </group>
+          <group name="Filter selection">
+            <PTA v="BUSCLK" />
+            <PTB v="BUSCLK" />
+            <PTC v="BUSCLK" />
+            <PTD v="BUSCLK" />
+            <KBI0 v="No filter" />
+            <KBI1 v="No filter" />
+            <NMI v="FLTDIV3" />
+            <RST v="No filter" />
+          </group>
+        </group>
+      </group>
+      <group name="Initialization">
+        <Call_Init_method v="yes" />
+      </group>
+    </Properties>
+    <Methods>
+      <Init v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="PIT" type="Init_PIT">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="PIT" />
+      <Device v="PIT" />
+      <group name="Setttings">
+        <Clock_gate v="Do not initialize" />
+        <group name="Clock settings">
+          <Base_clock_frequency v="16 MHz" />
+        </group>
+        <Freeze_in_debug_mode v="no" />
+      </group>
+      <group name="Channels">
+        <group name="Channel 0">
+          <Timer_0 v="Disabled" />
+          <Timer_0_load_value v="0" />
+          <Timer_0_Period v="0.062 us" />
+          <group name="Interrupt">
+            <Interrupt v="INT_PIT_CH0" />
+            <Interrupt_request v="Disabled" />
+            <Interrupt_priority v="0 (Highest)" />
+            <ISR_Name v="" />
+            <Timer_interrupt v="Disabled" />
+          </group>
+        </group>
+        <group name="Channel 1">
+          <Timer_1 v="Disabled" />
+          <Timer_1_chain_mode v="Disabled" />
+          <Timer_1_load_value v="0" />
+          <Timer_1_Period v="0.062 us" />
+          <group name="Interrupt">
+            <Interrupt v="INT_PIT_CH1" />
+            <Interrupt_request v="Disabled" />
+            <Interrupt_priority v="0 (Highest)" />
+            <ISR_Name v="" />
+            <Timer_interrupt v="Disabled" />
+          </group>
+        </group>
+      </group>
+      <group name="Initialization">
+        <Module v="Disabled" />
+        <Call_Init_method v="yes" />
+      </group>
+    </Properties>
+    <Methods>
+      <Init v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="SysTick" type="Init_SysTick">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="SysTick" />
+      <Device v="SysTick" />
+      <group name="Settings">
+        <Clock_source v="Processor clock" />
+        <Reload_value v="16000" />
+        <Counter_period v="1.000 ms" />
+      </group>
+      <group name="Interrupts">
+        <Interrupt v="INT_SysTick" />
+        <Interrupt_priority v="0 (Highest)" />
+        <ISR_Name v="SysTick_ISR" />
+        <Timer_interrupt v="Enabled" />
+      </group>
+      <group name="Initialization">
+        <Timer_enable v="yes" />
+        <Clear_counter v="yes" />
+        <Call_Init_method v="yes" />
+      </group>
+    </Properties>
+    <Methods>
+      <Init v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+</PE_PROJECT_SETTINGS_DOCUMENTATION>
+
