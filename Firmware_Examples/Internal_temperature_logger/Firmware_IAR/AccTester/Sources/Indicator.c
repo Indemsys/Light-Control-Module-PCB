@@ -328,11 +328,6 @@ void ADC_isr_procedure(void)
   TEMPER_adcr = ADC_R;
   INTTEMPER_adcr = ADC_R;
 
-  ADC_SC1 = ADC_SC1_ADCH(9);
-  ADC_SC1 = ADC_SC1_ADCH(10);
-  ADC_SC1 = ADC_SC1_ADCH(11);
-  ADC_SC1 = ADC_SC1_AIEN_MASK | ADC_SC1_ADCH(22);
-
   Clear_LED();
 }
 /*------------------------------------------------------------------------------
