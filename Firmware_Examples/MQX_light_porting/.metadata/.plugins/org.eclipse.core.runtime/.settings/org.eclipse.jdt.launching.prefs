@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1452254362946">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1452254362946" name\="com.somniumtech.jre.win32.win32.x86_1.7.0.76" path\="C\:\\Freescale\\KDS_3.0.0\\eclipse\\features\\com.somniumtech.jre.win32.win32.x86_1.7.0.76"/>\r\n</vmType>\r\n</vmSettings>\r\n

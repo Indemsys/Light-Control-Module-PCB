@@ -1,0 +1,236 @@
+/*!
+  \page PORT PORT (Init_PORT)
+**          This file implements the PORT (PORT) module initialization
+**          according to the Peripheral Initialization settings, and
+**          defines interrupt service routines prototypes.
+**
+
+- \subpage PORT_settings
+- \subpage PORT_regs_overview  
+- \subpage PORT_regs_details
+- \ref PORT_module "Component documentation" 
+\page PORT_regs_overview Registers Initialization Overview
+This page contains the initialization values for the registers of the peripheral(s) configured
+by the component. 
+<table>
+<tr><td colspan="4" class="ttitle1">PORT Initialization</td></tr>
+<tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
+<tr><td>0x40049000</td><td>PORT_IOFLT</td>
+<td class="regResetVal">0x00C00000</td>
+ <td>PORT_IOFLT register, peripheral PORT.</td></tr>
+<tr><td>0x4004900C</td><td>PORT_HDRVE</td>
+<td class="regNotResetVal">0x00000008</td>
+ <td>PORT_HDRVE register, peripheral PORT.</td></tr>
+</table>
+Color Denotes Reset Value
+<br/>
+\page PORT_regs_details Register Initialization Details
+This page contains detailed description of initialization values for the 
+registers of the peripheral(s) configured by the component. 
+
+<div class="reghdr1">PORT_IOFLT</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="3" rowspan="2">FLTDIV3</td><td colspan="3" rowspan="2">FLTDIV2</td>
+<td colspan="2" rowspan="2">FLTDIV1</td><td colspan="2" rowspan="2">FLTNMI</td><td colspan="2" rowspan="2">FLTKBI1</td>
+<td colspan="2" rowspan="2">FLTKBI0</td><td colspan="2" rowspan="2">FLTRST</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="2" rowspan="2">FLTH</td><td colspan="2" rowspan="2">FLTG</td>
+<td colspan="2" rowspan="2">FLTF</td><td colspan="2" rowspan="2">FLTE</td><td colspan="2" rowspan="2">FLTD</td>
+<td colspan="2" rowspan="2">FLTC</td><td colspan="2" rowspan="2">FLTB</td><td colspan="2" rowspan="2">FLTA</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40049000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00C00000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00C00000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>29 - 31</td><td>FLTDIV3</td><td>0x00</td><td>Filter Division Set 3</td>
+<tr><td>26 - 28</td><td>FLTDIV2</td><td>0x00</td><td>Filter Division Set 2</td>
+<tr><td>24 - 25</td><td>FLTDIV1</td><td>0x00</td><td>Filter Division Set 1</td>
+<tr><td>22 - 23</td><td>FLTNMI</td><td>0x02</td><td>Filter Selection for Input from NMI</td>
+<tr><td>20 - 21</td><td>FLTKBI1</td><td>0x00</td><td>Filter Selection for Input from KBI1</td>
+<tr><td>18 - 19</td><td>FLTKBI0</td><td>0x00</td><td>Filter selection for Input from KBI0</td>
+<tr><td>16 - 17</td><td>FLTRST</td><td>0x00</td><td>Filter Selection for Input from RESET/IRQ</td>
+<tr><td>14 - 15</td><td>FLTH</td><td>0x00</td><td>Filter Selection for Input from PTH</td>
+<tr><td>12 - 13</td><td>FLTG</td><td>0x00</td><td>Filter Selection for Input from PTG</td>
+<tr><td>10 - 11</td><td>FLTF</td><td>0x00</td><td>Filter Selection for Input from PTF</td>
+<tr><td>8 - 9</td><td>FLTE</td><td>0x00</td><td>Filter Selection for Input from PTD</td>
+<tr><td>6 - 7</td><td>FLTD</td><td>0x00</td><td>Filter Selection for Input from PTD</td>
+<tr><td>4 - 5</td><td>FLTC</td><td>0x00</td><td>Filter Selection for Input from PTC</td>
+<tr><td>2 - 3</td><td>FLTB</td><td>0x00</td><td>Filter Selection for Input from PTB</td>
+<tr><td>0 - 1</td><td>FLTA</td><td>0x00</td><td>Filter Selection for Input from PTA</td>
+</tr></table>
+<div class="reghdr1">PORT_HDRVE</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">PTH1</td>
+<td colspan="1" rowspan="2">PTH0</td><td colspan="1" rowspan="2">PTE1</td><td colspan="1" rowspan="2">PTE0</td>
+<td colspan="1" rowspan="2">PTD1</td><td colspan="1" rowspan="2">PTD0</td><td colspan="1" rowspan="2">PTB5</td>
+<td colspan="1" rowspan="2">PTB4</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x4004900C</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000008</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>7</td><td>PTH1</td><td>0x00</td><td>High Current Drive Capability of PTH1</td>
+<tr><td>6</td><td>PTH0</td><td>0x00</td><td>High Current Drive Capability of PTH0</td>
+<tr><td>5</td><td>PTE1</td><td>0x00</td><td>High Current Drive Capability of PTE1</td>
+<tr><td>4</td><td>PTE0</td><td>0x00</td><td>High Current Drive Capability of PTE0</td>
+<tr><td>3</td><td>PTD1</td><td>0x01</td><td>High Current Drive Capability of PTD1</td>
+<tr><td>2</td><td>PTD0</td><td>0x00</td><td>High Current Drive Capability of PTD0</td>
+<tr><td>1</td><td>PTB5</td><td>0x00</td><td>High Current Drive Capability of PTB5</td>
+<tr><td>0</td><td>PTB4</td><td>0x00</td><td>High Current Drive Capability of PTB4</td>
+</tr></table>
+*/
+/*!
+\page PORT_settings Component Settings
+\code
+**          Component name                                 : PORT
+**          Device                                         : PORT
+**          Settings                                       : 
+**            PTA                                          : 
+**              Pin 0                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 1                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 2                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 3                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 4                                      : Do not initialize
+**              Pin 5                                      : Do not initialize
+**              Pin 6                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 7                                      : Initialize
+**                Pullup                                   : No initialization
+**            PTB                                          : 
+**              Pin 0                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 1                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 2                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 3                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 4                                      : Initialize
+**                Pullup                                   : No initialization
+**                High drive                               : No initialization
+**              Pin 5                                      : Initialize
+**                Pullup                                   : No initialization
+**                High drive                               : No initialization
+**              Pin 6                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 7                                      : Initialize
+**                Pullup                                   : No initialization
+**            PTC                                          : 
+**              Pin 0                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 1                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 2                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 3                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 4                                      : Do not initialize
+**              Pin 5                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 6                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 7                                      : Initialize
+**                Pullup                                   : No initialization
+**            PTD                                          : 
+**              Pin 0                                      : Initialize
+**                Pullup                                   : No initialization
+**                High drive                               : No initialization
+**              Pin 1                                      : Initialize
+**                Pullup                                   : No initialization
+**                High drive                               : Enable
+**              Pin 2                                      : Initialize
+**                Pullup                                   : No initialization
+**              Pin 3                                      : Initialize
+**                Pullup                                   : No initialization
+**            Filters                                      : 
+**              Filter division                            : 
+**                Set 1                                    : BUSCLK/2
+**                Set 2                                    : BUSCLK/32
+**                Set 3                                    : LPOCLK
+**              Filter selection                           : 
+**                PTA                                      : BUSCLK
+**                PTB                                      : BUSCLK
+**                PTC                                      : BUSCLK
+**                PTD                                      : BUSCLK
+**                KBI0                                     : No filter
+**                KBI1                                     : No filter
+**                NMI                                      : FLTDIV3
+**                RST                                      : No filter
+**          Initialization                                 : 
+**            Call Init method                             : yes
+<h1>
+\endcode
+*/

@@ -1,0 +1,327 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="Other C/C++"
+    WorkingDir=".">
+    <Config
+        Name="Debug"
+        Type="cpp"
+        DebugCallbackName="gdb"
+        OutputFile="%bdMQXLite_porting"
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                OutputExts="*.o"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec CmdLine='cc -c -g %i %defd -o "%bd%n.o" "%f"'/>
+            </Target>
+            <Target
+                Name="Link"
+                MenuCaption="&amp;Link">
+                <Exec CmdLine='cc -g -o "%o" %f %libs'/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='vsdebugio -prog "%o"'/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%o"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Config
+        Name="Release"
+        Type="cpp"
+        DebugCallbackName="gdb"
+        OutputFile="%bdMQXLite_porting"
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                OutputExts="*.o"
+                RunFromDir="%rw">
+                <Exec CmdLine='cc -c -O %i %defd -o "%bd%n.o" "%f"'/>
+            </Target>
+            <Target
+                Name="Link"
+                MenuCaption="&amp;Link">
+                <Exec CmdLine='cc -O -o "%o" %f %libs'/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='vsdebugio -prog "%o"'/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%o"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Rules Name="Compile">
+        <Rule
+            InputExts="*.s"
+            OutputExts="*.o"
+            LinkObject="1">
+            <Exec CmdLine='as -o "%bd%n.o" "%f"'/>
+        </Rule>
+    </Rules>
+    <CustomFolders>
+        <Folder
+            Name="Source Files"
+            Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go"></Folder>
+        <Folder
+            Name="Header Files"
+            Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"></Folder>
+        <Folder
+            Name="Resource Files"
+            Filters="*.ico;*.cur;*.dlg"/>
+        <Folder
+            Name="Bitmaps"
+            Filters="*.bmp"/>
+        <Folder
+            Name="Other Files"
+            Filters=""></Folder>
+    </CustomFolders>
+    <Files AutoFolders="DirectoryView">
+        <Folder Name="../MQXLite_porting">
+            <Folder Name="Generated_Code">
+                <F N="../MQXLite_porting/Generated_Code/ADC.c"/>
+                <F N="../MQXLite_porting/Generated_Code/ADC.h"/>
+                <F N="../MQXLite_porting/Generated_Code/Cpu.c"/>
+                <F N="../MQXLite_porting/Generated_Code/Cpu.h"/>
+                <F N="../MQXLite_porting/Generated_Code/GPIOA.c"/>
+                <F N="../MQXLite_porting/Generated_Code/GPIOA.h"/>
+                <F N="../MQXLite_porting/Generated_Code/IO_Map.h"/>
+                <F N="../MQXLite_porting/Generated_Code/MQX1.c"/>
+                <F N="../MQXLite_porting/Generated_Code/MQX1.h"/>
+                <F N="../MQXLite_porting/Generated_Code/PE_Const.h"/>
+                <F N="../MQXLite_porting/Generated_Code/PE_Error.h"/>
+                <F N="../MQXLite_porting/Generated_Code/PE_LDD.c"/>
+                <F N="../MQXLite_porting/Generated_Code/PE_LDD.h"/>
+                <F N="../MQXLite_porting/Generated_Code/PE_Types.h"/>
+                <F N="../MQXLite_porting/Generated_Code/PIT.c"/>
+                <F N="../MQXLite_porting/Generated_Code/PIT.h"/>
+                <F N="../MQXLite_porting/Generated_Code/PORT.c"/>
+                <F N="../MQXLite_porting/Generated_Code/PORT.h"/>
+                <F N="../MQXLite_porting/Generated_Code/SPI0.c"/>
+                <F N="../MQXLite_porting/Generated_Code/SPI0.h"/>
+                <F N="../MQXLite_porting/Generated_Code/SystemTimer1.c"/>
+                <F N="../MQXLite_porting/Generated_Code/SystemTimer1.h"/>
+                <F N="../MQXLite_porting/Generated_Code/Vectors.c"/>
+            </Folder>
+            <Folder Name="MQXLITE">
+                <Folder Name="config">
+                    <F N="../MQXLite_porting/MQXLITE/config/task_template_list.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/config/task_template_list.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/config/user_config.h"/>
+                </Folder>
+                <Folder Name="include">
+                    <F N="../MQXLite_porting/MQXLITE/include/klog.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/log.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwevent.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwevent_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwlog.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwlog_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwmem.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwmem_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwmsgq.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwmsgq_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwsem.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwsem_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwtimer.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/lwtimer_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqx_cnfg.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqx_cpudef.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqx_inc.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqx_macros.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqx_str.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqxlite.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqxlite_cnfg.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mqxlite_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mutex.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/mutex_prv.h"/>
+                    <F N="../MQXLite_porting/MQXLITE/include/queue.h"/>
+                </Folder>
+                <Folder Name="kernel">
+                    <F N="../MQXLite_porting/MQXLITE/kernel/idletask.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/int.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/klog.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/lwevent.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/lwlog.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/lwmem.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/lwmsgq.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/lwsem.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/lwtimer.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/mqx_utils.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/mqxlite.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/mutex.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/qu_test.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/sched.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/task.c"/>
+                    <F N="../MQXLite_porting/MQXLITE/kernel/time_ticks.c"/>
+                </Folder>
+                <Folder Name="psp">
+                    <Folder Name="cortex_m">
+                        <Folder Name="compiler">
+                            <Folder Name="iar">
+                                <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar/asm_mac.h"/>
+                                <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar/comp.h"/>
+                            </Folder>
+                        </Folder>
+                        <Folder Name="core">
+                            <Folder Name="M0">
+                                <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/core/M0/boot.S"/>
+                                <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/core/M0/dispatch.S"/>
+                                <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/core/M0/psp_prv.inc"/>
+                            </Folder>
+                        </Folder>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/cortex.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/cortex.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_gkis.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_inst.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_kisr.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_pvta.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_unx.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_vtab.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/int_xcpt.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/kinetis.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/mem_zero.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_comp.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_cpu.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_cpudef.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_iinit.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_prv.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_supp.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_supp.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_tiad.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_ticks.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_tinm.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_tipr.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psp_tisu.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psplite.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/psptypes.h"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/sc_irdyq.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/stack_bu.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/stack_de.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/stack_st.c"/>
+                        <F N="../MQXLite_porting/MQXLITE/psp/cortex_m/types.inc"/>
+                    </Folder>
+                </Folder>
+            </Folder>
+            <Folder Name="Project_Settings">
+                <Folder Name="Linker_Files">
+                    <F N="../MQXLite_porting/Project_Settings/Linker_Files/ProcessorExpert.icf"/>
+                </Folder>
+            </Folder>
+            <Folder Name="Sources">
+                <Folder Name="RTT">
+                    <F N="../MQXLite_porting/Sources/RTT/SEGGER_RTT.c"/>
+                    <F N="../MQXLite_porting/Sources/RTT/SEGGER_RTT.h"/>
+                    <F N="../MQXLite_porting/Sources/RTT/SEGGER_RTT_Conf.h"/>
+                    <F N="../MQXLite_porting/Sources/RTT/SEGGER_RTT_printf.c"/>
+                </Folder>
+                <F N="../MQXLite_porting/Sources/App.h"/>
+                <F N="../MQXLite_porting/Sources/App_ADC.c"/>
+                <F N="../MQXLite_porting/Sources/App_ADC.h"/>
+                <F N="../MQXLite_porting/Sources/App_io.c"/>
+                <F N="../MQXLite_porting/Sources/App_io.h"/>
+                <F N="../MQXLite_porting/Sources/Indicator.c"/>
+                <F N="../MQXLite_porting/Sources/Indicator.h"/>
+                <F N="../MQXLite_porting/Sources/Measurements.c"/>
+                <F N="../MQXLite_porting/Sources/Measurements.h"/>
+                <F N="../MQXLite_porting/Sources/mqx_tasks.c"/>
+                <F N="../MQXLite_porting/Sources/mqx_tasks.h"/>
+                <F N="../MQXLite_porting/Sources/PWM_gen.c"/>
+                <F N="../MQXLite_porting/Sources/PWM_gen.h"/>
+            </Folder>
+            <Folder Name="Static_Code">
+                <Folder Name="IO_Map">
+                    <F N="../MQXLite_porting/Static_Code/IO_Map/SKEAZN642.h"/>
+                </Folder>
+                <Folder Name="PDD">
+                    <F N="../MQXLite_porting/Static_Code/PDD/ADC_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/CMP_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/CRC_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/FTM_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/FTMRH_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/GPIO_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/I2C_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/IRQ_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/KBI_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/MCM_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/PDD_Types.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/PIT_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/PMC_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/PORT_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/RTC0_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/SIM_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/SPI_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/SysTick_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/UART_PDD.h"/>
+                    <F N="../MQXLite_porting/Static_Code/PDD/WDOG_PDD.h"/>
+                </Folder>
+            </Folder>
+        </Folder>
+    </Files>
+</Project>

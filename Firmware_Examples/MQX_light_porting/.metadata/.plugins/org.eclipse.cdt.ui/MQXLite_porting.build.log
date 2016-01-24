@@ -1,0 +1,539 @@
+22:06:36 **** Rebuild of configuration Debug for project MQXLite_porting ****
+Info: Internal Builder is used for build
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_unx.c" -o "MQXLITE\\psp\\cortex_m\\int_unx.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 100 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\idletask.c" -o "MQXLITE\\kernel\\idletask.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 16 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\lwmsgq.c" -o "MQXLITE\\kernel\\lwmsgq.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\RTT\\SEGGER_RTT.c" -o "Sources\\RTT\\SEGGER_RTT.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 1 086 bytes of CODE  memory
+    12 bytes of CONST memory
+   393 bytes of DATA  memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\sched.c" -o "MQXLITE\\kernel\\sched.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 488 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\Cpu.c" -o "Generated_Code\\Cpu.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 340 bytes of CODE  memory
+  16 bytes of CONST memory
+   2 bytes of DATA  memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\psp_tinm.c" -o "MQXLITE\\psp\\cortex_m\\psp_tinm.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 64 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\lwevent.c" -o "MQXLITE\\kernel\\lwevent.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\PORT.c" -o "Generated_Code\\PORT.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 44 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_xcpt.c" -o "MQXLITE\\psp\\cortex_m\\int_xcpt.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 164 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\GPIOA.c" -o "Generated_Code\\GPIOA.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 84 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\lwlog.c" -o "MQXLITE\\kernel\\lwlog.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\cortex.c" -o "MQXLITE\\psp\\cortex_m\\cortex.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+
+  	if (irq >= PSP_INT_FIRST_INTERNAL && irq <= PSP_INT_LAST_INTERNAL) {
+  	        ^
+"C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\MQXLite_porting\MQXLITE\psp\cortex_m\cortex.c",82  Warning[Pe186]: pointless comparison of unsigned integer with zero
+
+      if (ext_irq_no >= PSP_INT_FIRST_INTERNAL && ext_irq_no <= PSP_INT_LAST_INTERNAL) {
+                     ^
+"C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\MQXLite_porting\MQXLITE\psp\cortex_m\cortex.c",115  Warning[Pe186]: pointless comparison of unsigned integer with zero
+
+      if (ext_irq_no >= PSP_INT_FIRST_INTERNAL && ext_irq_no <= PSP_INT_LAST_INTERNAL) {
+                     ^
+"C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\MQXLite_porting\MQXLITE\psp\cortex_m\cortex.c",143  Warning[Pe186]: pointless comparison of unsigned integer with zero
+ 
+ 212 bytes of CODE memory
+
+Errors: none
+Warnings: 3
+iccarm "..\\Generated_Code\\Vectors.c" -o "Generated_Code\\Vectors.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 192 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\PE_LDD.c" -o "Generated_Code\\PE_LDD.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 52 bytes of CODE  memory
+ 40 bytes of CONST memory
+  4 bytes of DATA  memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\mqx_utils.c" -o "MQXLITE\\kernel\\mqx_utils.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 382 bytes of CODE  memory
+  16 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\lwtimer.c" -o "MQXLITE\\kernel\\lwtimer.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\stack_de.c" -o "MQXLITE\\psp\\cortex_m\\stack_de.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 2 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\lwmem.c" -o "MQXLITE\\kernel\\lwmem.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\klog.c" -o "MQXLITE\\kernel\\klog.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_vtab.c" -o "MQXLITE\\psp\\cortex_m\\int_vtab.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 24 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\int.c" -o "MQXLITE\\kernel\\int.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 796 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\psp_supp.c" -o "MQXLITE\\psp\\cortex_m\\psp_supp.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\mutex.c" -o "MQXLITE\\kernel\\mutex.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\lwsem.c" -o "MQXLITE\\kernel\\lwsem.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 1 706 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\psp_tisu.c" -o "MQXLITE\\psp\\cortex_m\\psp_tisu.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 230 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\Indicator.c" -o "Sources\\Indicator.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 960 bytes of CODE  memory
+  76 bytes of CONST memory
+ 200 bytes of DATA  memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\qu_test.c" -o "MQXLITE\\kernel\\qu_test.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 108 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\stack_bu.c" -o "MQXLITE\\psp\\cortex_m\\stack_bu.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 92 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iasmarm "..\\MQXLITE\\psp\\cortex_m\\core\\M0\\boot.S" -o "MQXLITE\\psp\\cortex_m\\core\\M0\\boot.o" --cpu Cortex-M0+ --fpu None -s+ -r -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar 
+
+    IAR Assembler V7.40.7.9843/W32 for ARM
+    Copyright 1999-2015 IAR Systems AB.
+
+Errors:   0
+Warnings: 0
+Bytes: 52
+iccarm "..\\Generated_Code\\SPI0.c" -o "Generated_Code\\SPI0.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 76 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\Events.c" -o "Sources\\Events.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 38 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\ADC.c" -o "Generated_Code\\ADC.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 116 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\SystemTimer1.c" -o "Generated_Code\\SystemTimer1.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 304 bytes of CODE memory
+  12 bytes of DATA memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\MQX1.c" -o "Generated_Code\\MQX1.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+   168 bytes of CODE  memory
+    36 bytes of CONST memory
+ 2 256 bytes of DATA  memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\time_ticks.c" -o "MQXLITE\\kernel\\time_ticks.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 1 682 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Generated_Code\\PIT.c" -o "Generated_Code\\PIT.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 108 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_inst.c" -o "MQXLITE\\psp\\cortex_m\\int_inst.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 20 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\stack_st.c" -o "MQXLITE\\psp\\cortex_m\\stack_st.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 6 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\psp_tipr.c" -o "MQXLITE\\psp\\cortex_m\\psp_tipr.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 68 bytes of CODE  memory
+ 16 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\sc_irdyq.c" -o "MQXLITE\\psp\\cortex_m\\sc_irdyq.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 216 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\config\\task_template_list.c" -o "MQXLITE\\config\\task_template_list.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 64 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\task.c" -o "MQXLITE\\kernel\\task.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+
+      TD_STRUCT_PTR          td_ptr;
+                             ^
+"C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\MQXLite_porting\MQXLITE\kernel\task.c",3009  Warning[Pe550]: variable "td_ptr" was set but never used
+ 
+ 3 586 bytes of CODE memory
+     4 bytes of DATA memory
+
+Errors: none
+Warnings: 1
+iasmarm "..\\MQXLITE\\psp\\cortex_m\\core\\M0\\dispatch.S" -o "MQXLITE\\psp\\cortex_m\\core\\M0\\dispatch.o" --cpu Cortex-M0+ --fpu None -s+ -r -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar 
+
+    IAR Assembler V7.40.7.9843/W32 for ARM
+    Copyright 1999-2015 IAR Systems AB.
+
+Errors:   0
+Warnings: 0
+Bytes: 604
+iccarm "..\\MQXLITE\\psp\\cortex_m\\psp_iinit.c" -o "MQXLITE\\psp\\cortex_m\\psp_iinit.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 28 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\psp_tiad.c" -o "MQXLITE\\psp\\cortex_m\\psp_tiad.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 92 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\kernel\\mqxlite.c" -o "MQXLITE\\kernel\\mqxlite.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+
+      KERNEL_DATA_STRUCT_PTR kernel_data;
+                             ^
+"C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\MQXLite_porting\MQXLITE\kernel\mqxlite.c",375  Warning[Pe550]: variable "kernel_data" was set but never used
+ 
+ 366 bytes of CODE  memory
+ 272 bytes of CONST memory
+   8 bytes of DATA  memory
+
+Errors: none
+Warnings: 1
+iccarm "..\\Sources\\main.c" -o "Sources\\main.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 16 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\mqx_tasks.c" -o "Sources\\mqx_tasks.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 8 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_pvta.c" -o "MQXLITE\\psp\\cortex_m\\int_pvta.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_gkis.c" -o "MQXLITE\\psp\\cortex_m\\int_gkis.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 36 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\Sources\\RTT\\SEGGER_RTT_printf.c" -o "Sources\\RTT\\SEGGER_RTT_printf.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 1 198 bytes of CODE  memory
+    16 bytes of CONST memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\mem_zero.c" -o "MQXLITE\\psp\\cortex_m\\mem_zero.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 332 bytes of CODE memory
+
+Errors: none
+Warnings: none
+iccarm "..\\MQXLITE\\psp\\cortex_m\\int_kisr.c" -o "MQXLITE\\psp\\cortex_m\\int_kisr.o" --no_wrap_diagnostics -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/PDD -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Static_Code/IO_Map -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Sources -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Generated_Code -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/include -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/config -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/kernel -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/core/M0 -IC:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/MQXLITE/psp/cortex_m/compiler/iar -e --cpu Cortex-M0+ --fpu None --debug --dlib_config "C:/Program Files (x86)/IAR Systems/Embedded Workbench 7.2/arm/inc/c/DLib_Config_Normal.h" --endian little --cpu_mode thumb -On --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling 
+
+   IAR ANSI C/C++ Compiler V7.40.7.9843/W32 for ARM
+   Copyright 1999-2015 IAR Systems AB.
+ 
+ 16 bytes of CODE memory
+
+Errors: none
+Warnings: none
+ilinkarm "Generated_Code\\ADC.o" "MQXLITE\\psp\\cortex_m\\core\\M0\\boot.o" "MQXLITE\\psp\\cortex_m\\cortex.o" "Generated_Code\\Cpu.o" "MQXLITE\\psp\\cortex_m\\core\\M0\\dispatch.o" "Sources\\Events.o" "Generated_Code\\GPIOA.o" "MQXLITE\\kernel\\idletask.o" "Sources\\Indicator.o" "MQXLITE\\kernel\\int.o" "MQXLITE\\psp\\cortex_m\\int_gkis.o" "MQXLITE\\psp\\cortex_m\\int_inst.o" "MQXLITE\\psp\\cortex_m\\int_kisr.o" "MQXLITE\\psp\\cortex_m\\int_pvta.o" "MQXLITE\\psp\\cortex_m\\int_unx.o" "MQXLITE\\psp\\cortex_m\\int_vtab.o" "MQXLITE\\psp\\cortex_m\\int_xcpt.o" "MQXLITE\\kernel\\klog.o" "MQXLITE\\kernel\\lwevent.o" "MQXLITE\\kernel\\lwlog.o" "MQXLITE\\kernel\\lwmem.o" "MQXLITE\\kernel\\lwmsgq.o" "MQXLITE\\kernel\\lwsem.o" "MQXLITE\\kernel\\lwtimer.o" "Sources\\main.o" "MQXLITE\\psp\\cortex_m\\mem_zero.o" "Generated_Code\\MQX1.o" "Sources\\mqx_tasks.o" "MQXLITE\\kernel\\mqx_utils.o" "MQXLITE\\kernel\\mqxlite.o" "MQXLITE\\kernel\\mutex.o" "Generated_Code\\PE_LDD.o" "Generated_Code\\PIT.o" "Generated_Code\\PORT.o" "MQXLITE\\psp\\cortex_m\\psp_iinit.o" "MQXLITE\\psp\\cortex_m\\psp_supp.o" "MQXLITE\\psp\\cortex_m\\psp_tiad.o" "MQXLITE\\psp\\cortex_m\\psp_tinm.o" "MQXLITE\\psp\\cortex_m\\psp_tipr.o" "MQXLITE\\psp\\cortex_m\\psp_tisu.o" "MQXLITE\\kernel\\qu_test.o" "MQXLITE\\psp\\cortex_m\\sc_irdyq.o" "MQXLITE\\kernel\\sched.o" "Sources\\RTT\\SEGGER_RTT.o" "Sources\\RTT\\SEGGER_RTT_printf.o" "Generated_Code\\SPI0.o" "MQXLITE\\psp\\cortex_m\\stack_bu.o" "MQXLITE\\psp\\cortex_m\\stack_de.o" "MQXLITE\\psp\\cortex_m\\stack_st.o" "Generated_Code\\SystemTimer1.o" "MQXLITE\\kernel\\task.o" "MQXLITE\\config\\task_template_list.o" "MQXLITE\\kernel\\time_ticks.o" "Generated_Code\\Vectors.o" -o AccTester.out --config C:/Embedded/Projects/Light-Control-Module/Firmware_Examples/MQX_light_porting/MQXLite_porting/Project_Settings/Linker_Files/ProcessorExpert.icf --no_wrap_diagnostics --semihosting 
+
+   IAR ELF Linker V7.40.7.9843/W32 for ARM
+   Copyright 2007-2015 IAR Systems AB.
+
+  13 360 bytes of readonly  code memory
+     752 bytes of readonly  data memory
+   3 004 bytes of readwrite data memory (+ 120 absolute)
+
+Errors: none
+Warnings: none
+
+Link time:   0.09 (CPU)   0.16 (elapsed)
+
+22:06:48 Build Finished (took 11s.972ms)
+

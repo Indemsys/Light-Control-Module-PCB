@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
+preferredTargets=EMUL_CODE,EMUL_TRACE_FILTER,EMUL_TRACE_START,EMUL_TRACE_STOP,STD_CODE2,STD_LOG2,STD_TRACE_START2,STD_TRACE_STOP2,TDL_EMUL_TRACE_RANGE,TDL_EMUL_TRACE_START,TDL_EMUL_TRACE_STOP,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.cdt.debug.ui.toggleCDynamicPrintfTarget\:STD_CODE2|

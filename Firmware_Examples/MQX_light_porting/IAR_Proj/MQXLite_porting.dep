@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>190517003</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\ADC.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\MQX1.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\Cpu.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\GPIOA.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PE_LDD.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PIT.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PORT.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\SPI0.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\SystemTimer1.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\Vectors.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\config\task_template_list.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\idletask.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\int.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\klog.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwevent.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwlog.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwmem.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwmsgq.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwsem.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwtimer.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\mqx_utils.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\mqxlite.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\mutex.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\qu_test.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\sched.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tinm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tipr.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tisu.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\dispatch.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sc_irdyq.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_bu.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_de.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_st.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Events.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Indicator.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqx_tasks.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\boot.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_pvta.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Cpu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPIOA.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\MQX1.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\PWM_gen.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PWM_gen.__cstat.et</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\PWM_gen.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\PWM_gen.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mem_zero.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_iinit.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_supp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tiad.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tinm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tipr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tisu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sc_irdyq.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_bu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_de.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_st.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Events.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Indicator.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqx_tasks.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\ADC.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\MQXLite_porting.pbd</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Static_Code\IO_Map\SKEAZN642.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\Cpu.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PE_Const.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PE_Types.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PE_Error.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\IO_Map.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\idletask.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_supp.__cstat.et</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Project_Settings\Linker_Files\ProcessorExpert.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwmsgq.__cstat.et</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\types.inc</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\compiler\iar\asm_mac.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\core\M0\psp_prv.inc</file>
+      <file>$PROJ_DIR$\Debug\Obj\qu_test.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tiad.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_de.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_st.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqx_tasks.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwtimer.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwsem.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwmem.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\sched.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqx_utils.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tinm.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tipr.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Indicator.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tisu.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Events.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_unx.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.pbi</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\PE_LDD.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\PORT.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SystemTimer1.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\task_template_list.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\idletask.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\klog.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Vectors.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPI0.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwevent.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwlog.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwmem.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwmsgq.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwsem.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwtimer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqx_utils.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqxlite.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mutex.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\qu_test.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sched.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\task.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\time_ticks.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\cortex.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_gkis.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_inst.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_kisr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_unx.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_vtab.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_xcpt.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Measurements.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Measurements.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Measurements.pbi</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\Measurements.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\setjmp.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PE_LDD.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqxlite.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PIT.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\lwsem.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Static_Code\PDD\SysTick_PDD.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\queue.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\cortex.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\MQX1.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_cpudef.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PORT.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\Events.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_cpu.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_supp.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\mqx_tasks.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\SPI0.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqxlite_prv.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\GPIOA.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqx_cnfg.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqxlite_cnfg.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqx_macros.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\config\task_template_list.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Static_Code\PDD\PDD_Types.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\kinetis.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqx_cpudef.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\config\user_config.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\SystemTimer1.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psptypes.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\include\mqx_inc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\Indicator.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_ticks.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_comp.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\compiler\iar\comp.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psplite.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_prv.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\App.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\RTT\SEGGER_RTT_Conf.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\RTT\SEGGER_RTT.h</file>
+      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+      <file>$PROJ_DIR$\Debug\List\MQXLite_porting.map</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwtimer.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Cpu.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPIOA.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\MQX1.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqxlite.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqx_utils.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwsem.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwmsgq.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mutex.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwmem.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwlog.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwevent.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PE_LDD.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\klog.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\idletask.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SystemTimer1.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Vectors.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PORT.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\MQXLite_porting.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\task_template_list.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPI0.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_gkis.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\task.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\time_ticks.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sched.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\qu_test.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\cortex.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_inst.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_pvta.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_kisr.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_unx.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_vtab.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_xcpt.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mem_zero.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_iinit.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_supp.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_tiad.o</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\task.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\time_ticks.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\cortex.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\core\M0\boot.S</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\core\M0\dispatch.S</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_gkis.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_inst.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_kisr.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_pvta.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_unx.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_vtab.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_xcpt.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\mem_zero.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_iinit.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_supp.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tiad.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tinm.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tipr.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tisu.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\sc_irdyq.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\stack_bu.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\stack_de.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\stack_st.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\RTT\SEGGER_RTT.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\RTT\SEGGER_RTT_printf.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\Events.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\Indicator.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\Measurements.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\mqx_tasks.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\PWM_gen.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_xcpt.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_vtab.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\cortex.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\task.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_gkis.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwlog.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Vectors.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_inst.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPIOA.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mutex.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\MQX1.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\task_template_list.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\lwevent.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SystemTimer1.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\PORT.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mem_zero.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\klog.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\psp_iinit.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\stack_bu.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\sc_irdyq.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\time_ticks.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mqxlite.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_kisr.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Cpu.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPI0.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\int_pvta.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\PE_LDD.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\App_io.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\App_ADC.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\App_io.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\App_ADC.pbi</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\App_ADC.c</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\App_ADC.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\App_io.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\App_ADC.__cstat.et</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\App_io.h</file>
+      <file>$PROJ_DIR$\..\MQXLite_porting\Sources\App_io.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\ADC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 197</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 281</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67 76 77 73 68 79 78 71 72 66 81 80 75 82 70 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82 75 80 76 74 77 79 78 81 73 72 71 67 68 66 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\MQX1.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 196</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 273</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153 76 77 73 68 79 78 71 72 66 81 80 75 82 70 172 150 168 74 166 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161 159 162 155 148 67 160</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 74 166 66 68 73 76 80 165 152 160 82 161 70 168 151 162 75 159 172 147 81 79 72 78 71 173 149 157 154 148 153 150 163 158 171 164 169 170 155 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\Cpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 287</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147 163 171 164 173 77 73 68 79 78 71 72 66 158 165 151 149 157 154 170 169 82 70 152 161 162 76 81 80 75 74 155 148 67 160 153 172 150 168 166 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76 82 158 172 75 148 149 157 79 78 152 77 73 80 162 160 74 163 151 72 71 154 70 67 161 155 153 159 173 165 171 164 68 66 169 170 147 168 81 166 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\GPIOA.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 195</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 271</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 162 76 77 73 68 79 78 71 72 66 81 80 75 82 70 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82 80 81 79 78 76 75 74 77 73 72 71 162 68 66 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PE_LDD.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 206</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 292</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147 163 171 164 173 77 73 68 79 78 71 72 66 158 165 151 149 157 154 170 169 82 70 152 161 146 76 81 80 75 162 74 155 148 67 160 153 172 150 168 166</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 165 164 75 76 82 160 146 173 171 68 73 66 169 170 77 162 80 172 161 74 158 151 149 157 79 72 78 71 154 152 70 148 147 168 155 67 153 81 166 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PIT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 207</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 288</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148 76 77 73 68 79 78 71 72 66 81 80 75 82 70 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81 76 82 74 80 75 79 78 77 73 72 71 148 68 66 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\PORT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 213</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 277</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 155 76 77 73 68 79 78 71 72 66 81 80 75 82 70 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75 82 80 76 74 81 79 78 77 73 72 71 155 68 66 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\SPI0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 216</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 289</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 160 76 77 73 68 79 78 71 72 66 81 80 75 82 70 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 82 76 81 80 75 79 78 77 73 72 71 160 68 66 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\SystemTimer1.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 211</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 276</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153 76 77 73 68 79 78 71 72 66 81 80 75 82 70 172 150 168 74 166 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75 82 147 81 79 78 158 169 76 172 73 72 71 77 164 170 161 80 166 68 66 70 150 163 171 153 74 168 173 165 151 149 157 154 152</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Generated_Code\Vectors.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 212</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 269</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 76 77 73 68 79 78 71 72 66 81 80 75 82 70 162 155 148 67 160 153 172 150 168 166 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80 75 159 68 73 155 67 77 66 161 171 153 76 70 82 163 162 148 160 172 81 79 72 78 71 74 166 150 158 164 169 170 147 168 173 165 151 149 157 154 152</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\config\task_template_list.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 215</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 274</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 166 159 76 77 73 68 79 78 71 72 66 81 80 75 82 70 162 74 155 148 67 160 153 172 150 168 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76 68 73 75 82 168 160 80 162 77 66 158 169 148 172 70 74 164 170 159 155 67 153 81 79 72 78 71 147 163 171 166 161 150 173 165 151 149 157 154 152</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\idletask.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 209</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 161 155 78 80 181 81 180 76 153 82 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\int.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 210</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 290</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 161 77 80 181 162 66 68 73 182 164 160 75 82 157 146 171 148 172 76 74 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\klog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 208</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 279</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwevent.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 205</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 275</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwlog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 204</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 268</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwmem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 203</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwmsgq.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 201</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwsem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 200</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 70 161 147 80 181 67 72 71 183 75 77 82 157 180 76 155 153 81 79 78 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\lwtimer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 193</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\mqx_utils.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 199</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145 73 68 79 78 71 72 66 176 163 171 164 146 76 77 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67 161 82 80 181 72 71 147 73 68 183 75 77 157 79 78 180 76 155 153 81 70 163 152 176 66 146 182 171 164 162 148 160 172 74 166 150 158 154 179 145 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\mqxlite.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 198</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 285</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145 73 68 79 78 71 72 66 176 163 171 164 146 76 77 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 182 161 68 80 181 73 164 160 74 66 163 162 77 76 75 82 157 146 171 148 172 152 176 79 72 78 71 147 180 183 155 67 153 81 70 166 150 158 154 179 145 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 214 191</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\mutex.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 202</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 272</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\qu_test.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 221</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68 161 73 80 181 160 75 146 171 162 77 66 82 157 163 182 164 148 172 76 74 152 176 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\sched.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 220</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 147 161 73 70 80 181 67 72 71 183 75 77 82 157 180 76 155 153 81 79 78 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 76 77 73 68 79 78 71 72 66 81 80 75 82 70 156 162 155 148 67 160 153 172 150 168 166 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161 159 185 177 174 184 178 47 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 68 73 166 70 153 77 76 155 75 162 158 169 67 174 159 185 160 74 82 80 150 164 170 187 156 148 172 81 79 72 78 71 161 163 171 177 47 147 168 173 165 151 149 157 154 152 144 178 143 184</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\MQXLite_porting.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 85 197 294 295 39 222 194 28 195 209 35 210 217 223 225 224 226 227 228 208 205 204 203 201 200 193 140 229 196 37 199 198 202 206 207 213 230 231 232 25 26 27 45 221 29 220 33 38 216 30 31 32 211 218 215 219 212 189 188 190</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\task.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 218</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 266</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 73 68 79 78 71 72 66 174 167 176 163 171 164 146 76 77 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 80 181 66 68 73 180 76 155 81 70 75 77 82 157 147 183 67 163 152 176 174 167 79 72 78 71 146 182 171 164 162 148 160 172 74 166 150 158 154 179 175 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\kernel\time_ticks.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 219</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 284</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 68 73 77 161 162 80 181 163 182 164 160 75 82 157 146 171 148 172 76 74 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\cortex.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 222</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 265</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 155 161 79 80 181 81 180 76 153 82 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\core\M0\boot.S</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 88 163 171 164 87 89 157 154 170 169 152</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\core\M0\dispatch.S</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 88 163 171 164 87 89 157 154 170 169 152 161</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_gkis.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 217</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 267</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 161 155 78 80 181 81 180 76 153 82 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_inst.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 270</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 67 72 71 80 181 147 73 70 183 75 77 82 157 180 76 155 153 81 79 78 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_kisr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 225</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 286</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 171 148 76 80 181 146 172 74 75 77 82 157 163 182 164 162 160 68 73 66 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_pvta.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 224</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 291</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 164 160 75 80 181 182 68 73 163 162 77 66 82 157 146 171 148 172 76 74 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_unx.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 226</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 137</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 108</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 161 183 75 80 181 147 67 72 71 70 77 82 157 180 76 155 153 81 79 78 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_vtab.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 227</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 264</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 161 155 78 80 181 81 180 76 153 82 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\int_xcpt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 228</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 263</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 70 161 147 80 181 67 72 71 183 75 77 82 157 180 76 155 153 81 79 78 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\mem_zero.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 229</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 278</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 171 148 82 152 146 161 80 172 81 79 78 163 157 182 164 162 160 73 72 71 70 75 77 147 180 183 76 155 67 153 68 66 74 166 150 158 154 179 181 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_iinit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 280</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_supp.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 231</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tiad.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 232</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tinm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 164 160 75 80 181 182 68 73 163 162 77 66 82 157 146 171 148 172 76 74 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tipr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183 177 174 184</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 171 148 76 146 147 170 154 161 80 172 74 165 180 163 182 164 162 160 77 68 73 66 75 151 169 81 174 177 183 155 67 153 79 72 78 71 82 70 168 173 149 157 176 166 150 158 152 179 181 184</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\psp_tisu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 172 74 161 80 181 146 171 148 76 75 77 82 157 163 182 164 162 160 68 73 66 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\sc_irdyq.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 283</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 153 82 161 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\stack_bu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 282</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 80 181 172 74 146 171 148 76 75 77 82 157 163 182 164 162 160 68 73 66 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\stack_de.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 92</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 172 74 80 181 146 171 148 76 75 77 82 157 163 182 164 162 160 68 73 66 152 147 180 183 155 67 153 81 79 72 78 71 70 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\MQXLITE\psp\cortex_m\stack_st.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 94</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176 163 171 164 146 76 77 73 68 79 78 71 72 66 81 80 75 162 82 70 74 155 148 67 160 153 172 150 168 166 147 173 158 165 151 149 157 154 170 169 152 161 182 179 180 181 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 153 82 80 181 180 76 155 81 79 78 75 77 157 147 183 67 73 72 71 70 163 152 146 182 171 164 162 148 160 172 68 66 74 166 150 158 154 179 176 168 173 165 151 149 169 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\RTT\SEGGER_RTT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186 187 175 73 68 79 78 71 72 66 174 167</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 68 187 73 66 186 174 167 79 72 78 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\RTT\SEGGER_RTT_printf.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 187 186 192 73 68 79 78 71 72 66 174</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 144 68 72 78 186 192 73 174 66 71 187</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Events.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 76 77 73 68 79 78 71 72 66 81 80 75 82 70 156 162 155 148 67 160 153 172 150 168 166 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161 159 185 177 174 184 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 82 68 76 178 75 74 80 185 77 66 160 150 164 170 159 70 162 166 158 169 67 156 81 79 72 78 71 148 172 161 163 171 155 153 177 298 187 174 147 168 173 165 151 149 157 154 152 144 301 47 143 184</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Indicator.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185 81 73 177 68 79 78 71 72 66 174 184 70 77 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144 73 47 174 66 68 81 301 143 177 70 298 178 187 184 79 72 78 71 77 185</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Measurements.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185 81 73 177 68 79 78 71 72 66 174 184 70 77 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 187 72 71 177 298 68 73 77 70 178 184 79 78 81 144 301 47 143 174 66 185</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\mqx_tasks.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 95</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 76 77 73 68 79 78 71 72 66 81 80 75 82 70 159 162 155 148 67 160 153 172 150 168 166 147 163 171 164 173 158 165 151 149 157 154 170 169 152 161 185 177 174 184 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75 73 80 72 71 82 76 144 67 168 159 81 79 78 74 172 173 149 157 154 47 185 77 68 66 70 155 153 147 165 151 152 301 143 174 162 148 160 166 161 150 163 158 171 164 169 170 177 298 178 187 184</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\PWM_gen.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 76 77 73 68 79 78 71 72 66 81 80 75 82 70 185 177 174 184 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 178 81 75 68 76 66 70 185 80 82 77 177 298 187 174 74 79 72 78 71 144 301 47 143 184</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\App_ADC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 294</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 296</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 300</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185 81 73 177 68 79 78 71 72 66 174 184 70 77 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 81 301 73 144 47 174 66 68 177 70 298 178 187 184 79 72 78 71 77 185</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\MQXLite_porting\Sources\App_io.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 295</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 293</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 299</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185 81 73 177 68 79 78 71 72 66 174 184 70 77 301 298 47 178 143 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47 174 66 68 73 144 81 301 143 177 70 298 178 187 184 79 72 78 71 77 185</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

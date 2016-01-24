@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AccTester&apos; to &apos;MQXLite_porting&apos;" description="Rename resource &apos;AccTester&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/AccTester" name="MQXLite_porting" stamp="1453320371815" updateReferences="true"/>
+</session>
