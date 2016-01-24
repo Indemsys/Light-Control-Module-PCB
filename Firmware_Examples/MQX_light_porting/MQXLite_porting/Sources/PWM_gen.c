@@ -6,7 +6,7 @@
 #include   "app.h"
 
 
-
+#define PRESC 1
 
 /*-------------------------------------------------------------------------------------------------------------
   Инициализация модуля тамера FTM2 генерирующего сигнал ШИМ для соленоидов
@@ -43,7 +43,7 @@ void PWM_init(void)
              + LSHIFT(0, 6) // TOIE  | 1 Enable TOF interrupts. An interrupt is generated when TOF equals one.
              + LSHIFT(1, 5) // CPWMS | 1 FTM counter operates in up-down counting mode.
              + LSHIFT(0, 3) // CLKS  | 00 Модуль таймера остановлен
-             + LSHIFT(1, 0) // PS    | Prescale Factor Selection. 000 Divide by 1. Предделитель = 1, 001 Divide by 2
+             + LSHIFT(PRESC, 0) // PS    | Prescale Factor Selection. 000 Divide by 1. Предделитель = 1, 001 Divide by 2
   ;
 
   FTM2->SYNCONF = 0
@@ -78,16 +78,16 @@ void PWM_init(void)
   FTM2->FILTER = 0;     // Фильтры не используем
 
 
-  FTM2->CONTROLS[0].CnV = 0;
-  FTM2->CONTROLS[1].CnV = 0;
+  FTM2->CONTROLS[4].CnV = PWM_MODULO/2;
+  FTM2->CONTROLS[5].CnV = PWM_MODULO/2;
 
-  FTM2->CONTROLS[0].CnSC = 0
+  FTM2->CONTROLS[4].CnSC = 0
                            + LSHIFT(0, 6) // CHIE. 0 Disable channel interrupts. Use software polling.
                            + LSHIFT(1, 3) // ELSB. Edge or Level Select. ELSB=1,ELSA=0 - установка низкого уровня на входе при совпадении
                            + LSHIFT(0, 2) // ELSA. Edge or Level Select  ELSB=1,ELSA=1 - установка высокого уровня на входе при совпадении
                            + LSHIFT(0, 0) // DMA.  0 Disable DMA transfers.
   ;
-  FTM2->CONTROLS[1].CnSC = 0
+  FTM2->CONTROLS[5].CnSC = 0
                            + LSHIFT(0, 6) // CHIE. 0 Disable channel interrupts. Use software polling.
                            + LSHIFT(1, 3) // ELSB. Edge or Level Select
                            + LSHIFT(0, 2) // ELSA. Edge or Level Select
@@ -113,8 +113,26 @@ void PWM_init(void)
              + LSHIFT(0, 6) // TOIE. 1 Enable TOF interrupts. An interrupt is generated when TOF equals one.
              + LSHIFT(1, 5) // CPWMS. 1 -FTM counter operates in up-down counting mode.
              + LSHIFT(1, 3) // CLKS. 01 System clock
-             + LSHIFT(0, 0) // PS. Prescale Factor Selection. 000 Divide by 1
+             + LSHIFT(PRESC, 0) // PS. Prescale Factor Selection. 000 Divide by 1
   ;
 }
 
+/*------------------------------------------------------------------------------
 
+
+
+ \param freq
+ ------------------------------------------------------------------------------*/
+void Set_pwm_freq(unsigned int freq)
+{
+  FTM_MemMapPtr FTM2 = FTM2_BASE_PTR;
+  unsigned int mod;
+
+  mod  = (CPU_BUS_CLK_HZ_CONFIG_0 / (2 * 2 * freq));
+
+  FTM2->MOD = mod;
+  FTM2->CONTROLS[4].CnV = mod/2;
+  FTM2->CONTROLS[5].CnV = mod/2;
+
+  FTM2->SYNC |= BIT(7); 
+}

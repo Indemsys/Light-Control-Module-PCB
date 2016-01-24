@@ -71,7 +71,7 @@ const TASK_TEMPLATE_STRUCT MQX_template_list[] =
   /* Task number                      */  CONSOLE_TASK,
   /* Entry point                      */  (TASK_FPTR)Console_task,
   /* Stack size                       */  CONSOLE_TASK_STACK_SIZE,
-  /* Task priority                    */  8U,
+  /* Task priority                    */  7U,
   /* Task name                        */  "console",
   /* Task attributes                  */  (MQX_AUTO_START_TASK),
   /* Task parameter                   */  (uint32_t)(0)

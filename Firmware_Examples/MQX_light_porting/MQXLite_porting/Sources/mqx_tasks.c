@@ -11,8 +11,8 @@
  ------------------------------------------------------------------------------*/
 int main(void)
 {
-  PE_low_level_init(); // Обязательный вызов внутри которого будет вызвана функция _mqxlite_init 
-  _mqxlite();          // Запуск операционной системы 
+  PE_low_level_init(); // Обязательный вызов внутри которого будет вызвана функция _mqxlite_init
+  _mqxlite();          // Запуск операционной системы
 }
 
 
@@ -34,6 +34,8 @@ void Main_task(uint32_t task_init_data)
   // Выводим в интерфейс RTT информацию о чипе и его уникальный идентификатор
   Get_unique_identificator(uuid);
   RTT_printf("\r\n\r\nS9KEAZN64AMLC (64 KB FLASH, 4 KB RAM) UUID=%08X-%08X\r\n", uuid[0], uuid[1]);
+
+  //_task_ready(_task_get_td(_task_get_id_from_name( "console" )));
 
   for (;;)
   {
@@ -64,13 +66,23 @@ void Main_task(uint32_t task_init_data)
 void Console_task(uint32_t task_init_data)
 {
   int counter = 0;
+  unsigned int freq;
+
+  freq = 100;
 
   while (1)
   {
     counter++;
 
-    _time_delay_ticks(100);
+    _time_delay_ticks(10);
 
+    Set_pwm_freq(freq);
+
+    freq++;
+    if (freq==300)
+    {
+      freq = 100;
+    }
   }
 }
 
