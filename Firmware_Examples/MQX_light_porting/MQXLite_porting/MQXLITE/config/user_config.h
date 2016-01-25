@@ -8,23 +8,23 @@
 **     Compiler    : IAR ARM C Compiler
 **     Date/Time   : 2016-01-20, 22:06, # CodeGen: 0
 **
-**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
+**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc.
 **     All Rights Reserved.
-**     
+**
 **     Redistribution and use in source and binary forms, with or without modification,
 **     are permitted provided that the following conditions are met:
-**     
+**
 **     o Redistributions of source code must retain the above copyright notice, this list
 **       of conditions and the following disclaimer.
-**     
+**
 **     o Redistributions in binary form must reproduce the above copyright notice, this
 **       list of conditions and the following disclaimer in the documentation and/or
 **       other materials provided with the distribution.
-**     
+**
 **     o Neither the name of Freescale Semiconductor, Inc. nor the names of its
 **       contributors may be used to endorse or promote products derived from this
 **       software without specific prior written permission.
-**     
+**
 **     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 **     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 **     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -35,18 +35,18 @@
 **     ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 **     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 **     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-**     
+**
 **     http: www.freescale.com
 **     mail: support@freescale.com
 ** ###################################################################*/
 /*!
-** @file user_config.h                                                  
+** @file user_config.h
 ** @version 01.00
-*/         
+*/
 /*!
 **  @addtogroup user_config_module user_config module documentation
 **  @{
-*/         
+*/
 #ifndef __user_config_h__
 #define __user_config_h__
 
@@ -59,7 +59,7 @@
 
 /* Component settings */
 #define MQX_USE_SEMAPHORES             1
-#define MQX_USE_LWEVENTS               0
+#define MQX_USE_LWEVENTS               1
 #define MQX_USE_MUTEXES                0
 #define MQX_USE_LWMSGQ                 0
 #define MQX_USE_LWTIMER                0

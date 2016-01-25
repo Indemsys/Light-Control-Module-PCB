@@ -2282,6 +2282,9 @@
         <name>$PROJ_DIR$\..\MQXLite_porting\Sources\App_io.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\MQXLite_porting\Sources\App_UART.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Indicator.c</name>
       </file>
       <file>

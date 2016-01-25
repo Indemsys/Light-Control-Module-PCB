@@ -29,11 +29,12 @@ void Main_task(uint32_t task_init_data)
   unsigned int uuid[2];
 
   PWM_init();
+  UART0_Init(125000);
   ADC_prepere();
   Clear_display();
   // Выводим в интерфейс RTT информацию о чипе и его уникальный идентификатор
   Get_unique_identificator(uuid);
-  RTT_printf("\r\n\r\nS9KEAZN64AMLC (64 KB FLASH, 4 KB RAM) UUID=%08X-%08X\r\n", uuid[0], uuid[1]);
+  UART_printf("\r\n\r\nS9KEAZN64AMLC (64 KB FLASH, 4 KB RAM) UUID=%08X-%08X\r\n", uuid[0], uuid[1]);
 
   //_task_ready(_task_get_td(_task_get_id_from_name( "console" )));
 
@@ -83,6 +84,7 @@ void Console_task(uint32_t task_init_data)
     {
       freq = 100;
     }
+    UART_printf("%d\r\n", freq);
   }
 }
 

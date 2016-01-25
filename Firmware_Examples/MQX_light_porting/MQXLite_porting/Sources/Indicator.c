@@ -7,7 +7,7 @@
 
 unsigned int pos;
 unsigned char disp_buf[DISPLEN];
-unsigned char ciphs[] =
+const unsigned char ciphs[] =
 {
   SEG_A + SEG_B + SEG_C + SEG_D + SEG_E + SEG_F,          //0
   SEG_B + SEG_C,                                          //1
@@ -156,7 +156,7 @@ void Show_int(const char *fmt, int val)
 
  \param str
  ------------------------------------------------------------------------------*/
-void Show_mnemonic(unsigned char *str)
+void Show_mnemonic(const unsigned char *str)
 {
   int i;
   for (i = 0; i < DISPLEN; i++)

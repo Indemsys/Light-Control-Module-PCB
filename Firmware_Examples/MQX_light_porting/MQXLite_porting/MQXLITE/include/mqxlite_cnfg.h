@@ -120,7 +120,7 @@
  * was successful.
  */
 #ifndef MQX_CHECK_MEMORY_ALLOCATION_ERRORS
-#define MQX_CHECK_MEMORY_ALLOCATION_ERRORS              0
+#define MQX_CHECK_MEMORY_ALLOCATION_ERRORS              1
 #endif
 
 

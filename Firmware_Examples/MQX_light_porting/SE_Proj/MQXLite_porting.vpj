@@ -286,6 +286,8 @@
                 <F N="../MQXLite_porting/Sources/App_ADC.h"/>
                 <F N="../MQXLite_porting/Sources/App_io.c"/>
                 <F N="../MQXLite_porting/Sources/App_io.h"/>
+                <F N="../MQXLite_porting/Sources/App_UART.c"/>
+                <F N="../MQXLite_porting/Sources/App_UART.h"/>
                 <F N="../MQXLite_porting/Sources/Indicator.c"/>
                 <F N="../MQXLite_porting/Sources/Indicator.h"/>
                 <F N="../MQXLite_porting/Sources/Measurements.c"/>

@@ -49,6 +49,7 @@
 
 #define DISPLEN  3
 #define RTT_STR_SZ 128
+#define UART_STR_SZ 128
 
 
 #define TSLOPE_LOW   0.003266
@@ -63,6 +64,7 @@
 #include "SKEAZN642.h"
 #include "App_io.h"
 #include "App_ADC.h"
+#include "App_UART.h"
 #include "PWM_gen.h"
 #include "Indicator.h"
 #include "Measurements.h"
@@ -76,15 +78,15 @@ volatile unsigned int TEMPER_adcr;
 volatile unsigned int INTTEMPER_adcr;
 
 char rtt_str[RTT_STR_SZ+1];
+char uart_str[UART_STR_SZ+1];
 
-
-unsigned char Mnemonic_t[] =
+const unsigned char Mnemonic_t[] =
 {
   SEG_D + SEG_E + SEG_F + SEG_G,
   SEG_G ,
   0
 };
-unsigned char Mnemonic_v[] =
+const unsigned char Mnemonic_v[] =
 {
   SEG_C + SEG_D + SEG_E,
   SEG_G ,
@@ -99,9 +101,10 @@ extern volatile unsigned int TEMPER_adcr;
 extern volatile unsigned int INTTEMPER_adcr;
 
 extern char rtt_str[];
+extern char uart_str[];
 
-extern unsigned char Mnemonic_t[];
-extern unsigned char Mnemonic_v[];
+extern const unsigned char Mnemonic_t[];
+extern const unsigned char Mnemonic_v[];
 #endif
 
 

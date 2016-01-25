@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.40.7.9843/W32 for ARM                 24/Jan/2016  16:22:07
+# IAR ELF Linker V7.40.7.9843/W32 for ARM                 25/Jan/2016  09:52:24
 # Copyright 2007-2015 IAR Systems AB.
 #
 #    Output file  =  
@@ -11,6 +11,7 @@
 #        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\ADC.o
 #        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\App_ADC.o
 #        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\App_io.o
+#        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\App_UART.o
 #        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\boot.o
 #        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\cortex.o
 #        C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj\Cpu.o
@@ -93,137 +94,118 @@ __dlib_jmp_buf_num_elements = 8
 "P2":  place in [from 0x1ffffc00 to 0x20000bff] { rw, block CSTACK, block HEAP };
 "P3":  place in [from 0x00000400 to 0x0000040f] { section FlashConfig };
 
-  Section                Kind        Address    Size  Object
-  -------                ----        -------    ----  ------
-"A1":                                           0xc0
-  .intvec                const    0x00000000    0xc0  Vectors.o [1]
-                                - 0x000000c0    0xc0
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc0
+  .intvec            const    0x00000000    0xc0  Vectors.o [1]
+                            - 0x000000c0    0xc0
 
-"P3":                                           0x10
-  FlashConfig            const    0x00000400    0x10  Cpu.o [1]
-                                - 0x00000410    0x10
+"P3":                                       0x10
+  FlashConfig        const    0x00000400    0x10  Cpu.o [1]
+                            - 0x00000410    0x10
 
-"P1":                                         0x3724
-  .text                  ro code  0x00000410   0xeba  xprintffull_nomb.o [3]
-  .text                  ro code  0x000012ca    0x14  strchr.o [5]
-  .text                  ro code  0x000012de    0x10  strlen.o [5]
-  .text                  ro code  0x000012ee    0x18  memchr.o [5]
-  .text                  ro code  0x00001306    0x6a  I64DivMod.o [5]
-  .text                  ro code  0x00001370    0x5c  ABImemcpy.o [5]
-  .text                  ro code  0x000013cc    0x44  xdnorm.o [4]
-  .text                  ro code  0x00001410    0x32  DblCmpLe.o [4]
-  .text                  ro code  0x00001442    0x32  DblCmpGe.o [4]
-  .text                  ro code  0x00001474   0x11c  xdscale.o [4]
-  .text                  ro code  0x00001590    0x52  DblToI32.o [4]
-  .text                  ro code  0x000015e4    0x34  I32ToDbl.o [4]
-  .text                  ro code  0x00001618   0x1b4  DblAddSub.o [4]
-  .text                  ro code  0x000017cc    0xe0  I32DivModFast.o [5]
-  .text                  ro code  0x000018ac   0x184  DblMul.o [4]
-  .text                  ro code  0x00001a30    0xc2  DblDiv.o [4]
-  .text                  ro code  0x00001af2    0x20  div.o [3]
-  .text                  ro code  0x00001b14     0x2  I64DivZer.o [5]
-  .text                  ro code  0x00001b18     0x2  IntDivZer.o [5]
-  .text                  ro code  0x00001b1c   0x45e  task.o [1]
-  .text                  ro code  0x00001f7c   0x218  lwsem.o [1]
-  .text                  ro code  0x00002194   0x150  int.o [1]
-  .text                  ro code  0x000022e4     0x2  stack_de.o [1]
-  KERNEL                 ro code  0x000022f0   0x25c  dispatch.o [1]
-  .text                  ro code  0x0000254c    0x48  stack_bu.o [1]
-  .text                  ro code  0x00002594   0x134  mem_zero.o [1]
-  .text                  ro code  0x000026c8   0x274  time_ticks.o [1]
-  .text                  ro code  0x0000293c    0x3c  psp_tinm.o [1]
-  .text                  ro code  0x00002978   0x1bc  Indicator.o [1]
-  .text                  ro code  0x00002b34    0x32  FltToDbl.o [4]
-  .text                  ro code  0x00002b68    0x48  snprintf.o [3]
-  .text                  ro code  0x00002bb0    0x44  App_io.o [1]
-  .text                  ro code  0x00002bf4   0x160  mqxlite.o [1]
-  .text                  ro code  0x00002d54   0x128  mqx_utils.o [1]
-  .text                  ro code  0x00002e7c    0xc0  sc_irdyq.o [1]
-  .text                  ro code  0x00002f3c    0x14  psp_iinit.o [1]
-  .text                  ro code  0x00002f50    0x10  int_vtab.o [1]
-  .text                  ro code  0x00002f60    0x7c  MQX1.o [1]
-  .text                  ro code  0x00002fdc    0x10  int_inst.o [1]
-  .text                  ro code  0x00002fec    0xc0  SystemTimer1.o [1]
-  .text                  ro code  0x000030ac   0x150  Cpu.o [1]
-  .text                  ro code  0x000031fc    0x54  GPIOA.o [1]
-  .text                  ro code  0x00003250    0x2c  PORT.o [1]
-  .text                  ro code  0x0000327c    0x6c  PIT.o [1]
-  .text                  ro code  0x000032e8    0x70  ADC.o [1]
-  .text                  ro code  0x00003358   0x14c  SEGGER_RTT.o [1]
-  .text                  ro code  0x000034a4    0xd4  mqx_tasks.o [1]
-  .text                  ro code  0x00003578    0xa4  PWM_gen.o [1]
-  .text                  ro code  0x0000361c    0x50  App_ADC.o [1]
-  .text                  ro code  0x0000366c    0xa4  Measurements.o [1]
-  .text                  ro code  0x00003710    0x3c  vsnprint.o [3]
-  .text                  ro code  0x0000374c    0x62  DblToFlt.o [4]
-  Initializer bytes      const    0x000037b0    0x78  <for Absolute sections 1-1>
-  .rodata                const    0x00003828    0x54  task_template_list.o [1]
-  .rodata                const    0x0000387c    0x44  mqxlite.o [1]
-  .rodata                const    0x000038c0    0x3c  mqx_tasks.o [1]
-  .text                  ro code  0x000038fc    0x3c  zero_init3.o [5]
-  .text                  ro code  0x00003940    0x34  boot.o [1]
-  .text                  ro code  0x00003974     0xc  cstartup_M.o [5]
-  .text                  ro code  0x00003980    0x1a  cmain.o [5]
-  .text                  ro code  0x0000399c    0x28  data_init.o [5]
-  .text                  ro code  0x000039c4     0x8  exit.o [3]
-  .text                  ro code  0x000039cc     0xa  cexit.o [5]
-  .text                  ro code  0x000039d8     0xc  XXexit.o [5]
-  .text                  ro code  0x000039e4    0x30  copy_init3.o [5]
-  .rodata                const    0x00003a14    0x24  MQX1.o [1]
-  .iar.init_table        const    0x00003a38    0x38  - Linker created -
-  .text                  ro code  0x00003a70    0x1c  xsnprout.o [3]
-  .rodata                const    0x00003a8c    0x18  mqxlite.o [1]
-  .rodata                const    0x00003aa4    0x18  xprintffull_nomb.o [3]
-  .rodata                const    0x00003abc    0x10  mqx_utils.o [1]
-  .text                  ro code  0x00003acc    0x10  idletask.o [1]
-  .rodata                const    0x00003adc     0xc  SEGGER_RTT.o [1]
-  .rodata                const    0x00003ae8     0x8  mqx_tasks.o [1]
-  .rodata                const    0x00003af0     0x8  task_template_list.o [1]
-  .rodata                const    0x00003af8     0x8  task_template_list.o [1]
-  .rodata                const    0x00003b00     0x4  mqxlite.o [1]
-  .rodata                const    0x00003b04     0x4  mqxlite.o [1]
-  .rodata                const    0x00003b08     0x4  mqxlite.o [1]
-  .rodata                const    0x00003b0c     0x4  mqxlite.o [1]
-  .rodata                const    0x00003b10     0x0  zero_init3.o [5]
-  .rodata                const    0x00003b10     0x0  copy_init3.o [5]
-  Initializer bytes      const    0x00003b10    0x24  <for P2 s0>
-                                - 0x00003b34  0x3724
+"P1":                                     0x3730
+  .text              ro code  0x00000410   0xeba  xprintffull_nomb.o [3]
+  .text              ro code  0x000012ca    0x14  strchr.o [5]
+  .text              ro code  0x000012de    0x10  strlen.o [5]
+  .text              ro code  0x000012ee    0x18  memchr.o [5]
+  .text              ro code  0x00001306    0x6a  I64DivMod.o [5]
+  .text              ro code  0x00001370    0x5c  ABImemcpy.o [5]
+  .text              ro code  0x000013cc    0x44  xdnorm.o [4]
+  .text              ro code  0x00001410    0x32  DblCmpLe.o [4]
+  .text              ro code  0x00001442    0x32  DblCmpGe.o [4]
+  .text              ro code  0x00001474   0x11c  xdscale.o [4]
+  .text              ro code  0x00001590    0x52  DblToI32.o [4]
+  .text              ro code  0x000015e4    0x34  I32ToDbl.o [4]
+  .text              ro code  0x00001618   0x1b4  DblAddSub.o [4]
+  .text              ro code  0x000017cc    0xe0  I32DivModFast.o [5]
+  .text              ro code  0x000018ac   0x184  DblMul.o [4]
+  .text              ro code  0x00001a30    0xc2  DblDiv.o [4]
+  .text              ro code  0x00001af2    0x20  div.o [3]
+  .text              ro code  0x00001b14     0x2  I64DivZer.o [5]
+  .text              ro code  0x00001b18     0x2  IntDivZer.o [5]
+  .text              ro code  0x00001b1c   0x3e8  task.o [1]
+  .text              ro code  0x00001f04   0x1d8  lwsem.o [1]
+  .text              ro code  0x000020dc   0x12c  int.o [1]
+  .text              ro code  0x00002208     0x2  stack_de.o [1]
+  KERNEL             ro code  0x00002210   0x25c  dispatch.o [1]
+  .text              ro code  0x0000246c    0x44  stack_bu.o [1]
+  .text              ro code  0x000024b0    0xb4  mem_zero.o [1]
+  .text              ro code  0x00002564   0x338  lwevent.o [1]
+  .text              ro code  0x0000289c   0x2c4  time_ticks.o [1]
+  .text              ro code  0x00002b60    0x48  psp_tiad.o [1]
+  .text              ro code  0x00002ba8    0x38  psp_tinm.o [1]
+  .text              ro code  0x00002be0   0x16c  App_UART.o [1]
+  .text              ro code  0x00002d4c    0x3c  vsnprint.o [3]
+  .text              ro code  0x00002d88   0x150  Indicator.o [1]
+  .text              ro code  0x00002ed8    0x32  FltToDbl.o [4]
+  .text              ro code  0x00002f0c    0x48  snprintf.o [3]
+  .text              ro code  0x00002f54    0x44  App_io.o [1]
+  .text              ro code  0x00002f98   0x14c  mqxlite.o [1]
+  .text              ro code  0x000030e4   0x100  mqx_utils.o [1]
+  .text              ro code  0x000031e4    0x94  sc_irdyq.o [1]
+  .text              ro code  0x00003278    0x12  psp_iinit.o [1]
+  .text              ro code  0x0000328c    0x10  int_vtab.o [1]
+  .text              ro code  0x0000329c    0x70  MQX1.o [1]
+  .text              ro code  0x0000330c    0x34  ABImemset.o [5]
+  .text              ro code  0x00003340    0x10  int_inst.o [1]
+  .text              ro code  0x00003350    0xac  SystemTimer1.o [1]
+  .text              ro code  0x000033fc   0x114  mqx_tasks.o [1]
+  .text              ro code  0x00003510    0xfc  Cpu.o [1]
+  .text              ro code  0x0000360c    0x8c  PWM_gen.o [1]
+  .text              ro code  0x00003698    0x48  App_ADC.o [1]
+  .text              ro code  0x000036e0    0x98  Measurements.o [1]
+  .text              ro code  0x00003778    0x38  GPIOA.o [1]
+  .text              ro code  0x000037b0    0x24  PORT.o [1]
+  .text              ro code  0x000037d4    0x40  PIT.o [1]
+  .text              ro code  0x00003814    0x48  ADC.o [1]
+  .text              ro code  0x0000385c    0x62  DblToFlt.o [4]
+  .rodata            const    0x000038c0    0x68  mqxlite.o [1]
+  .rodata            const    0x00003928    0x64  task_template_list.o [1]
+  .text              ro code  0x0000398c    0x3c  zero_init3.o [5]
+  .text              ro code  0x000039d0    0x34  boot.o [1]
+  .text              ro code  0x00003a04     0xc  cstartup_M.o [5]
+  .text              ro code  0x00003a10    0x1a  cmain.o [5]
+  .text              ro code  0x00003a2c    0x28  data_init.o [5]
+  .text              ro code  0x00003a54     0x8  exit.o [3]
+  .text              ro code  0x00003a5c     0xa  cexit.o [5]
+  .text              ro code  0x00003a68     0xc  XXexit.o [5]
+  .text              ro code  0x00003a74    0x30  copy_init3.o [5]
+  .rodata            const    0x00003aa4    0x24  MQX1.o [1]
+  .iar.init_table    const    0x00003ac8    0x24  - Linker created -
+  .text              ro code  0x00003aec    0x1c  xsnprout.o [3]
+  .rodata            const    0x00003b08    0x18  xprintffull_nomb.o [3]
+  .text              ro code  0x00003b20    0x10  idletask.o [1]
+  .rodata            const    0x00003b30     0x0  zero_init3.o [5]
+  .rodata            const    0x00003b30     0x0  copy_init3.o [5]
+  Initializer bytes  const    0x00003b30    0x10  <for P2 s0>
+                            - 0x00003b40  0x3730
 
-Absolute sections:                              0x78
-  Absolute sections 1-1           0x1ffffc00    0x78  <Init block>
-    .data                inited   0x1ffffc00    0x78  SEGGER_RTT.o [1]
-                                - 0x1ffffc78    0x78
-
-"P2":                                          0xe48
-  P2 s0                           0x1ffffc78    0x24  <Init block>
-    .data                inited   0x1ffffc78     0xc  Indicator.o [1]
-    .data                inited   0x1ffffc84     0xc  MQX1.o [1]
-    .data                inited   0x1ffffc90     0x4  mqx_tasks.o [1]
-    .data                inited   0x1ffffc94     0x4  mqx_tasks.o [1]
-    .data                inited   0x1ffffc98     0x4  mqxlite.o [1]
-  .bss                   zero     0x1ffffc9c   0x288  MQX1.o [1]
-  .bss                   zero     0x1fffff24   0x288  MQX1.o [1]
-  .bss                   zero     0x200001ac   0x234  MQX1.o [1]
-  .bss                   zero     0x200003e0   0x12c  MQX1.o [1]
-  .bss                   zero     0x2000050c   0x12c  MQX1.o [1]
-  .bss                   zero     0x20000638   0x110  MQX1.o [1]
-  .bss                   zero     0x20000748   0x100  SEGGER_RTT.o [1]
-  .bss                   zero     0x20000848    0xa0  MQX1.o [1]
-  .bss                   zero     0x200008e8    0x84  mqx_tasks.o [1]
-  .bss                   zero     0x2000096c    0x14  Indicator.o [1]
-  .bss                   zero     0x20000980    0x10  SEGGER_RTT.o [1]
-  .bss                   zero     0x20000990     0xc  SystemTimer1.o [1]
-  .bss                   zero     0x2000099c     0x4  Indicator.o [1]
-  .bss                   zero     0x200009a0     0x4  Indicator.o [1]
-  .bss                   zero     0x200009a4     0x4  MQX1.o [1]
-  .bss                   zero     0x200009a8     0x4  mqx_tasks.o [1]
-  .bss                   zero     0x200009ac     0x4  mqx_tasks.o [1]
-  .bss                   zero     0x200009b0     0x4  mqx_tasks.o [1]
-  .bss                   zero     0x200009b4     0x4  mqx_tasks.o [1]
-  .bss                   zero     0x200009b8     0x4  PE_LDD.o [1]
-  CSTACK                          0x200009c0   0x100  <Block>
-    CSTACK               uninit   0x200009c0   0x100  <Block tail>
-                                - 0x20000ac0   0xe48
+"P2":                                      0xdf0
+  P2 s0                       0x1ffffc00    0x10  <Init block>
+    .data            inited   0x1ffffc00     0xc  MQX1.o [1]
+    .data            inited   0x1ffffc0c     0x4  mqxlite.o [1]
+  .bss               zero     0x1ffffc10   0x28c  MQX1.o [1]
+  .bss               zero     0x1ffffe9c   0x28c  MQX1.o [1]
+  .bss               zero     0x20000128   0x244  MQX1.o [1]
+  .bss               zero     0x2000036c   0x130  MQX1.o [1]
+  .bss               zero     0x2000049c   0x12c  MQX1.o [1]
+  .bss               zero     0x200005c8   0x110  MQX1.o [1]
+  .bss               zero     0x200006d8    0xa0  MQX1.o [1]
+  .bss               zero     0x20000778    0x84  mqx_tasks.o [1]
+  .bss               zero     0x200007fc    0x6c  App_UART.o [1]
+  .bss               zero     0x20000868    0x44  App_UART.o [1]
+  .bss               zero     0x200008ac    0x1c  Indicator.o [1]
+  .bss               zero     0x200008c8     0xc  SystemTimer1.o [1]
+  .bss               zero     0x200008d4     0x4  MQX1.o [1]
+  .bss               zero     0x200008d8     0x4  mqx_tasks.o [1]
+  .bss               zero     0x200008dc     0x4  mqx_tasks.o [1]
+  .bss               zero     0x200008e0     0x4  mqx_tasks.o [1]
+  .bss               zero     0x200008e4     0x4  mqx_tasks.o [1]
+  .bss               zero     0x200008e8     0x4  PE_LDD.o [1]
+  CSTACK                      0x200008f0   0x100  <Block>
+    CSTACK           uninit   0x200008f0   0x100  <Block tail>
+                            - 0x200009f0   0xdf0
 
 
 *******************************************************************************
@@ -233,20 +215,14 @@ Absolute sections:                              0x78
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0xd20:
-          0x1ffffc9c  0xd20
+    1 destination range, total size 0xcdc:
+          0x1ffffc10  0xcdc
 
 Copy (__iar_copy_init3)
-    1 source range, total size 0x78:
-          0x000037b0   0x78
-    1 destination range, total size 0x78:
-          0x1ffffc00   0x78
-
-Copy (__iar_copy_init3)
-    1 source range, total size 0x24:
-          0x00003b10   0x24
-    1 destination range, total size 0x24:
-          0x1ffffc78   0x24
+    1 source range, total size 0x10:
+          0x00003b30   0x10
+    1 destination range, total size 0x10:
+          0x1ffffc00   0x10
 
 
 
@@ -254,49 +230,50 @@ Copy (__iar_copy_init3)
 *** MODULE SUMMARY
 ***
 
-    Module                ro code  ro data  rw data  rw data
-                                                      (abs)
-    ------                -------  -------  -------  -------
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
 C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj: [1]
-    ADC.o                     112
-    App_ADC.o                  80
+    ADC.o                      72
+    App_ADC.o                  72
+    App_UART.o                364               176
     App_io.o                   68
-    Cpu.o                     336       16
-    GPIOA.o                    84
-    Indicator.o               444       12       40
-    MQX1.o                    124       48    2 908
-    Measurements.o            164
+    Cpu.o                     252       16
+    GPIOA.o                    56
+    Indicator.o               336                28
+    MQX1.o                    112       48    2 936
+    Measurements.o            152
     PE_LDD.o                                      4
-    PIT.o                     108
-    PORT.o                     44
-    PWM_gen.o                 164
-    SEGGER_RTT.o              332      132      272      120
-    SystemTimer1.o            192                12
+    PIT.o                      64
+    PORT.o                     36
+    PWM_gen.o                 140
+    SystemTimer1.o            172                12
     Vectors.o                          192
     boot.o                     52
     dispatch.o                604
     idletask.o                 16
-    int.o                     336
+    int.o                     300
     int_inst.o                 16
     int_vtab.o                 16
-    lwsem.o                   536
-    mem_zero.o                308
-    mqx_tasks.o               212       76      156
-    mqx_utils.o               296       16
-    mqxlite.o                 352      112        4
-    psp_iinit.o                20
-    psp_tinm.o                 60
-    sc_irdyq.o                192
-    stack_bu.o                 72
+    lwevent.o                 824
+    lwsem.o                   472
+    mem_zero.o                180
+    mqx_tasks.o               276               148
+    mqx_utils.o               256
+    mqxlite.o                 332      108        4
+    psp_iinit.o                18
+    psp_tiad.o                 72
+    psp_tinm.o                 56
+    sc_irdyq.o                148
+    stack_bu.o                 68
     stack_de.o                  2
-    task.o                  1 118
+    task.o                  1 000
     task_template_list.o               100
-    time_ticks.o              628
-    --------------------------------------------------------
-    Total:                  7 088      704    3 396      120
+    time_ticks.o              708
+    -----------------------------------------------
+    Total:                  7 312      464    3 308
 
 command line: [2]
-    --------------------------------------------------------
+    -----------------------------------------------
     Total:
 
 dl6M_tln.a: [3]
@@ -306,7 +283,7 @@ dl6M_tln.a: [3]
     vsnprint.o                 60
     xprintffull_nomb.o      3 770       24
     xsnprout.o                 28
-    --------------------------------------------------------
+    -----------------------------------------------
     Total:                  3 970       24
 
 m6M_tl.a: [4]
@@ -321,11 +298,12 @@ m6M_tl.a: [4]
     I32ToDbl.o                 52
     xdnorm.o                   68
     xdscale.o                 284
-    --------------------------------------------------------
+    -----------------------------------------------
     Total:                  1 752
 
 rt6M_tl.a: [5]
     ABImemcpy.o                92
+    ABImemset.o                52
     I32DivModFast.o           224
     I64DivMod.o               106
     I64DivZer.o                 2
@@ -340,13 +318,13 @@ rt6M_tl.a: [5]
     strchr.o                   20
     strlen.o                   16
     zero_init3.o               60
-    --------------------------------------------------------
-    Total:                    694
+    -----------------------------------------------
+    Total:                    746
 
-    Gaps                       34
-    Linker created                      58      256
-------------------------------------------------------------
-    Grand Total:           13 538      786    3 652      120
+    Gaps                       30        2
+    Linker created                      36      256
+---------------------------------------------------
+    Grand Total:           13 810      526    3 564
 
 
 *******************************************************************************
@@ -355,217 +333,235 @@ rt6M_tl.a: [5]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x00003a38          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00003a70          --   Gb  - Linker created -
-?main                   0x00003981         Code  Gb  cmain.o [5]
-ADC_Init                0x000032e9   0x70  Code  Gb  ADC.o [1]
-ADC_Isr                 0x0000362d   0x28  Code  Gb  App_ADC.o [1]
-ADC_prepere             0x0000361d   0x10  Code  Gb  App_ADC.o [1]
-CSTACK$$Base            0x200009c0          --   Gb  - Linker created -
-CSTACK$$Limit           0x20000ac0          --   Gb  - Linker created -
-Clear_K1P               0x00002bcf    0xa  Code  Gb  App_io.o [1]
-Clear_K2P               0x00002bd9    0xa  Code  Gb  App_io.o [1]
-Clear_K3P               0x00002be3    0xa  Code  Gb  App_io.o [1]
-Clear_display           0x00002ab3   0x14  Code  Gb  Indicator.o [1]
+.iar.init_table$$Base   0x00003ac8          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00003aec          --   Gb  - Linker created -
+?main                   0x00003a11         Code  Gb  cmain.o [5]
+ADC_Init                0x00003815   0x48  Code  Gb  ADC.o [1]
+ADC_Isr                 0x000036a5   0x22  Code  Gb  App_ADC.o [1]
+ADC_prepere             0x00003699    0xc  Code  Gb  App_ADC.o [1]
+CSTACK$$Base            0x200008f0          --   Gb  - Linker created -
+CSTACK$$Limit           0x200009f0          --   Gb  - Linker created -
+Clear_K1P               0x00002f73    0xa  Code  Gb  App_io.o [1]
+Clear_K2P               0x00002f7d    0xa  Code  Gb  App_io.o [1]
+Clear_K3P               0x00002f87    0xa  Code  Gb  App_io.o [1]
+Clear_display           0x00002e6d   0x10  Code  Gb  Indicator.o [1]
 Config                  0x00000400   0x10  Data  Gb  Cpu.o [1]
-Console_task            0x00003511   0x22  Code  Gb  mqx_tasks.o [1]
-Console_task_stack      0x1fffff24  0x288  Data  Gb  MQX1.o [1]
-Cpu_Interrupt           0x000030ad    0x2  Code  Gb  Cpu.o [1]
+Console_task            0x0000347d   0x28  Code  Gb  mqx_tasks.o [1]
+Console_task_stack      0x1ffffe9c  0x28c  Data  Gb  MQX1.o [1]
+Cpu_Interrupt           0x00003511    0x2  Code  Gb  Cpu.o [1]
 DeviceDataPrv__DEFAULT_RTOS_ALLOC
-                        0x20000990    0xc  Data  Lc  SystemTimer1.o [1]
-Display_scaning         0x00002ac7   0x54  Code  Gb  Indicator.o [1]
-GPIOA_Init              0x000031fd   0x54  Code  Gb  GPIOA.o [1]
+                        0x200008c8    0xc  Data  Lc  SystemTimer1.o [1]
+Display_scaning         0x00002e7d   0x44  Code  Gb  Indicator.o [1]
+GPIOA_Init              0x00003779   0x38  Code  Gb  GPIOA.o [1]
 Get_internal_temperature
-                        0x0000366d   0x54  Code  Gb  Measurements.o [1]
-Get_power_voltage       0x000036c1   0x20  Code  Gb  Measurements.o [1]
+                        0x000036e1   0x4c  Code  Gb  Measurements.o [1]
+Get_power_voltage       0x0000372d   0x20  Code  Gb  Measurements.o [1]
 Get_unique_identificator
-                        0x00003553    0xc  Code  Gb  mqx_tasks.o [1]
-INTTEMPER_adcr          0x200009b4    0x4  Data  Gb  mqx_tasks.o [1]
+                        0x000034a5    0xc  Code  Gb  mqx_tasks.o [1]
+INTTEMPER_adcr          0x200008e4    0x4  Data  Gb  mqx_tasks.o [1]
 LoadInt                 0x000009cd   0x68  Code  Lc  xprintffull_nomb.o [3]
-MQX_init_struct         0x00003a14   0x24  Data  Gb  MQX1.o [1]
-MQX_template_list       0x00003828   0x54  Data  Gb  task_template_list.o [1]
-Main_task               0x000034b3   0x5e  Code  Gb  mqx_tasks.o [1]
-Main_task_stack         0x1ffffc9c  0x288  Data  Gb  MQX1.o [1]
-Mnemonic_t              0x1ffffc90    0x4  Data  Gb  mqx_tasks.o [1]
-Mnemonic_v              0x1ffffc94    0x4  Data  Gb  mqx_tasks.o [1]
-NumToDisp               0x00002a1d   0x64  Code  Lc  Indicator.o [1]
-PE_LDD_DeviceDataList   0x200009b8    0x4  Data  Gb  PE_LDD.o [1]
-PE_low_level_init       0x0000310d   0x94  Code  Gb  Cpu.o [1]
-PIT_Init                0x0000327d   0x6c  Code  Gb  PIT.o [1]
-PORT_Init               0x00003251   0x2c  Code  Gb  PORT.o [1]
-PWM_init                0x00003579   0x6a  Code  Gb  PWM_gen.o [1]
-RTT_printf              0x00003533   0x20  Code  Gb  mqx_tasks.o [1]
-Region$$Table$$Base     0x00003a38          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00003a70          --   Gb  - Linker created -
-SEGGER_RTT_Write        0x0000335b  0x144  Code  Gb  SEGGER_RTT.o [1]
-Set_K1P                 0x00002bb1    0xa  Code  Gb  App_io.o [1]
-Set_K2P                 0x00002bbb    0xa  Code  Gb  App_io.o [1]
-Set_K3P                 0x00002bc5    0xa  Code  Gb  App_io.o [1]
-Set_pwm_freq            0x000035e3   0x24  Code  Gb  PWM_gen.o [1]
-Set_segments            0x00002979   0xa4  Code  Gb  Indicator.o [1]
-Show_float              0x00002a81   0x1e  Code  Gb  Indicator.o [1]
-Show_mnemonic           0x00002a9f   0x14  Code  Gb  Indicator.o [1]
-SystemTimer1_Enable     0x00003039   0x10  Code  Gb  SystemTimer1.o [1]
+MQX_init_struct         0x00003aa4   0x24  Data  Gb  MQX1.o [1]
+MQX_template_list       0x00003938   0x54  Data  Gb  task_template_list.o [1]
+Main_task               0x0000340d   0x70  Code  Gb  mqx_tasks.o [1]
+Main_task_stack         0x1ffffc10  0x28c  Data  Gb  MQX1.o [1]
+Mnemonic_t              0x00003508    0x4  Data  Gb  mqx_tasks.o [1]
+Mnemonic_v              0x0000350c    0x4  Data  Gb  mqx_tasks.o [1]
+NumToDisp               0x00002df1   0x4e  Code  Lc  Indicator.o [1]
+PE_LDD_DeviceDataList   0x200008e8    0x4  Data  Gb  PE_LDD.o [1]
+PE_low_level_init       0x0000355d   0x76  Code  Gb  Cpu.o [1]
+PIT_Init                0x000037d5   0x40  Code  Gb  PIT.o [1]
+PORT_Init               0x000037b1   0x24  Code  Gb  PORT.o [1]
+PWM_init                0x0000360d   0x4e  Code  Gb  PWM_gen.o [1]
+Region$$Table$$Base     0x00003ac8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00003aec          --   Gb  - Linker created -
+Set_K1P                 0x00002f55    0xa  Code  Gb  App_io.o [1]
+Set_K2P                 0x00002f5f    0xa  Code  Gb  App_io.o [1]
+Set_K3P                 0x00002f69    0xa  Code  Gb  App_io.o [1]
+Set_pwm_freq            0x0000365b   0x20  Code  Gb  PWM_gen.o [1]
+Set_segments            0x00002d89   0x66  Code  Gb  Indicator.o [1]
+Show_float              0x00002e3f   0x1e  Code  Gb  Indicator.o [1]
+Show_mnemonic           0x00002e5d   0x10  Code  Gb  Indicator.o [1]
+SystemTimer1_Enable     0x00003393    0xe  Code  Gb  SystemTimer1.o [1]
 SystemTimer1_GetCounterValue
-                        0x00003061    0x6  Code  Gb  SystemTimer1.o [1]
+                        0x000033b5    0x6  Code  Gb  SystemTimer1.o [1]
 SystemTimer1_GetInputFrequency
-                        0x00003049    0x4  Code  Gb  SystemTimer1.o [1]
+                        0x000033a1    0x4  Code  Gb  SystemTimer1.o [1]
 SystemTimer1_GetPeriodTicks
-                        0x0000304d   0x14  Code  Gb  SystemTimer1.o [1]
+                        0x000033a5   0x10  Code  Gb  SystemTimer1.o [1]
 SystemTimer1_GetTicsPerSecond
-                        0x00002f69   0x1c  Code  Gb  MQX1.o [1]
-SystemTimer1_Init       0x00002fed   0x4c  Code  Gb  SystemTimer1.o [1]
-SystemTimer1_Interrupt  0x00003067   0x16  Code  Gb  SystemTimer1.o [1]
+                        0x000032a5   0x1a  Code  Gb  MQX1.o [1]
+SystemTimer1_Init       0x00003351   0x42  Code  Gb  SystemTimer1.o [1]
+SystemTimer1_Interrupt  0x000033bb   0x14  Code  Gb  SystemTimer1.o [1]
 SystemTimer1_OnCounterRestart
-                        0x00002f61    0x8  Code  Gb  MQX1.o [1]
+                        0x0000329d    0x8  Code  Gb  MQX1.o [1]
 SystemTimerDeviceDataPtr
-                        0x200009a4    0x4  Data  Lc  MQX1.o [1]
-TEMPER_adcr             0x200009b0    0x4  Data  Gb  mqx_tasks.o [1]
-VAN_adcr                0x200009a8    0x4  Data  Gb  mqx_tasks.o [1]
-VOLTAGE_adcr            0x200009ac    0x4  Data  Gb  mqx_tasks.o [1]
+                        0x200008d4    0x4  Data  Lc  MQX1.o [1]
+TEMPER_adcr             0x200008e0    0x4  Data  Gb  mqx_tasks.o [1]
+UART0_Init              0x00002be1   0x62  Code  Gb  App_UART.o [1]
+UART0_isr               0x00002c43   0x64  Code  Lc  App_UART.o [1]
+UART0_send_buffer       0x00002ca7   0x54  Code  Gb  App_UART.o [1]
+UART_printf             0x00002cfb   0x24  Code  Gb  App_UART.o [1]
+VAN_adcr                0x200008d8    0x4  Data  Gb  mqx_tasks.o [1]
+VOLTAGE_adcr            0x200008dc    0x4  Data  Gb  mqx_tasks.o [1]
 _GenldFullNoMb          0x00000ffd  0x29a  Code  Lc  xprintffull_nomb.o [3]
-_Init                   0x00003359    0x2  Code  Lc  SEGGER_RTT.o [1]
 _LdtobFullNoMb          0x00000b69  0x480  Code  Lc  xprintffull_nomb.o [3]
 _LitobFullNoMb          0x00000a35  0x12e  Code  Lc  xprintffull_nomb.o [3]
 _PrintfFullNoMb         0x00000411  0x5bc  Code  Gb  xprintffull_nomb.o [3]
 _PutcharsFullNoMb       0x00001297   0x30  Code  Lc  xprintffull_nomb.o [3]
-_SEGGER_RTT             0x1ffffc00   0x78  Data  Lc  SEGGER_RTT.o [1]
-_SNProut                0x00003a71   0x1c  Code  Gb  xsnprout.o [3]
+_SNProut                0x00003aed   0x1c  Code  Gb  xsnprout.o [3]
 __VECTOR_TABLE_START {Abs}
                         0x00000000          --   Gb  command line/config [2]
 __aeabi_cdcmple         0x00001411         Code  Gb  DblCmpLe.o [4]
 __aeabi_cdrcmple        0x00001443         Code  Gb  DblCmpGe.o [4]
-__aeabi_d2f             0x0000374d         Code  Gb  DblToFlt.o [4]
+__aeabi_d2f             0x0000385d         Code  Gb  DblToFlt.o [4]
 __aeabi_d2iz            0x00001591         Code  Gb  DblToI32.o [4]
 __aeabi_d2uiz           0x000015b5         Code  Gb  DblToI32.o [4]
 __aeabi_dadd            0x00001619         Code  Gb  DblAddSub.o [4]
 __aeabi_ddiv            0x00001a31         Code  Gb  DblDiv.o [4]
 __aeabi_dmul            0x000018ad         Code  Gb  DblMul.o [4]
 __aeabi_dsub            0x000016df         Code  Gb  DblAddSub.o [4]
-__aeabi_f2d             0x00002b35         Code  Gb  FltToDbl.o [4]
+__aeabi_f2d             0x00002ed9         Code  Gb  FltToDbl.o [4]
 __aeabi_i2d             0x000015e5         Code  Gb  I32ToDbl.o [4]
 __aeabi_idiv            0x000017f9         Code  Gb  I32DivModFast.o [5]
 __aeabi_idiv0           0x00001b19         Code  Gb  IntDivZer.o [5]
 __aeabi_idivmod         0x000017f9         Code  Gb  I32DivModFast.o [5]
 __aeabi_ldiv0           0x00001b15         Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x0000333d         Code  Gb  ABImemset.o [5]
+__aeabi_memclr8         0x0000333d         Code  Gb  ABImemset.o [5]
 __aeabi_memcpy          0x00001371         Code  Gb  ABImemcpy.o [5]
 __aeabi_memcpy4         0x00001399         Code  Wk  ABImemcpy.o [5]
 __aeabi_ui2d            0x000015f9         Code  Gb  I32ToDbl.o [4]
 __aeabi_uidiv           0x000017ff         Code  Gb  I32DivModFast.o [5]
 __aeabi_uidivmod        0x000017ff         Code  Gb  I32DivModFast.o [5]
 __aeabi_uldivmod        0x00001307         Code  Gb  I64DivMod.o [5]
-__boot                  0x00003941         Code  Gb  boot.o [1]
-__cmain                 0x00003981         Code  Gb  cmain.o [5]
-__exit                  0x000039d9         Code  Gb  XXexit.o [5]
-__get_MSP               0x00002525         Code  Gb  dispatch.o [1]
-__get_PSP               0x0000251f         Code  Gb  dispatch.o [1]
-__get_PSR               0x00002531         Code  Gb  dispatch.o [1]
+__boot                  0x000039d1         Code  Gb  boot.o [1]
+__cmain                 0x00003a11         Code  Gb  cmain.o [5]
+__exit                  0x00003a69         Code  Gb  XXexit.o [5]
+__get_MSP               0x00002445         Code  Gb  dispatch.o [1]
+__get_PSP               0x0000243f         Code  Gb  dispatch.o [1]
+__get_PSR               0x00002451         Code  Gb  dispatch.o [1]
 __iar_Dnorm             0x000013cd   0x44  Code  Gb  xdnorm.o [4]
 __iar_Dscale            0x00001475  0x11c  Code  Gb  xdscale.o [4]
 __iar_Memchr            0x000012ef   0x18  Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x0000330d         Code  Gb  ABImemset.o [5]
 __iar_Strchr            0x000012cb   0x14  Code  Gb  strchr.o [5]
-__iar_copy_init3        0x000039e5   0x30  Code  Gb  copy_init3.o [5]
+__iar_copy_init3        0x00003a75   0x30  Code  Gb  copy_init3.o [5]
 __iar_d2uiz             0x000015b9         Code  Gb  DblToI32.o [4]
-__iar_data_init3        0x0000399d   0x28  Code  Gb  data_init.o [5]
-__iar_program_start     0x00003975         Code  Gb  cstartup_M.o [5]
+__iar_data_init3        0x00003a2d   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x00003a05         Code  Gb  cstartup_M.o [5]
 __iar_ui2d              0x000015fd         Code  Gb  I32ToDbl.o [4]
-__iar_zero_init3        0x000038fd   0x3c  Code  Gb  zero_init3.o [5]
-__low_level_init        0x000030af   0x5e  Code  Gb  Cpu.o [1]
-__set_MSP               0x0000252b         Code  Gb  dispatch.o [1]
+__iar_zero_init3        0x0000398d   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00003513   0x4a  Code  Gb  Cpu.o [1]
+__set_MSP               0x0000244b         Code  Gb  dispatch.o [1]
 __vect_table {Abs}      0x00000000          --   Gb  command line/config [2]
 __vector_table          0x00000000   0xc0  Data  Gb  Vectors.o [1]
-_acDownBuffer           0x20000980   0x10  Data  Lc  SEGGER_RTT.o [1]
-_acUpBuffer             0x20000748  0x100  Data  Lc  SEGGER_RTT.o [1]
-_call_main              0x0000398d         Code  Gb  cmain.o [5]
-_exit                   0x000039cd         Code  Gb  cexit.o [5]
-_int_default_isr        0x00002195   0x30  Code  Gb  int.o [1]
-_int_disable            0x000021c5   0x1c  Code  Gb  int.o [1]
-_int_enable             0x000021e1   0x2e  Code  Gb  int.o [1]
-_int_get_isr_data       0x0000220f   0x3c  Code  Gb  int.o [1]
-_int_init               0x00002299   0x3c  Code  Gb  int.o [1]
-_int_install_isr        0x0000224b   0x4e  Code  Gb  int.o [1]
-_int_kernel_isr         0x00002427         Code  Gb  dispatch.o [1]
-_int_set_vector_table   0x00002f51    0xc  Code  Gb  int_vtab.o [1]
-_lwsem_create           0x00001fef    0xc  Code  Gb  lwsem.o [1]
-_lwsem_create_internal  0x00001f7d   0x72  Code  Gb  lwsem.o [1]
-_lwsem_post             0x00001ffd   0xce  Code  Gb  lwsem.o [1]
-_lwsem_wait             0x000020d5   0xae  Code  Gb  lwsem.o [1]
-_main                   0x00003997         Code  Gb  cmain.o [5]
-_mem_test_and_set       0x00002509         Code  Gb  dispatch.o [1]
-_mem_zero               0x00002595  0x134  Code  Gb  mem_zero.o [1]
-_mqx_api_call           0x000023dd         Code  Gb  dispatch.o [1]
-_mqx_exit               0x00002d2d    0xc  Code  Gb  mqxlite.o [1]
-_mqx_idle_task          0x00003acd   0x10  Code  Gb  idletask.o [1]
+_call_main              0x00003a1d         Code  Gb  cmain.o [5]
+_exit                   0x00003a5d         Code  Gb  cexit.o [5]
+_int_default_isr        0x000020dd   0x30  Code  Gb  int.o [1]
+_int_disable            0x0000210d   0x18  Code  Gb  int.o [1]
+_int_enable             0x00002125   0x20  Code  Gb  int.o [1]
+_int_get_isr_data       0x0000214d   0x2c  Code  Gb  int.o [1]
+_int_init               0x000021bd   0x3c  Code  Gb  int.o [1]
+_int_install_isr        0x00002179   0x44  Code  Gb  int.o [1]
+_int_kernel_isr         0x00002347         Code  Gb  dispatch.o [1]
+_int_set_vector_table   0x0000328d    0xa  Code  Gb  int_vtab.o [1]
+_lwevent_clear          0x000025f5   0x44  Code  Gb  lwevent.o [1]
+_lwevent_create         0x000025e9    0xa  Code  Gb  lwevent.o [1]
+_lwevent_create_internal
+                        0x00002565   0x84  Code  Gb  lwevent.o [1]
+_lwevent_set            0x00002641   0xf2  Code  Gb  lwevent.o [1]
+_lwevent_wait_internal  0x00002741   0xf8  Code  Gb  lwevent.o [1]
+_lwevent_wait_ticks     0x00002841   0x4a  Code  Gb  lwevent.o [1]
+_lwsem_create           0x00001f6b    0xc  Code  Gb  lwsem.o [1]
+_lwsem_create_internal  0x00001f05   0x66  Code  Gb  lwsem.o [1]
+_lwsem_post             0x00001f79   0xb4  Code  Gb  lwsem.o [1]
+_lwsem_wait             0x00002031   0x96  Code  Gb  lwsem.o [1]
+_main                   0x00003a27         Code  Gb  cmain.o [5]
+_mem_test_and_set       0x00002429         Code  Gb  dispatch.o [1]
+_mem_zero               0x000024b1   0xb4  Code  Gb  mem_zero.o [1]
+_mqx_api_call           0x000022fd         Code  Gb  dispatch.o [1]
+_mqx_exit               0x000030cd    0x8  Code  Gb  mqxlite.o [1]
+_mqx_idle_task          0x00003b21   0x10  Code  Gb  idletask.o [1]
 _mqx_init_kernel_data_internal
-                        0x00002d5d  0x106  Code  Gb  mqx_utils.o [1]
-_mqx_kernel_data        0x1ffffc98    0x4  Data  Gb  mqxlite.o [1]
+                        0x000030ed   0xd2  Code  Gb  mqx_utils.o [1]
+_mqx_kernel_data        0x1ffffc0c    0x4  Data  Gb  mqxlite.o [1]
 _mqx_kernel_data_struct
-                        0x200001ac  0x234  Data  Gb  MQX1.o [1]
-_mqx_path               0x00003b08    0x4  Data  Gb  mqxlite.o [1]
-_mqx_set_cpu_type       0x00002d55    0x8  Code  Gb  mqx_utils.o [1]
-_mqx_vendor             0x00003b04    0x4  Data  Gb  mqxlite.o [1]
-_mqx_version_number     0x00003b00    0x4  Data  Gb  mqxlite.o [1]
-_mqxlite                0x00002ca5   0x88  Code  Gb  mqxlite.o [1]
-_mqxlite_init           0x00002bf5   0xb0  Code  Gb  mqxlite.o [1]
+                        0x20000128  0x244  Data  Gb  MQX1.o [1]
+_mqx_path               0x000030dc    0x4  Data  Gb  mqxlite.o [1]
+_mqx_set_cpu_type       0x000030e5    0x8  Code  Gb  mqx_utils.o [1]
+_mqx_vendor             0x000030d8    0x4  Data  Gb  mqxlite.o [1]
+_mqx_version_number     0x000030d4    0x4  Data  Gb  mqxlite.o [1]
+_mqx_zero_tick_struct   0x0000391c    0xc  Data  Gb  mqxlite.o [1]
+_mqxlite                0x0000303d   0x82  Code  Gb  mqxlite.o [1]
+_mqxlite_init           0x00002f99   0xa4  Code  Gb  mqxlite.o [1]
 _mqxlite_version_number
-                        0x00003b0c    0x4  Data  Gb  mqxlite.o [1]
-_psp_build_stack_frame  0x0000254d   0x48  Code  Gb  stack_bu.o [1]
+                        0x000030e0    0x4  Data  Gb  mqxlite.o [1]
+_psp_add_ticks          0x00002b61   0x48  Code  Gb  psp_tiad.o [1]
+_psp_build_stack_frame  0x0000246d   0x44  Code  Gb  stack_bu.o [1]
 _psp_destroy_stack_frame
-                        0x000022e5    0x2  Code  Gb  stack_de.o [1]
-_psp_exception_return   0x000024d1         Code  Gb  dispatch.o [1]
-_psp_init_readyqs       0x00002ed5   0x58  Code  Gb  sc_irdyq.o [1]
-_psp_int_init           0x00002f3d   0x14  Code  Gb  psp_iinit.o [1]
-_psp_int_install        0x00002fdd   0x10  Code  Gb  int_inst.o [1]
-_psp_normalize_ticks    0x0000293d   0x3c  Code  Gb  psp_tinm.o [1]
+                        0x00002209    0x2  Code  Gb  stack_de.o [1]
+_psp_exception_return   0x000023f1         Code  Gb  dispatch.o [1]
+_psp_init_readyqs       0x0000321d   0x4a  Code  Gb  sc_irdyq.o [1]
+_psp_int_init           0x00003279   0x12  Code  Gb  psp_iinit.o [1]
+_psp_int_install        0x00003341   0x10  Code  Gb  int_inst.o [1]
+_psp_normalize_ticks    0x00002ba9   0x38  Code  Gb  psp_tinm.o [1]
 _psp_set_kernel_disable_level
-                        0x00002e7d   0x58  Code  Gb  sc_irdyq.o [1]
+                        0x000031e5   0x38  Code  Gb  sc_irdyq.o [1]
 _sched_check_scheduler_internal
-                        0x000022fd         Code  Gb  dispatch.o [1]
+                        0x0000221d         Code  Gb  dispatch.o [1]
 _sched_execute_scheduler_internal
-                        0x00002315         Code  Gb  dispatch.o [1]
-_sched_run_internal     0x000022f7         Code  Gb  dispatch.o [1]
-_sched_start_internal   0x000022f1         Code  Gb  dispatch.o [1]
+                        0x00002235         Code  Gb  dispatch.o [1]
+_sched_run_internal     0x00002217         Code  Gb  dispatch.o [1]
+_sched_start_internal   0x00002211         Code  Gb  dispatch.o [1]
 _task_alloc_td_internal
-                        0x00001ec5   0x98  Code  Gb  task.o [1]
-_task_block             0x000023df         Code  Gb  dispatch.o [1]
-_task_destroy           0x00001c9d    0xa  Code  Gb  task.o [1]
-_task_destroy_internal  0x00001b1d  0x17e  Code  Gb  task.o [1]
+                        0x00001e63   0x86  Code  Gb  task.o [1]
+_task_block             0x000022ff         Code  Gb  dispatch.o [1]
+_task_destroy           0x00001c65    0xa  Code  Gb  task.o [1]
+_task_destroy_internal  0x00001b1d  0x140  Code  Gb  task.o [1]
 _task_exit_function_internal
-                        0x00001d5d   0x10  Code  Gb  task.o [1]
+                        0x00001d15    0xa  Code  Gb  task.o [1]
 _task_fill_stack_internal
-                        0x00001e8d   0x16  Code  Gb  task.o [1]
-_task_get_td            0x00001cad   0x7e  Code  Gb  task.o [1]
-_task_init_internal     0x00001d6d  0x11c  Code  Gb  task.o [1]
-_task_ready_internal    0x00001ea3   0x22  Code  Gb  task.o [1]
-_task_set_error         0x00001d2b   0x32  Code  Gb  task.o [1]
+                        0x00001e2d   0x12  Code  Gb  task.o [1]
+_task_get_td            0x00001c75   0x70  Code  Gb  task.o [1]
+_task_init_internal     0x00001d1f  0x10e  Code  Gb  task.o [1]
+_task_ready_internal    0x00001e3f   0x22  Code  Gb  task.o [1]
+_task_set_error         0x00001ce5   0x2e  Code  Gb  task.o [1]
 _task_set_error_td_internal
-                        0x00001f69   0x12  Code  Gb  task.o [1]
-_time_delay_internal    0x000026c9   0x9e  Code  Gb  time_ticks.o [1]
-_time_delay_ticks       0x00002769   0x62  Code  Gb  time_ticks.o [1]
-_time_notify_kernel     0x000027d1  0x13e  Code  Gb  time_ticks.o [1]
+                        0x00001ef5   0x10  Code  Gb  task.o [1]
+_time_delay_for         0x0000289d   0x54  Code  Gb  time_ticks.o [1]
+_time_delay_internal    0x000028f1   0x7a  Code  Gb  time_ticks.o [1]
+_time_delay_ticks       0x0000296d   0x56  Code  Gb  time_ticks.o [1]
+_time_delay_until       0x000029c5   0x4e  Code  Gb  time_ticks.o [1]
+_time_notify_kernel     0x00002a19  0x11a  Code  Gb  time_ticks.o [1]
 _time_set_hwtick_function
-                        0x00002911   0x12  Code  Gb  time_ticks.o [1]
+                        0x00002b3d   0x10  Code  Gb  time_ticks.o [1]
 _time_set_hwticks_per_tick
-                        0x00002923    0xc  Code  Gb  time_ticks.o [1]
-ciphs                   0x1ffffc78    0xc  Data  Gb  Indicator.o [1]
-disp_buf                0x200009a0    0x4  Data  Gb  Indicator.o [1]
+                        0x00002b4d    0xc  Code  Gb  time_ticks.o [1]
+ciphs                   0x00002ecc    0xc  Data  Gb  Indicator.o [1]
+disp_buf                0x200008ac    0x4  Data  Gb  Indicator.o [1]
 div                     0x00001af3   0x20  Code  Gb  div.o [3]
-exit                    0x000039c5    0x8  Code  Gb  exit.o [3]
-main                    0x000034a5    0xe  Code  Gb  mqx_tasks.o [1]
-mqx_idle_task_stack     0x2000050c  0x12c  Data  Gb  MQX1.o [1]
-mqx_interrupt_stack     0x20000638  0x110  Data  Gb  MQX1.o [1]
-mqx_static_isr_table    0x200003e0  0x12c  Data  Gb  MQX1.o [1]
-mqx_static_ready_queue  0x20000848   0xa0  Data  Gb  MQX1.o [1]
+exit                    0x00003a55    0x8  Code  Gb  exit.o [3]
+main                    0x000033fd    0xe  Code  Gb  mqx_tasks.o [1]
+mqx_idle_task_stack     0x2000036c  0x130  Data  Gb  MQX1.o [1]
+mqx_interrupt_stack     0x200005c8  0x110  Data  Gb  MQX1.o [1]
+mqx_static_isr_table    0x2000049c  0x12c  Data  Gb  MQX1.o [1]
+mqx_static_ready_queue  0x200006d8   0xa0  Data  Gb  MQX1.o [1]
 mqx_task_stack_pointers
-                        0x1ffffc84    0xc  Data  Gb  MQX1.o [1]
-nstr                    0x2000096c   0x14  Data  Gb  Indicator.o [1]
-pos                     0x2000099c    0x4  Data  Gb  Indicator.o [1]
-rtt_str                 0x200008e8   0x84  Data  Gb  mqx_tasks.o [1]
-snprintf                0x00002b69   0x48  Code  Gb  snprintf.o [3]
+                        0x1ffffc00    0xc  Data  Gb  MQX1.o [1]
+nstr                    0x200008b0   0x14  Data  Gb  Indicator.o [1]
+pos                     0x200008c4    0x4  Data  Gb  Indicator.o [1]
+snprintf                0x00002f0d   0x48  Code  Gb  snprintf.o [3]
 strlen                  0x000012df   0x10  Code  Gb  strlen.o [5]
-system_timer_init       0x00002f85   0x3e  Code  Gb  MQX1.o [1]
-system_timer_start      0x00002fc3    0xe  Code  Gb  MQX1.o [1]
-vsnprintf               0x00003711   0x3c  Code  Gb  vsnprint.o [3]
+system_timer_init       0x000032bf   0x34  Code  Gb  MQX1.o [1]
+system_timer_start      0x000032f3    0xe  Code  Gb  MQX1.o [1]
+uart_evt                0x20000844   0x24  Data  Gb  App_UART.o [1]
+uart_rx_buf             0x20000868   0x40  Data  Gb  App_UART.o [1]
+uart_rx_head            0x200008a8    0x4  Data  Lc  App_UART.o [1]
+uart_str                0x20000778   0x84  Data  Gb  mqx_tasks.o [1]
+uart_tx_buf             0x200007fc   0x40  Data  Lc  App_UART.o [1]
+uart_tx_head            0x2000083c    0x4  Data  Lc  App_UART.o [1]
+uart_tx_tail            0x20000840    0x4  Data  Lc  App_UART.o [1]
+vsnprintf               0x00002d4d   0x3c  Code  Gb  vsnprint.o [3]
 
 
 [1] = C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\MQX_light_porting\IAR_Proj\Debug\Obj
@@ -574,9 +570,9 @@ vsnprintf               0x00003711   0x3c  Code  Gb  vsnprint.o [3]
 [4] = m6M_tl.a
 [5] = rt6M_tl.a
 
-  13 538 bytes of readonly  code memory
-     786 bytes of readonly  data memory
-   3 652 bytes of readwrite data memory (+ 120 absolute)
+  13 810 bytes of readonly  code memory
+     526 bytes of readonly  data memory
+   3 564 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
