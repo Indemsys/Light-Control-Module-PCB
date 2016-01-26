@@ -3,13 +3,14 @@
 #include "mqx_tasks.h"
 #include "app.h"
 
+static uint8_t f_init;
 /*------------------------------------------------------------------------------
 
 
 
  \return int
  ------------------------------------------------------------------------------*/
-int main(void)
+2int main(void)
 {
   PE_low_level_init(); // Обязательный вызов внутри которого будет вызвана функция _mqxlite_init
   _mqxlite();          // Запуск операционной системы
@@ -38,21 +39,37 @@ void Main_task(uint32_t task_init_data)
 
   //_task_ready(_task_get_td(_task_get_id_from_name( "console" )));
 
+
+  f_init = 1;
   for (;;)
   {
-    Show_mnemonic(Mnemonic_t);
-    _time_delay_ticks(50);
+    int gmode;
 
-    f = Get_internal_temperature();
-    Show_float("%0.1f", f);
-    _time_delay_ticks(200);
+    gmode = Gen_get_mode();
+    if (gmode == GMOD_IDLE)
+    {
 
-    Show_mnemonic(Mnemonic_v);
-    _time_delay_ticks(50);
+      Show_mnemonic(Mnemonic_t);
+      _time_delay_ticks(50);
 
-    f = Get_power_voltage();
-    Show_float("%0.1f", f);
-    _time_delay_ticks(200);
+      f = Get_internal_temperature();
+      Show_float("%0.1f", f);
+      _time_delay_ticks(200);
+
+      Show_mnemonic(Mnemonic_v);
+      _time_delay_ticks(50);
+
+      f = Get_power_voltage();
+      Show_float("%0.1f", f);
+      _time_delay_ticks(200);
+    }
+    else
+    {
+      //Show_mnemonic(Mnemonic_f);
+      //_time_delay_ticks(5);
+      Show_int("%d", Gen_get_param());
+      _time_delay_ticks(10);
+    }
   }
 }
 
@@ -66,26 +83,14 @@ void Main_task(uint32_t task_init_data)
  ------------------------------------------------------------------------------*/
 void Console_task(uint32_t task_init_data)
 {
-  int counter = 0;
-  unsigned int freq;
+  while (f_init==0) _time_delay_ticks(1);
 
-  freq = 100;
-
-  while (1)
+  Gen_default_func1();
+  do
   {
-    counter++;
-
-    _time_delay_ticks(10);
-
-    Set_pwm_freq(freq);
-
-    freq++;
-    if (freq==300)
-    {
-      freq = 100;
-    }
-    UART_printf("%d\r\n", freq);
+    Functional_generator();
   }
+  while (1);
 }
 
 /*------------------------------------------------------------------------------

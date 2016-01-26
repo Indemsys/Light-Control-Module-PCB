@@ -162,9 +162,48 @@ static void UART0_isr(LDD_RTOS_TISRParameter _isrParameter)
   }
 }
 
+/*------------------------------------------------------------------------------
+  Ожидаем прихода символа заданное колическтво тиков - ticks
 
 
+ \return int  Возвращает -1 если символа не дождались
+ ------------------------------------------------------------------------------*/
+int UART_wait_sym(unsigned int ticks)
+{
+  unsigned int b;
+  if (uart_rx_head != uart_rx_tail)
+  {
+    b = uart_rx_buf[uart_rx_tail];
+    uart_rx_tail++;
+    if (uart_rx_tail >= COMC_IN_BUF_SZ) uart_rx_tail = 0;
+    return b;
+  }
+  else
+  {
+    if (_lwevent_wait_ticks(&uart_evt, UART_EVT_RECEIVED, FALSE, ticks) == MQX_OK)
+    {
+      if (uart_rx_head != uart_rx_tail)
+      {
+        b = uart_rx_buf[uart_rx_tail];
+        uart_rx_tail++;
+        if (uart_rx_tail >= COMC_IN_BUF_SZ) uart_rx_tail = 0;
+        return b;
+      }
+    }
+  }
+  return -1;
+}
 
+/*------------------------------------------------------------------------------
+ Проверить не появилось ли входящих символов
+
+ \return int  возвращает -1 если символов нет и 1 если есть символы
+ ------------------------------------------------------------------------------*/
+int UART_check_sym(void)
+{
+  if (uart_rx_head == uart_rx_tail) return -1;
+  return 1;
+}
 /*------------------------------------------------------------------------------
   Послать буфер в коммуникационный канал
   Строка отправляется в кольцевой буффер
@@ -192,6 +231,10 @@ int UART0_send_buffer(char *buf, int len)
 
   return 0;
 }
+
+
+
+
 
 /*------------------------------------------------------------------------------
   Выводим форматированную строку в UART

@@ -54,9 +54,9 @@ void PWM_init(void)
                   + LSHIFT(0, 16) // HWRSTCNT.   1 A hardware trigger activates the FTM counter synchronization.
                   + LSHIFT(0, 12) // SWSOC.      1 The software trigger activates the SWOCTRL register synchronization.
                   + LSHIFT(0, 11) // SWINVC.     1 The software trigger activates the INVCTRL register synchronization.
-                  + LSHIFT(1, 10) // SWOM.       1 The software trigger activates the OUTMASK register synchronization.
+                  + LSHIFT(0, 10) // SWOM.       1 The software trigger activates the OUTMASK register synchronization.
                   + LSHIFT(1, 9) // SWWRBUF.    1 The software trigger activates MOD, CNTIN, and CV registers synchronization
-                  + LSHIFT(1, 8) // SWRSTCNT.   1 обновлени€ регистров MOD, CNTIN, and CV произойдет сразу после установки флага SWSYNC. ≈сли 0, то в точке загрузки при установленном флаге SWSYNC.
+                  + LSHIFT(0, 8) // SWRSTCNT.   1 обновлени€ регистров MOD, CNTIN, and CV произойдет сразу после установки флага SWSYNC. ≈сли 0, то в точке загрузки при установленном флаге SWSYNC.
                   + LSHIFT(1, 7) // SYNCMODE.   1 Enhanced PWM synchronization is selected.
                   + LSHIFT(0, 5) // SWOC.       1 SWOCTRL регистр будет обновлен в точке зугрузки при наличии флага синхронизации, если 0 то будет обновлен сразу
                   + LSHIFT(0, 4) // INVC.       1 INVCTRL регистр будет обновлен в точке зугрузки при наличии флага синхронизации, если 0 то будет обновлен сразу
@@ -71,7 +71,36 @@ void PWM_init(void)
   FTM2->CNT = 0;    // «апись в регистр счетчка любого значени€ приводит к записи значени€ из CNTIN и установке начального состо€ни€ выходов
   FTM2->OUTINIT = 0;    //
   FTM2->OUTMASK = 0;    //
-  FTM2->COMBINE = 0;
+  FTM2_COMBINE = 0
+     + LSHIFT(0, 30) // FAULTEN3. 1 The fault control in this pair of channels is enabled.                 | n=6
+     + LSHIFT(0, 29) // SYNCEN3.  1 The PWM synchronization in this pair of channels is enabled.           | n=6
+     + LSHIFT(0, 28) // DTEN3.    0 The deadtime insertion in this pair of channels is disabled.           | n=6
+     + LSHIFT(0, 27) // DECAP3.   0 The dual edge captures are inactive.                                   | n=6
+     + LSHIFT(0, 26) // DECAPEN3  0 The dual edge capture mode in this pair of channels is disabled.       | n=6
+     + LSHIFT(0, 25) // COMP3     1 The channel (n+1) output is the complement of the channel (n) output.  | n=6
+     + LSHIFT(0, 24) // COMBINE3  1 Channels (n) and (n+1) are combined.                                   | n=6
+     + LSHIFT(0, 22) // FAULTEN2  1 The fault control in this pair of channels is enabled.                 | n=4
+     + LSHIFT(1, 21) // SYNCEN2   1 The PWM synchronization in this pair of channels is enabled.           | n=4
+     + LSHIFT(0, 20) // DTEN2     0 The deadtime insertion in this pair of channels is disabled.           | n=4
+     + LSHIFT(0, 19) // DECAP2    0 The dual edge captures are inactive.                                   | n=4
+     + LSHIFT(0, 18) // DECAPEN2  0 The dual edge capture mode in this pair of channels is disabled.       | n=4
+     + LSHIFT(1, 17) // COMP2     1 The channel (n+1) output is the complement of the channel (n) output.  | n=4
+     + LSHIFT(0, 16) // COMBINE2  1 Channels (n) and (n+1) are combined.                                   | n=4
+     + LSHIFT(0, 14) // FAULTEN1  1 The fault control in this pair of channels is enabled.                 | n=2
+     + LSHIFT(0, 13) // SYNCEN1   1 The PWM synchronization in this pair of channels is enabled.           | n=2
+     + LSHIFT(0, 12) // DTEN1     0 The deadtime insertion in this pair of channels is disabled.           | n=2
+     + LSHIFT(0, 11) // DECAP1    0 The dual edge captures are inactive.                                   | n=2
+     + LSHIFT(0, 10) // DECAPEN1  0 The dual edge capture mode in this pair of channels is disabled.       | n=2
+     + LSHIFT(0,  9) // COMP1     1 The channel (n+1) output is the complement of the channel (n) output.  | n=2
+     + LSHIFT(0,  8) // COMBINE1  1 Channels (n) and (n+1) are combined.                                   | n=2
+     + LSHIFT(0,  6) // FAULTEN0  1 The fault control in this pair of channels is enabled.                 | n=0
+     + LSHIFT(0,  5) // SYNCEN0   1 The PWM synchronization in this pair of channels is enabled.           | n=0
+     + LSHIFT(0,  4) // DTEN0     0 The deadtime insertion in this pair of channels is disabled.           | n=0
+     + LSHIFT(0,  3) // DECAP0    0 The dual edge captures are inactive.                                   | n=0
+     + LSHIFT(0,  2) // DECAPEN0  0 The dual edge capture mode in this pair of channels is disabled.       | n=0
+     + LSHIFT(0,  1) // COMP0     1 The channel (n+1) output is the complement of the channel (n) output.  | n=0
+     + LSHIFT(0,  0) // COMBINE0  1 Channels (n) and (n+1) are combined.                                   | n=0
+  ;
   FTM2->DEADTIME = 0;
   FTM2->INVCTRL = 0;
 
@@ -84,13 +113,13 @@ void PWM_init(void)
   FTM2->CONTROLS[4].CnSC = 0
                            + LSHIFT(0, 6) // CHIE. 0 Disable channel interrupts. Use software polling.
                            + LSHIFT(1, 3) // ELSB. Edge or Level Select. ELSB=1,ELSA=0 - установка низкого уровн€ на входе при совпадении
-                           + LSHIFT(0, 2) // ELSA. Edge or Level Select  ELSB=1,ELSA=1 - установка высокого уровн€ на входе при совпадении
+                           + LSHIFT(1, 2) // ELSA. Edge or Level Select  ELSB=1,ELSA=1 - установка высокого уровн€ на входе при совпадении
                            + LSHIFT(0, 0) // DMA.  0 Disable DMA transfers.
   ;
   FTM2->CONTROLS[5].CnSC = 0
                            + LSHIFT(0, 6) // CHIE. 0 Disable channel interrupts. Use software polling.
                            + LSHIFT(1, 3) // ELSB. Edge or Level Select
-                           + LSHIFT(0, 2) // ELSA. Edge or Level Select
+                           + LSHIFT(1, 2) // ELSA. Edge or Level Select
                            + LSHIFT(0, 0) // DMA.  0 Disable DMA transfers.
   ;
 
@@ -102,7 +131,7 @@ void PWM_init(void)
                + LSHIFT(0, 4)  // TRIG0   | PWM Synchronization Hardware Trigger 0
                + LSHIFT(0, 3)  // SYNCHOM | 0 OUTMASK register is updated with the value of its buffer in all rising edges of the system clock
                + LSHIFT(0, 2)  // REINIT  | FTM Counter Reinitialization by Synchronization | 0 FTM counter continues to count normally.
-               + LSHIFT(0, 1)  // CNTMAX  | 1 The maximum loading point is enabled.
+               + LSHIFT(1, 1)  // CNTMAX  | 1 The maximum loading point is enabled.
                + LSHIFT(0, 0)  // CNTMIN  | 1 The minimum loading point is enabled
   ;
 
@@ -134,5 +163,5 @@ void Set_pwm_freq(unsigned int freq)
   FTM2->CONTROLS[4].CnV = mod/2;
   FTM2->CONTROLS[5].CnV = mod/2;
 
-  FTM2->SYNC |= BIT(7); 
+  FTM2->SYNC |= BIT(7);
 }

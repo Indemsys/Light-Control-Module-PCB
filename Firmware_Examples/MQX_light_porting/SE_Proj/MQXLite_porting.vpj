@@ -288,12 +288,16 @@
                 <F N="../MQXLite_porting/Sources/App_io.h"/>
                 <F N="../MQXLite_porting/Sources/App_UART.c"/>
                 <F N="../MQXLite_porting/Sources/App_UART.h"/>
+                <F N="../MQXLite_porting/Sources/Func_Generator.c"/>
+                <F N="../MQXLite_porting/Sources/Func_Generator.h"/>
                 <F N="../MQXLite_porting/Sources/Indicator.c"/>
                 <F N="../MQXLite_porting/Sources/Indicator.h"/>
                 <F N="../MQXLite_porting/Sources/Measurements.c"/>
                 <F N="../MQXLite_porting/Sources/Measurements.h"/>
                 <F N="../MQXLite_porting/Sources/mqx_tasks.c"/>
                 <F N="../MQXLite_porting/Sources/mqx_tasks.h"/>
+                <F N="../MQXLite_porting/Sources/Protocol.c"/>
+                <F N="../MQXLite_porting/Sources/Protocol.h"/>
                 <F N="../MQXLite_porting/Sources/PWM_gen.c"/>
                 <F N="../MQXLite_porting/Sources/PWM_gen.h"/>
             </Folder>

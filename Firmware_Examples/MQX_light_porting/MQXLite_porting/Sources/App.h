@@ -61,6 +61,8 @@
 #include "intrinsics.h"
 #include "stdio.h"
 #include "stdarg.h"
+#include "string.h"
+
 #include "SKEAZN642.h"
 #include "App_io.h"
 #include "App_ADC.h"
@@ -68,6 +70,8 @@
 #include "PWM_gen.h"
 #include "Indicator.h"
 #include "Measurements.h"
+#include "Func_Generator.h"
+#include "Protocol.h"
 #include "./RTT/SEGGER_RTT.h"
 
 #ifdef _GLOBALS_
@@ -92,6 +96,13 @@ const unsigned char Mnemonic_v[] =
   SEG_G ,
   0
 };
+const unsigned char Mnemonic_f[] =
+{
+  SEG_A + SEG_E + SEG_F + SEG_G ,
+  SEG_G ,
+  0
+};
+
 
 #else
 
@@ -105,6 +116,7 @@ extern char uart_str[];
 
 extern const unsigned char Mnemonic_t[];
 extern const unsigned char Mnemonic_v[];
+extern const unsigned char Mnemonic_f[];
 #endif
 
 

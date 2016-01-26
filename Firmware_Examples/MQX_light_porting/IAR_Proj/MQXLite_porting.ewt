@@ -2285,6 +2285,9 @@
         <name>$PROJ_DIR$\..\MQXLite_porting\Sources\App_UART.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Func_Generator.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Indicator.c</name>
       </file>
       <file>
@@ -2292,6 +2295,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\MQXLite_porting\Sources\mqx_tasks.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\MQXLite_porting\Sources\Protocol.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\MQXLite_porting\Sources\PWM_gen.c</name>
