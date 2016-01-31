@@ -14,23 +14,23 @@
 **     Contents    :
 **         No public methods
 **
-**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
+**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc.
 **     All Rights Reserved.
-**     
+**
 **     Redistribution and use in source and binary forms, with or without modification,
 **     are permitted provided that the following conditions are met:
-**     
+**
 **     o Redistributions of source code must retain the above copyright notice, this list
 **       of conditions and the following disclaimer.
-**     
+**
 **     o Redistributions in binary form must reproduce the above copyright notice, this
 **       list of conditions and the following disclaimer in the documentation and/or
 **       other materials provided with the distribution.
-**     
+**
 **     o Neither the name of Freescale Semiconductor, Inc. nor the names of its
 **       contributors may be used to endorse or promote products derived from this
 **       software without specific prior written permission.
-**     
+**
 **     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 **     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 **     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -41,7 +41,7 @@
 **     ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 **     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 **     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-**     
+**
 **     http: www.freescale.com
 **     mail: support@freescale.com
 ** ###################################################################*/
@@ -52,11 +52,11 @@
 **         PE_Types.h - contains definitions of basic types,
 **         register access macros and hardware specific macros
 **         which can be used in user application.
-*/         
+*/
 /*!
 **  @addtogroup PE_Types_module PE_Types module documentation
 **  @{
-*/         
+*/
 
 #ifndef __PE_Types_H
 #define __PE_Types_H
@@ -78,15 +78,15 @@
 
 /* PE types definition */
 #ifndef __cplusplus
-  #ifndef bool 
-typedef unsigned char           bool;
+  #ifndef bool
+typedef uint8_t           bool;
   #endif
 #endif
-typedef unsigned char           byte;
-typedef unsigned short          word;
+typedef uint8_t                 byte;
+typedef uint16_t                word;
 typedef unsigned long           dword;
 typedef unsigned long long      dlong;
-typedef unsigned char           TPE_ErrCode;
+typedef uint8_t                 TPE_ErrCode;
 #ifndef TPE_Float
 typedef float                   TPE_Float;
 #endif
@@ -99,8 +99,7 @@ typedef signed char             int8;
 typedef signed short int        int16;
 typedef signed long int         int32;
 
-typedef unsigned char           uint8;
-typedef unsigned short int      uint16;
+typedef uint8_t                 uint8;
 typedef unsigned long int       uint32;
 
 
@@ -133,7 +132,7 @@ typedef unsigned long int       uint32;
   } \
  } while(0)
 
- 
+
 /* Restore status register  */
 #define ExitCritical() \
  do {\

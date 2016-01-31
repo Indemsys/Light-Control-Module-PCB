@@ -17,7 +17,7 @@
           <useExtraArgs>0</useExtraArgs>
           <extraArgs></extraArgs>
           <analyzeTimeout>600</analyzeTimeout>
-          <enableParallel>0</enableParallel>
+          <enableParallel>1</enableParallel>
           <parallelThreads>4</parallelThreads>
         </cstatargs>
         <cstatsettings>
@@ -67,12 +67,7 @@
             <group checked="true" name="COMMENT">
               <check checked="true" name="COMMENT-nested"/>
             </group>
-            <group checked="false" name="CONCURRENCY">
-              <check checked="true" name="CONCURRENCY-double-lock"/>
-              <check checked="true" name="CONCURRENCY-double-unlock"/>
-              <check checked="true" name="CONCURRENCY-lock-no-unlock"/>
-              <check checked="true" name="CONCURRENCY-sleep-while-locking"/>
-            </group>
+            <check checked="false" name="CONCURRENCY"/>
             <group checked="true" name="CONST">
               <check checked="false" name="CONST-local"/>
               <check checked="true" name="CONST-member-ret"/>
@@ -122,8 +117,6 @@
               <check checked="true" name="EXPR-const-overflow"/>
             </group>
             <group checked="false" name="FPT">
-              <check checked="true" name="FPT-arith-address"/>
-              <check checked="true" name="FPT-arith"/>
               <check checked="true" name="FPT-cmp-null"/>
               <check checked="false" name="FPT-literal"/>
               <check checked="true" name="FPT-misuse"/>
@@ -187,7 +180,6 @@
               <check checked="false" name="LOGIC-overload"/>
             </group>
             <group checked="false" name="MEM">
-              <check checked="true" name="MEM-alias-double-free"/>
               <check checked="true" name="MEM-delete-array-op"/>
               <check checked="true" name="MEM-delete-op"/>
               <check checked="true" name="MEM-double-free-alias"/>
@@ -224,10 +216,7 @@
               <check checked="true" name="MEM-use-free-all"/>
               <check checked="true" name="MEM-use-free-some"/>
             </group>
-            <group checked="false" name="POR">
-              <check checked="true" name="POR-imp-cast-subscript"/>
-              <check checked="false" name="POR-imp-cast-ternary"/>
-            </group>
+            <check checked="false" name="POR"/>
             <group checked="true" name="PTR">
               <check checked="true" name="PTR-arith-field"/>
               <check checked="true" name="PTR-arith-stack"/>
@@ -282,19 +271,13 @@
               <check checked="false" name="RESOURCE-implicit-deref-file"/>
               <check checked="true" name="RESOURCE-write-ronly-file"/>
             </group>
-            <group checked="false" name="SEM">
-              <check checked="false" name="SEM-const-call"/>
-              <check checked="false" name="SEM-const-global"/>
-              <check checked="false" name="SEM-pure-call"/>
-              <check checked="false" name="SEM-pure-global"/>
-            </group>
+            <check checked="false" name="SEM"/>
             <group checked="true" name="SIZEOF">
               <check checked="true" name="SIZEOF-side-effect"/>
             </group>
             <group checked="true" name="SPC">
               <check checked="false" name="SPC-init-list"/>
               <check checked="true" name="SPC-order"/>
-              <check checked="true" name="SPC-return"/>
               <check checked="true" name="SPC-uninit-arr-all"/>
               <check checked="true" name="SPC-uninit-struct-field-heap"/>
               <check checked="true" name="SPC-uninit-struct-field"/>
@@ -328,7 +311,6 @@
           </package>
           <package checked="false" name="MISRAC2004">
             <group checked="false" name="MISRAC2004-1">
-              <check checked="true" name="MISRAC2004-1.1"/>
               <check checked="true" name="MISRAC2004-1.2_a"/>
               <check checked="true" name="MISRAC2004-1.2_b"/>
               <check checked="true" name="MISRAC2004-1.2_c"/>
@@ -508,7 +490,6 @@
               <check checked="true" name="MISRAC2012-Dir-4.3"/>
               <check checked="false" name="MISRAC2012-Dir-4.4"/>
               <check checked="false" name="MISRAC2012-Dir-4.6_a"/>
-              <check checked="false" name="MISRAC2012-Dir-4.6_b"/>
               <check checked="false" name="MISRAC2012-Dir-4.9"/>
               <check checked="true" name="MISRAC2012-Dir-4.10"/>
             </group>
@@ -826,7 +807,6 @@
             <group checked="true" name="MISRAC++2008-6-2">
               <check checked="true" name="MISRAC++2008-6-2-1"/>
               <check checked="true" name="MISRAC++2008-6-2-2"/>
-              <check checked="true" name="MISRAC++2008-6-2-3"/>
             </group>
             <group checked="true" name="MISRAC++2008-6-3">
               <check checked="true" name="MISRAC++2008-6-3-1_a"/>

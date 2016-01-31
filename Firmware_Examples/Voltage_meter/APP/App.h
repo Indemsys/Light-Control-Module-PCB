@@ -1,6 +1,7 @@
 #ifndef APP_H
   #define APP_H
 
+#include "stdint.h"
 #include "Cpu.h"
 #include "GPIOA.h"
 #include "PORT.h"
@@ -13,7 +14,7 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 
-#define BIT( val )  (1 << val)
+#define BIT( val )  ((uint32_t)1 << val)
 #define LSHIFT( val, n ) ( val << n )
 
 #define BIT_PTA0 BIT(0 )
@@ -73,10 +74,10 @@
 
 typedef struct
 {
-  unsigned short vcal;
-  unsigned short tcal;
-  unsigned int   vint;
-  unsigned char  vch;
+  uint16_t vcal;
+  uint16_t tcal;
+  uint32_t   vint;
+  uint8_t  vch;
   unsigned long  vlng;
   float          f1;
   float          f2;
@@ -88,21 +89,21 @@ T_calibr_constants;
 
 __no_init const T_calibr_constants vcal @ EEPROM_START;
 
-volatile unsigned int VAN_adcr;
-volatile unsigned int VOLTAGE_adcr;
-volatile unsigned int TEMPER_adcr;
-volatile unsigned int INTTEMPER_adcr;
+volatile uint32_t VAN_adcr;
+volatile uint32_t VOLTAGE_adcr;
+volatile uint32_t TEMPER_adcr;
+volatile uint32_t INTTEMPER_adcr;
 
-int                   tick_500ms;
+int32_t                   tick_500ms;
 char                  rtt_str[RTT_STR_SZ+1];
 
-unsigned char Mnemonic_t[] =
+uint8_t Mnemonic_t[] =
 {
   SEG_D + SEG_E + SEG_F + SEG_G,
   SEG_G ,
   0
 };
-unsigned char Mnemonic_v[] =
+uint8_t Mnemonic_v[] =
 {
   SEG_C + SEG_D + SEG_E,
   SEG_G ,
@@ -113,16 +114,16 @@ unsigned char Mnemonic_v[] =
 #else
 
 extern const T_calibr_constants vcal;
-extern volatile unsigned int VAN_adcr;
-extern volatile unsigned int VOLTAGE_adcr;
-extern volatile unsigned int TEMPER_adcr;
-extern volatile unsigned int INTTEMPER_adcr;
+extern volatile uint32_t VAN_adcr;
+extern volatile uint32_t VOLTAGE_adcr;
+extern volatile uint32_t TEMPER_adcr;
+extern volatile uint32_t INTTEMPER_adcr;
 
-extern int            tick_500ms;
+extern int32_t            tick_500ms;
 extern char           rtt_str[RTT_STR_SZ+1];
 
-extern unsigned char Mnemonic_t[];
-extern unsigned char Mnemonic_v[];
+extern uint8_t Mnemonic_t[];
+extern uint8_t Mnemonic_v[];
 
 #endif
 
@@ -139,7 +140,7 @@ extern unsigned char Mnemonic_v[];
 
 
 
-void Get_unique_identificator(unsigned int *uid);
+void Get_unique_identificator(uint32_t *uid);
 void RTT_printf(const char *fmt, ...);
 void Cpu_OnNMIINT(void);
 

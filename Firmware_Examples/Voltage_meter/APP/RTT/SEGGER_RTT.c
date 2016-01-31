@@ -15,7 +15,7 @@ Purpose : Implementation of SEGGER real-time terminal (RTT) which allows
           real-time terminal communication on targets which support
           debugger memory accesses while the CPU is running.
 
-          Type "int" is assumed to be 32-bits in size
+          Type "int32_t" is assumed to be 32-bits in size
           H->T    Host to target communication
           T->H    Target to host communication
 
@@ -98,10 +98,10 @@ Purpose : Implementation of SEGGER real-time terminal (RTT) which allows
 typedef struct {
   const char* sName;                     // Optional name. Standard names so far are: "Terminal", "VCom"
   char*  pBuffer;                        // Pointer to start of buffer
-  int    SizeOfBuffer;                   // Buffer size in bytes. Note that one byte is lost, as this implementation does not fill up the buffer in order to avoid the problem of being unable to distinguish between full and empty.
-  volatile int WrOff;                    // Position of next item to be written by either host (down-buffer) or target (up-buffer). Must be volatile since it may be modified by host (down-buffer)
-  volatile int RdOff;                    // Position of next item to be read by target (down-buffer) or host (up-buffer). Must be volatile since it may be modified by host (up-buffer)
-  int    Flags;                          // Contains configuration flags
+  int32_t    SizeOfBuffer;                   // Buffer size in bytes. Note that one byte is lost, as this implementation does not fill up the buffer in order to avoid the problem of being unable to distinguish between full and empty.
+  volatile int32_t WrOff;                    // Position of next item to be written by either host (down-buffer) or target (up-buffer). Must be volatile since it may be modified by host (down-buffer)
+  volatile int32_t RdOff;                    // Position of next item to be read by target (down-buffer) or host (up-buffer). Must be volatile since it may be modified by host (up-buffer)
+  int32_t    Flags;                          // Contains configuration flags
 } RING_BUFFER;
 
 //
@@ -111,8 +111,8 @@ typedef struct {
 //
 typedef struct {
   char        acID[16];                                 // Initialized to "SEGGER RTT"
-  int         MaxNumUpBuffers;                          // Initialized to SEGGER_RTT_MAX_NUM_UP_BUFFERS (type. 2)
-  int         MaxNumDownBuffers;                        // Initialized to SEGGER_RTT_MAX_NUM_DOWN_BUFFERS (type. 2)
+  int32_t         MaxNumUpBuffers;                          // Initialized to SEGGER_RTT_MAX_NUM_UP_BUFFERS (type. 2)
+  int32_t         MaxNumDownBuffers;                        // Initialized to SEGGER_RTT_MAX_NUM_DOWN_BUFFERS (type. 2)
   RING_BUFFER aUp[SEGGER_RTT_MAX_NUM_UP_BUFFERS];       // Up buffers, transferring information up from target via debug probe to host
   RING_BUFFER aDown[SEGGER_RTT_MAX_NUM_DOWN_BUFFERS];   // Down buffers, transferring information down from host via debug probe to target
 } SEGGER_RTT_CB;
@@ -172,8 +172,8 @@ static SEGGER_RTT_CB _SEGGER_RTT  = {
 *  Notes
 *    (1) s needs to point to an \0 terminated string. Otherwise proper functionality of this function is not guaranteed.
 */
-static int _strlen(const char* s) {
-  int Len;
+static int32_t _strlen(const char* s) {
+  int32_t Len;
 
   Len = 0;
   if (s == NULL) {
@@ -228,11 +228,11 @@ static void _Init(void) {
 *  Return values
 *    Number of bytes that have been read
 */
-int SEGGER_RTT_Read(unsigned BufferIndex, char* pBuffer, unsigned BufferSize) {
-  int NumBytesRem;
+int32_t SEGGER_RTT_Read(unsigned BufferIndex, char* pBuffer, unsigned BufferSize) {
+  int32_t NumBytesRem;
   unsigned NumBytesRead;
-  int RdOff;
-  int WrOff;
+  int32_t RdOff;
+  int32_t WrOff;
 
   SEGGER_RTT_LOCK();
   _Init();
@@ -244,7 +244,7 @@ int SEGGER_RTT_Read(unsigned BufferIndex, char* pBuffer, unsigned BufferSize) {
   //
   if (RdOff > WrOff) {
     NumBytesRem = _SEGGER_RTT.aDown[BufferIndex].SizeOfBuffer - RdOff;
-    NumBytesRem = MIN(NumBytesRem, (int)BufferSize);
+    NumBytesRem = MIN(NumBytesRem, (int32_t)BufferSize);
     MEMCPY(pBuffer, _SEGGER_RTT.aDown[BufferIndex].pBuffer + RdOff, NumBytesRem);
     NumBytesRead += NumBytesRem;
     pBuffer      += NumBytesRem;
@@ -261,7 +261,7 @@ int SEGGER_RTT_Read(unsigned BufferIndex, char* pBuffer, unsigned BufferSize) {
   // Read remaining items of buffer
   //
   NumBytesRem = WrOff - RdOff;
-  NumBytesRem = MIN(NumBytesRem, (int)BufferSize);
+  NumBytesRem = MIN(NumBytesRem, (int32_t)BufferSize);
   if (NumBytesRem > 0) {
     MEMCPY(pBuffer, _SEGGER_RTT.aDown[BufferIndex].pBuffer + RdOff, NumBytesRem);
     NumBytesRead += NumBytesRem;
@@ -295,10 +295,10 @@ int SEGGER_RTT_Read(unsigned BufferIndex, char* pBuffer, unsigned BufferSize) {
 *  Notes
 *    (1) If there is not enough space in the "Up"-buffer, remaining characters of pBuffer are dropped.
 */
-int SEGGER_RTT_Write(unsigned BufferIndex, const char* pBuffer, unsigned NumBytes) {
-  int NumBytesToWrite;
+int32_t SEGGER_RTT_Write(unsigned BufferIndex, const char* pBuffer, unsigned NumBytes) {
+  int32_t NumBytesToWrite;
   unsigned NumBytesWritten;
-  int RdOff;
+  int32_t RdOff;
   //
   // Target is not allowed to perform other RTT operations while string still has not been stored completely.
   // Otherwise we would probably end up with a mixed string in the buffer.
@@ -318,7 +318,7 @@ int SEGGER_RTT_Write(unsigned BufferIndex, const char* pBuffer, unsigned NumByte
     //
     // If the complete data does not fit in the buffer, check if we have to skip it completely or trim the data
     //
-    if ((int)NumBytes > NumBytesToWrite) {
+    if ((int32_t)NumBytes > NumBytesToWrite) {
       if ((_SEGGER_RTT.aUp[BufferIndex].Flags & SEGGER_RTT_MODE_MASK) == SEGGER_RTT_MODE_NO_BLOCK_SKIP) {
         SEGGER_RTT_UNLOCK();
         return 0;
@@ -345,7 +345,7 @@ int SEGGER_RTT_Write(unsigned BufferIndex, const char* pBuffer, unsigned NumByte
       NumBytesToWrite += _SEGGER_RTT.aUp[BufferIndex].SizeOfBuffer;
     }
     NumBytesToWrite = MIN(NumBytesToWrite, (_SEGGER_RTT.aUp[BufferIndex].SizeOfBuffer - _SEGGER_RTT.aUp[BufferIndex].WrOff));    // Number of bytes that can be written until buffer wrap-around
-    NumBytesToWrite = MIN(NumBytesToWrite, (int)NumBytes);
+    NumBytesToWrite = MIN(NumBytesToWrite, (int32_t)NumBytes);
     MEMCPY(_SEGGER_RTT.aUp[BufferIndex].pBuffer + _SEGGER_RTT.aUp[BufferIndex].WrOff, pBuffer, NumBytesToWrite);
     NumBytesWritten     += NumBytesToWrite;
     pBuffer             += NumBytesToWrite;
@@ -380,8 +380,8 @@ int SEGGER_RTT_Write(unsigned BufferIndex, const char* pBuffer, unsigned NumByte
 *    (2) String passed to this function has to be \0 terminated
 *    (3) \0 termination character is *not* stored in RTT buffer
 */
-int SEGGER_RTT_WriteString(unsigned BufferIndex, const char* s) {
-  int Len;
+int32_t SEGGER_RTT_WriteString(unsigned BufferIndex, const char* s) {
+  int32_t Len;
 
   Len = _strlen(s);
   return SEGGER_RTT_Write(BufferIndex, s, Len);
@@ -402,13 +402,13 @@ int SEGGER_RTT_WriteString(unsigned BufferIndex, const char* s) {
 *  Notes
 *    (1) This function is only specified for accesses to RTT buffer 0.
 */
-int SEGGER_RTT_GetKey(void) {
+int32_t SEGGER_RTT_GetKey(void) {
   char c;
-  int r;
+  int32_t r;
 
   r = SEGGER_RTT_Read(0, &c, 1);
   if (r == 1) {
-    return (int)(unsigned char)c;
+    return (int32_t)c;
   }
   return -1;
 }
@@ -428,8 +428,8 @@ int SEGGER_RTT_GetKey(void) {
 *    (1) This function is only specified for accesses to RTT buffer 0
 *    (2) This function is blocking if no character is present in RTT buffer
 */
-int SEGGER_RTT_WaitKey(void) {
-  int r;
+int32_t SEGGER_RTT_WaitKey(void) {
+  int32_t r;
 
   do {
     r = SEGGER_RTT_GetKey();
@@ -451,8 +451,8 @@ int SEGGER_RTT_WaitKey(void) {
 *  Notes
 *    (1) This function is only specified for accesses to RTT buffer 0
 */
-int SEGGER_RTT_HasKey(void) {
-  int RdOff;
+int32_t SEGGER_RTT_HasKey(void) {
+  int32_t RdOff;
 
   _Init();
   RdOff = _SEGGER_RTT.aDown[0].RdOff;
@@ -475,7 +475,7 @@ int SEGGER_RTT_HasKey(void) {
 *    >= 0  O.K.
 *     < 0  Error
 */
-int SEGGER_RTT_ConfigUpBuffer(unsigned BufferIndex, const char* sName, char* pBuffer, int BufferSize, int Flags) {
+int32_t SEGGER_RTT_ConfigUpBuffer(unsigned BufferIndex, const char* sName, char* pBuffer, int32_t BufferSize, int32_t Flags) {
   _Init();
   if (BufferIndex < (unsigned)_SEGGER_RTT.MaxNumUpBuffers) {
     SEGGER_RTT_LOCK();
@@ -506,7 +506,7 @@ int SEGGER_RTT_ConfigUpBuffer(unsigned BufferIndex, const char* sName, char* pBu
 *    >= 0  O.K.
 *     < 0  Error
 */
-int SEGGER_RTT_ConfigDownBuffer(unsigned BufferIndex, const char* sName, char* pBuffer, int BufferSize, int Flags) {
+int32_t SEGGER_RTT_ConfigDownBuffer(unsigned BufferIndex, const char* sName, char* pBuffer, int32_t BufferSize, int32_t Flags) {
   _Init();
   if (BufferIndex < (unsigned)_SEGGER_RTT.MaxNumDownBuffers) {
     SEGGER_RTT_LOCK();
@@ -569,9 +569,9 @@ void SEGGER_RTT_SetTerminal (char TerminalId) {
 *     without changing the terminal for channel 0.
 *
 */
-int SEGGER_RTT_TerminalOut (char TerminalId, const char* s) {
+int32_t SEGGER_RTT_TerminalOut (char TerminalId, const char* s) {
   char ac[2];
-  int  r;
+  int32_t  r;
 
   ac[0] = 0xFF;
   if (TerminalId < 10) {

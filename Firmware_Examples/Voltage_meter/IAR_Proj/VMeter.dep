@@ -6,30 +6,23 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT.c</file>
-      <file>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT_printf.c</file>
-      <file>$PROJ_DIR$\..\APP\App_ADC.c</file>
-      <file>$PROJ_DIR$\..\APP\App_EEPROM.c</file>
-      <file>$PROJ_DIR$\..\APP\Indicator.c</file>
-      <file>$PROJ_DIR$\..\APP\main.c</file>
-      <file>$PROJ_DIR$\..\BSP\ADC.c</file>
-      <file>$PROJ_DIR$\..\BSP\Cpu.c</file>
-      <file>$PROJ_DIR$\..\BSP\GPIOA.c</file>
-      <file>$PROJ_DIR$\..\BSP\PE_LDD.c</file>
-      <file>$PROJ_DIR$\..\BSP\PIT.c</file>
-      <file>$PROJ_DIR$\..\BSP\PORT.c</file>
-      <file>$PROJ_DIR$\..\BSP\SPI0.c</file>
-      <file>$PROJ_DIR$\..\BSP\SysTick.c</file>
-      <file>$PROJ_DIR$\..\BSP\Vectors.c</file>
-      <file>$PROJ_DIR$\Debug\List\VMeter.map</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\PORT.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\PIT.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\SPI0.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Cpu.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPIOA.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\PE_LDD.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\APP\App.h</file>
+      <file>$PROJ_DIR$\..\APP\Indicator.h</file>
+      <file>$PROJ_DIR$\..\APP\Events.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\APP\Measurements.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Measurements.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Measurements.pbi</file>
       <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$PROJ_DIR$\Debug\Exe\VMeter.out</file>
       <file>$PROJ_DIR$\..\BSP\SKEAZN642.h</file>
@@ -41,10 +34,10 @@
       <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
       <file>$PROJ_DIR$\Debug\Obj\ADC.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.o</file>
       <file>$PROJ_DIR$\Debug\Obj\main.o</file>
       <file>$PROJ_DIR$\Debug\Obj\Events.o</file>
       <file>$PROJ_DIR$\Debug\Obj\GPIOA.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.o</file>
       <file>$PROJ_DIR$\Debug\Obj\Cpu.o</file>
       <file>$PROJ_DIR$\Debug\Obj\VMeter.pbd</file>
       <file>$PROJ_DIR$\Debug\Obj\Vectors.pbi</file>
@@ -64,6 +57,40 @@
       <file>$PROJ_DIR$\Debug\Obj\SPI0.__cstat.et</file>
       <file>$PROJ_DIR$\Debug\Obj\PORT.__cstat.et</file>
       <file>$PROJ_DIR$\..\BSP\PE_Const.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Debug\List\VMeter.map</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\PORT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPI0.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.o</file>
+      <file>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT.c</file>
+      <file>$PROJ_DIR$\..\APP\App_EEPROM.c</file>
+      <file>$PROJ_DIR$\..\APP\App_ADC.c</file>
+      <file>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT_printf.c</file>
+      <file>$PROJ_DIR$\..\APP\Indicator.c</file>
+      <file>$PROJ_DIR$\..\APP\main.c</file>
+      <file>$PROJ_DIR$\..\APP\Measurements.c</file>
+      <file>$PROJ_DIR$\..\BSP\ADC.c</file>
+      <file>$PROJ_DIR$\..\BSP\Cpu.c</file>
+      <file>$PROJ_DIR$\..\BSP\GPIOA.c</file>
+      <file>$PROJ_DIR$\..\BSP\PE_LDD.c</file>
+      <file>$PROJ_DIR$\..\BSP\PIT.c</file>
+      <file>$PROJ_DIR$\..\BSP\PORT.c</file>
+      <file>$PROJ_DIR$\..\BSP\SPI0.c</file>
+      <file>$PROJ_DIR$\..\BSP\SysTick.c</file>
+      <file>$PROJ_DIR$\..\BSP\Vectors.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\SysTick.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Indicator.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Events.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.__cstat.et</file>
       <file>$PROJ_DIR$\..\BSP\IO_Map.h</file>
       <file>$PROJ_DIR$\..\BSP\Cpu.h</file>
       <file>$PROJ_DIR$\..\BSP\PIT.h</file>
@@ -90,53 +117,87 @@
       <file>$PROJ_DIR$\Debug\Obj\PE_LDD.o</file>
       <file>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT_Conf.h</file>
       <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\SysTick.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ADC.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT_printf.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\SEGGER_RTT.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\Events.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\Indicator.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\Cpu.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\GPIOA.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\PE_LDD.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\PIT.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
-      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
-      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\..\APP\App.h</file>
-      <file>$PROJ_DIR$\..\APP\Indicator.h</file>
-      <file>$PROJ_DIR$\..\APP\Events.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\..\APP\Measurements.c</file>
-      <file>$PROJ_DIR$\..\APP\Measurements.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Measurements.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\Measurements.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Measurements.__cstat.et</file>
     </outputs>
     <file>
-      <name>[ROOT_NODE]</name>
+      <name>$PROJ_DIR$\..\APP\Events.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86 45 51 17 8 23 57 9 24 25 53 44 50 85 19 94 43 89 87 88 96 95 10 26 13 22 103 11 20</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 45 10 50 53 23 57 43 44 85 19 22 94 51 17 24 9 87 86 26 11 8 25 89 88 95 58 103 20 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\VMeter.out</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 25 15</file>
+          <file> 52</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 98 27 104 92 32 30 21 28 15 108 55 54 59 31 56 76 107 7 6 5</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 23</file>
+          <file> 59</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 79</file>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109 20 51 17 8 23 57 9 24 25 110 13 77</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 8 110 51 24 9 20 23 57 109 25 13 77</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\APP\App_EEPROM.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
         </tool>
         <tool>
           <name>__cstat</name>
@@ -146,38 +207,11 @@
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 82 27 83 24 101 30 21 102 31 32 106 85</file>
+          <file> 10 51 17 8 23 57 9 24 25 86 45 53 44 50 85 19 43 89 87 88 96 95 26 13 22 103 97 11 14 20</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 83 101 27 24 32 82 106 85 30 31 21 102</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT_printf.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 35</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 86</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 89</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 27 82 87 24 101 30 21 102 31 32 106</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 30 22 101 31 21 82 87 24 106 32 102 27</file>
+          <file> 8 51 50 58 17 95 19 44 89 85 11 25 45 53 86 88 103 20 22 43 87 96 26 97 14 23 24 57 9 10 13</file>
         </tool>
       </inputs>
     </file>
@@ -186,52 +220,52 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 77</file>
+          <file> 104</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 78</file>
+          <file> 105</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 75</file>
+          <file> 102</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 103 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 50 62 60 61 69 68 33 106 29 76 70 104 108 27</file>
+          <file> 10 51 17 8 23 57 9 24 25 86 45 53 44 50 85 19 43 89 87 88 96 95 26 13 22 103 97 11 14 20</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 51 52 57 59 22 61 104 101 24 29 62 68 58 17 76 27 32 50 60 69 33 26 70 108 16 103 30 31 21 102 106</file>
+          <file> 45 17 51 85 26 23 57 50 87 97 44 43 96 19 14 24 9 86 89 88 95 53 58 103 11 20 8 25 13 10 22</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\APP\App_EEPROM.c</name>
+      <name>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT_printf.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 65</file>
+          <file> 31</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 64</file>
+          <file> 80</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 63</file>
+          <file> 84</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 103 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 50 62 60 61 69 68 33 106 29 76 70 104 108 27</file>
+          <file> 20 51 17 8 23 57 9 24 25 109 78 13</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 58 51 62 33 57 24 68 70 16 31 102 59 61 26 108 52 30 21 29 50 60 69 17 22 76 104 27 101 32 103 106</file>
+          <file> 23 57 58 17 24 9 8 109 78 51 25 20 13</file>
         </tool>
       </inputs>
     </file>
@@ -240,25 +274,25 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 28</file>
+          <file> 21</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 72</file>
+          <file> 99</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 92</file>
+          <file> 81</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 103 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 50 62 60 61 69 68 33 106 29 76 70 104 108 27</file>
+          <file> 10 51 17 8 23 57 9 24 25 86 45 53 44 50 85 19 43 89 87 88 96 95 26 13 22 103 97 11 14 20</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 51 52 57 59 22 61 104 101 24 29 62 68 58 17 76 27 32 50 60 69 33 26 70 108 16 103 30 31 21 102 106</file>
+          <file> 95 20 45 17 51 85 53 50 89 103 8 44 86 88 58 11 57 43 87 96 26 19 97 14 23 24 9 13 10 25 22</file>
         </tool>
       </inputs>
     </file>
@@ -267,250 +301,7 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 36</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 48</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 93</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 103 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 50 62 60 61 69 68 33 106 29 76 70 104 108 27</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 33 57 60 51 52 70 58 101 24 29 50 69 26 108 16 32 59 103 62 61 68 17 22 76 104 27 30 31 21 102 106</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\ADC.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 74</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 88</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 69 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58 57 51 52 59 17 30 21 16 24 31 102 69 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\Cpu.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 47</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 94</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 50 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59 62 60 61 69 68</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52 58 57 69 30 21 59 60 51 17 62 61 68 16 24 31 102 50 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\GPIOA.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 38</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 49</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 95</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 50 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58 51 17 30 21 52 57 59 16 24 31 102 50 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\PE_LDD.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 81</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 96</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 66 52 16 24 101 30 21 102 31 32 17 51 57 50 58 26 59 62 60 61 69 68</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52 51 30 58 21 60 59 50 69 17 57 62 61 68 16 24 31 102 66 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\PIT.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 19</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 45</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 97</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 60 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 17 52 58 59 51 57 30 21 16 24 31 102 60 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\PORT.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 18</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 44</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 56</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 62 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 57 58 51 52 59 17 30 21 16 24 31 102 62 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\SPI0.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 20</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 43</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 55</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 68 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 59 58 52 17 51 57 30 21 16 24 31 102 68 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\SysTick.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 84</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 42</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 54</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 61 52 16 24 101 30 21 102 31 32 17 51 57 58 26 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52 16 58 59 51 57 30 21 17 24 31 102 61 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\BSP\Vectors.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 80</file>
+          <file> 28</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -518,59 +309,17 @@
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 53</file>
+          <file> 0</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 50 62 60 61 69 68</file>
+          <file> 10 51 17 8 23 57 9 24 25 86 45 53 44 50 85 19 43 89 87 88 96 95 26 13 22 103 97 11 14 20</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 51 16 57 61 24 62 68 31 102 58 50 60 69 52 30 21 59 17 101 32 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\VMeter.out</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 15</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 71 34 77 65 39 38 28 36 109 81 19 18 23 35 20 84 80 100 99 98</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\APP\Events.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 37</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 73</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 91</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 67 50 62 60 61 69 68 103 33 106 29 76 104 27</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 69 52 103 57 17 30 21 50 51 58 26 29 67 16 24 31 102 60 59 33 104 101 32 62 61 68 22 76 27 106</file>
+          <file> 25 45 17 85 53 51 89 20 50 95 103 8 44 86 88 58 11 10 43 87 96 26 19 97 14 23 24 57 9 13 22</file>
         </tool>
       </inputs>
     </file>
@@ -579,24 +328,344 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 109</file>
+          <file> 15</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 110</file>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 111</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 103 59 52 16 24 101 30 21 102 31 32 17 51 57 58 26 50 62 60 61 69 68 33 106 29 76 70 104 108 27</file>
+          <file> 10 51 17 8 23 57 9 24 25 86 45 53 44 50 85 19 43 89 87 88 96 95 26 13 22 103 97 11 14 20</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 57 51 50 26 69 108 16 101 24 52 29 60 33 70 58 32 59 62 61 68 17 22 76 104 27 103 30 31 21 102 106</file>
+          <file> 45 17 44 51 85 86 58 50 88 11 89 95 53 103 20 8 25 43 87 96 26 19 97 14 23 24 57 9 13 10 22</file>
         </tool>
       </inputs>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\ADC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85 50 44 45 86 53 23 57 51 17 24 9 96 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\Cpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86 89 87 88 96 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 85 50 96 23 57 86 87 44 53 89 88 95 51 17 24 9 43 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\GPIOA.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85 44 53 23 57 45 50 86 51 17 24 9 43 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\PE_LDD.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 93 45 51 17 8 23 57 9 24 25 53 44 50 43 85 19 86 89 87 88 96 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 44 23 85 57 87 86 43 96 53 50 89 88 95 51 17 24 9 93 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\PIT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 45 85 86 44 50 23 57 51 17 24 9 87 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\PORT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 89 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50 85 44 45 86 53 23 57 51 17 24 9 89 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\SPI0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86 85 45 53 44 50 23 57 51 17 24 9 95 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\SysTick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 88 45 51 17 8 23 57 9 24 25 53 44 50 85 19 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 51 85 86 44 50 23 57 53 17 24 9 88 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BSP\Vectors.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86 45 51 17 8 23 57 9 24 25 53 44 50 85 19 43 89 87 88 96 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44 51 50 88 17 89 95 85 24 9 43 87 96 23 57 45 86 53 8 25 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 18 52</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\App_EEPROM.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\App_ADC.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\RTT\SEGGER_RTT_printf.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\Indicator.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\main.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\APP\Measurements.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\ADC.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\Cpu.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\GPIOA.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\PE_LDD.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\PIT.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\PORT.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\SPI0.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\SysTick.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\BSP\Vectors.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>

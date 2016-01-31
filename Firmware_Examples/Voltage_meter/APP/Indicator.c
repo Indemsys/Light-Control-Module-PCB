@@ -5,9 +5,9 @@
 #include   "app.h"
 
 
-unsigned int pos;
-unsigned char disp_buf[DISPLEN];
-unsigned char ciphs[] =
+uint32_t pos;
+uint8_t disp_buf[DISPLEN];
+uint8_t ciphs[] =
 {
   SEG_A + SEG_B + SEG_C + SEG_D + SEG_E + SEG_F,          //0
   SEG_B + SEG_C,                                          //1
@@ -25,7 +25,7 @@ unsigned char ciphs[] =
 #define MAXSTRSZ 16
 char nstr[MAXSTRSZ+1];
 
-unsigned int tdiv;
+uint32_t tdiv;
 
 /*------------------------------------------------------------------------------
 
@@ -100,7 +100,7 @@ static void Clear_K3P(void)
 
  \param val - битовая переменная биты соответствуют сегментам - a, b, c, d, e, f, g, h
  ------------------------------------------------------------------------------*/
-void Set_segments(unsigned char val)
+void Set_segments(uint8_t val)
 {
   if (val & SEG_A)
   {
@@ -171,31 +171,36 @@ void Set_segments(unsigned char val)
 /*------------------------------------------------------------------------------
    Вывод длобальной строки nstr содержащей число с плавающей точкой на дисплей
  ------------------------------------------------------------------------------*/
-static void NumToDisp()
+static void NumToDisp(uint8_t *vbuf, uint8_t offs)
 {
-  int i, k;
-  unsigned char v;
+  int32_t i, k;
+  uint8_t v;
 
   k = 0;
   for (i = 0; i < MAXSTRSZ; i++)
   {
-    if ((nstr[i] >= '0') & (nstr[i] <= '9'))
+    if ((vbuf[i+offs] >= '0') & (vbuf[i+offs] <= '9'))
     {
-      v = nstr[i] - 0x30;
+      v = vbuf[i+offs] - 0x30;
       disp_buf[k] = ciphs[v];
       k++;
 
     }
-    else if (nstr[i] == '.')
+    else if (vbuf[i+offs] == '.')
     {
       if (k > 0)
       {
         disp_buf[k - 1] = disp_buf[k - 1] | SEG_H;
       }
     }
-    else if (nstr[i] == '-')
+    else if (vbuf[i+offs] == '-')
     {
       disp_buf[k] = SEG_G;
+      k++;
+    }
+    else
+    {
+      disp_buf[k] = 0;
       k++;
     }
 
@@ -207,19 +212,19 @@ static void NumToDisp()
  \param fmt - строка форматирования
  \param val - величина с плавающей точкой
  ------------------------------------------------------------------------------*/
-void Show_float(const char *fmt, float val)
+void Show_float(const char *fmt, float val, uint8_t offs)
 {
   snprintf(nstr, MAXSTRSZ, fmt, val);
-  NumToDisp();
+  NumToDisp((uint8_t*)nstr, offs);
 }
 /*------------------------------------------------------------------------------
  \param fmt - строка форматирования
  \param val - величина с плавающей точкой
  ------------------------------------------------------------------------------*/
-void Show_int(const char *fmt, int val)
+void Show_int(const char *fmt, int32_t val, uint8_t offs)
 {
   snprintf(nstr, MAXSTRSZ, fmt, val);
-  NumToDisp();
+  NumToDisp((uint8_t*)nstr, offs);
 }
 
 /*------------------------------------------------------------------------------
@@ -228,9 +233,9 @@ void Show_int(const char *fmt, int val)
 
  \param str
  ------------------------------------------------------------------------------*/
-void Show_mnemonic(unsigned char *str)
+void Show_mnemonic(uint8_t *str)
 {
-  int i;
+  int32_t i;
   for (i = 0; i < DISPLEN; i++)
   {
     disp_buf[i] = str[i];
@@ -242,9 +247,20 @@ void Show_mnemonic(unsigned char *str)
  ------------------------------------------------------------------------------*/
 void Clear_display(void)
 {
-  int i;
+  int32_t i;
   for (i = 0; i < DISPLEN; i++)
     disp_buf[i] = 0x0;
+}
+
+/*------------------------------------------------------------------------------
+
+
+ ------------------------------------------------------------------------------*/
+void Fill_display(uint8_t v)
+{
+  int32_t i;
+  for (i = 0; i < DISPLEN; i++)
+    disp_buf[i] = v;
 }
 
 /*------------------------------------------------------------------------------
@@ -286,7 +302,7 @@ void SysTick_ISR(void)
   // .....................................................................
 
   tdiv++;
-  if (tdiv > 500)
+  if (tdiv > 250)
   {
     tdiv = 0;
     // Участок выполняемый каждые 0.5 сек

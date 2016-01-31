@@ -16,25 +16,25 @@
 **          CPU type                                       : SKEAZN64MLC2
 **          CPU                                            : CPU
 **          MemModelDev                                    : MemModel_NoFlexMem
-**          Clock settings                                 : 
-**            Internal oscillator                          : 
+**          Clock settings                                 :
+**            Internal oscillator                          :
 **              Slow internal reference clock [kHz]        : 31.25
 **              Initialize slow trim value                 : no
 **            System oscillator                            : Disabled
 **            Clock source settings                        : 1
-**              Clock source setting 0                     : 
-**                Internal reference clock                 : 
+**              Clock source setting 0                     :
+**                Internal reference clock                 :
 **                  ICSIRCLK clock                         : Enabled
 **                  ICSIRCLK in stop                       : Disabled
 **                  ICSIRCLK clock [MHz]                   : 0.03125
-**                External reference clock                 : 
+**                External reference clock                 :
 **                  OSCERCLK in stop                       : Disabled
 **                  OSCERCLK clock [MHz]                   : 0
-**                ICS settings                             : 
+**                ICS settings                             :
 **                  ICS mode                               : FEI
 **                  ICS external ref. clock [MHz]          : 0
 **                  Clock monitor                          : Disabled
-**                  FLL settings                           : 
+**                  FLL settings                           :
 **                    FLL module                           : Enabled
 **                    FLL output [MHz]                     : 32
 **                    ICSFFCLK clock [kHz]                 : 31.25
@@ -47,15 +47,15 @@
 **                  ICS output clock                       : 16
 **          Initialization priority                        : interrupts enabled
 **          Watchdog disable                               : yes
-**          Internal peripherals                           : 
-**            Bus clock output                             : 
+**          Internal peripherals                           :
+**            Bus clock output                             :
 **              Clock output divider                       : 1
 **              Bus clock output on pin                    : Disabled
 **            NMI pin                                      : Disabled
 **            Reset pin                                    : Enabled
 **              Reset pin                                  : PTA5/IRQ/FTM0_CLK/RESET
-**              Reset pin signal                           : 
-**            Shared Flash memory organization             : 
+**              Reset pin signal                           :
+**            Shared Flash memory organization             :
 **              Flash blocks                               : 2
 **                Flash block 0                            : PFlash
 **                  Address                                : 0x0
@@ -68,7 +68,7 @@
 **                  Write unit size Size [bytes]           : 1
 **                  Erase unit size Size [bytes]           : 2
 **            Flash configuration field                    : Enabled
-**              Security settings                          : 
+**              Security settings                          :
 **                Flash security                           : Unsecured
 **                Backdoor key                             : Disabled (11)
 **                Backdoor key 0                           : 255
@@ -79,42 +79,42 @@
 **                Backdoor key 5                           : 255
 **                Backdoor key 6                           : 255
 **                Backdoor key 7                           : 255
-**              Protection regions                         : 
-**                Flash protection settings                : 
+**              Protection regions                         :
+**                Flash protection settings                :
 **                  Protection scenario                    : No protection
-**                Eeprom protection settings               : 
+**                Eeprom protection settings               :
 **                  Protection state                       : Disabled
 **                  Protection size                        : 256 bytes
 **            MCM settings                                 : Disabled
-**            Power management controller                  : 
+**            Power management controller                  :
 **              LVD module                                 : Enabled
 **                LVD reset                                : Enabled
 **                LVD in STOP                              : Enabled
 **                LVD voltage treshold                     : Low
 **                LVW voltage treshold                     : Low
 **                Bandgap buffer                           : Disabled
-**                LVD interrupt                            : 
+**                LVD interrupt                            :
 **                  Interrupt                              : INT_LVD_LVW
 **                  Interrupt request                      : Disabled
 **                  Interrupt priority                     : 0 (Highest)
 **                  LVW interrupt                          : Disabled
-**            System Integration Module                    : 
+**            System Integration Module                    :
 **              Clock gating control                       : Disabled
-**          CPU interrupts/resets                          : 
+**          CPU interrupts/resets                          :
 **            Non-maskable interrupt                       : Disabled
 **            Hard fault                                   : Disabled
 **            Supervisor call                              : Disabled
 **            Pendable service                             : Disabled
 **            ICS Loss of lock                             : Disabled
-**          Low power mode settings                        : 
-**            Operation mode settings                      : 
-**              WAIT operation mode                        : 
+**          Low power mode settings                        :
+**            Operation mode settings                      :
+**              WAIT operation mode                        :
 **                Return to wait after ISR                 : no
-**              SLEEP operation mode                       : 
+**              SLEEP operation mode                       :
 **                Return to stop after ISR                 : no
 **              STOP operation mode                        : Disabled
 **          Clock configurations                           : 1
-**            Clock configuration 0                        : 
+**            Clock configuration 0                        :
 **              __IRC_32kHz                                : 0.03125
 **              __SYSTEM_OSC                               : 10
 **              Clock source setting                       : configuration 0
@@ -123,30 +123,30 @@
 **                ICSIRCLK clock [MHz]                     : 0.03125
 **                ICSFFCLK [kHz]                           : 31.25
 **                OSCERCLK clock [MHz]                     : 0
-**              System clocks                              : 
+**              System clocks                              :
 **                Core clock                               : 16
 **                Bus clock prescaler                      : Auto select
 **                Bus clock                                : 16
 **     Contents    :
 **         No public methods
 **
-**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
+**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc.
 **     All Rights Reserved.
-**     
+**
 **     Redistribution and use in source and binary forms, with or without modification,
 **     are permitted provided that the following conditions are met:
-**     
+**
 **     o Redistributions of source code must retain the above copyright notice, this list
 **       of conditions and the following disclaimer.
-**     
+**
 **     o Redistributions in binary form must reproduce the above copyright notice, this
 **       list of conditions and the following disclaimer in the documentation and/or
 **       other materials provided with the distribution.
-**     
+**
 **     o Neither the name of Freescale Semiconductor, Inc. nor the names of its
 **       contributors may be used to endorse or promote products derived from this
 **       software without specific prior written permission.
-**     
+**
 **     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 **     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 **     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -157,7 +157,7 @@
 **     ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 **     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 **     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-**     
+**
 **     http: www.freescale.com
 **     mail: support@freescale.com
 ** ###################################################################*/
@@ -166,11 +166,11 @@
 ** @version 01.04
 ** @brief
 **
-*/         
+*/
 /*!
 **  @addtogroup Cpu_module Cpu module documentation
 **  @{
-*/         
+*/
 
 /* MODULE Cpu. */
 
@@ -207,7 +207,7 @@ volatile uint8_t SR_lock = 0x00U;      /* Lock */
 */
 PE_ISR(Cpu_Interrupt)
 {
-  /* This code can be changed using the CPU bean property "Build Options / Unhandled int code" */
+  /* This code can be changed using the CPU bean property "Build Options / Unhandled int32_t code" */
   /* asm (HALT) */
 }
 
@@ -217,7 +217,7 @@ PE_ISR(Cpu_Interrupt)
 /*lint -esym(765,__low_level_init) Disable MISRA rule (8.10) checking for symbols (__low_level_init). The function is linked to the EWL library */
 /*lint -esym(765,Cpu_Interrupt) Disable MISRA rule (8.10) checking for symbols (Cpu_Interrupt). */
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
-int __low_level_init(void)
+int32_t __low_level_init(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
 
@@ -275,8 +275,8 @@ int __low_level_init(void)
 **     Method      :  PE_low_level_init (component MKE02Z64LC2)
 **
 **     Description :
-**         Initializes beans and provides common register initialization. 
-**         The method is called automatically as a part of the 
+**         Initializes beans and provides common register initialization.
+**         The method is called automatically as a part of the
 **         application initialization code.
 **         This method is internal. It is used by Processor Expert only.
 ** ===================================================================

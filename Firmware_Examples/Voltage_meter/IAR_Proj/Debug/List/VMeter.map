@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.40.7.9843/W32 for ARM                 24/Jan/2016  11:43:25
+# IAR ELF Linker V7.40.7.9843/W32 for ARM                 30/Jan/2016  22:57:15
 # Copyright 2007-2015 IAR Systems AB.
 #
 #    Output file  =  
@@ -68,17 +68,15 @@ __SystemLibrary = DLib
   .intvec                const    0x00000000    0xc0  Vectors.o [1]
                                 - 0x000000c0    0xc0
 
-"P2", part 1 of 2:                              0x14
+"P2", part 1 of 2:                               0x0
   .rodata                const    0x000000c0     0x0  zero_init3.o [5]
   .rodata                const    0x000000c0     0x0  copy_init3.o [5]
-  Initializer bytes      const    0x000000c0    0x14  <for P3 s0>
-                                - 0x000000d4    0x14
 
 "P1":                                           0x10
   FlashConfig            const    0x00000400    0x10  Cpu.o [1]
                                 - 0x00000410    0x10
 
-"P2", part 2 of 2:                            0x22f8
+"P2", part 2 of 2:                            0x20f4
   .text                  ro code  0x00000410   0xeba  xprintffull_nomb.o [3]
   .text                  ro code  0x000012ca    0x14  strchr.o [5]
   .text                  ro code  0x000012de    0x10  strlen.o [5]
@@ -91,73 +89,64 @@ __SystemLibrary = DLib
   .text                  ro code  0x00001474   0x11c  xdscale.o [4]
   .text                  ro code  0x00001590    0x52  DblToI32.o [4]
   .text                  ro code  0x000015e4    0x34  I32ToDbl.o [4]
-  .text                  ro code  0x00001618   0x1b4  DblAddSub.o [4]
-  .text                  ro code  0x000017cc    0xe0  I32DivModFast.o [5]
-  .text                  ro code  0x000018ac   0x184  DblMul.o [4]
-  .text                  ro code  0x00001a30    0xc2  DblDiv.o [4]
-  .text                  ro code  0x00001af2    0x20  div.o [3]
-  .text                  ro code  0x00001b14     0x2  I64DivZer.o [5]
-  .text                  ro code  0x00001b18     0x2  IntDivZer.o [5]
-  .text                  ro code  0x00001b1c   0x248  Indicator.o [1]
-  .text                  ro code  0x00001d64    0x32  FltToDbl.o [4]
-  .text                  ro code  0x00001d98    0x48  snprintf.o [3]
-  .text                  ro code  0x00001de0   0x160  Cpu.o [1]
-  .text                  ro code  0x00001f40    0x54  GPIOA.o [1]
-  .text                  ro code  0x00001f94    0x2c  PORT.o [1]
-  .text                  ro code  0x00001fc0    0x6c  PIT.o [1]
-  .text                  ro code  0x0000202c    0x28  SysTick.o [1]
-  .text                  ro code  0x00002054    0x70  ADC.o [1]
-  .text                  ro code  0x000020c4    0x4c  SPI0.o [1]
-  .text                  ro code  0x00002110   0x14c  SEGGER_RTT.o [1]
-  .text                  ro code  0x0000225c    0xdc  main.o [1]
-  .text                  ro code  0x00002338    0x20  App_EEPROM.o [1]
-  .text                  ro code  0x00002358    0x54  App_ADC.o [1]
-  .text                  ro code  0x000023ac    0xa4  Measurements.o [1]
-  .text                  ro code  0x00002450    0x3c  vsnprint.o [3]
-  .text                  ro code  0x0000248c    0x62  DblToFlt.o [4]
-  Initializer bytes      const    0x000024f0    0x78  <for Absolute sections 1-1>
-  .rodata                const    0x00002568    0x3c  main.o [1]
-  .text                  ro code  0x000025a4    0x3c  zero_init3.o [5]
-  .text                  ro code  0x000025e0    0x30  copy_init3.o [5]
-  .text                  ro code  0x00002610    0x28  data_init.o [5]
-  .iar.init_table        const    0x00002638    0x38  - Linker created -
-  .text                  ro code  0x00002670    0x1c  xsnprout.o [3]
-  .text                  ro code  0x0000268c    0x1a  cmain.o [5]
-  .text                  ro code  0x000026a6     0x8  exit.o [3]
-  .text                  ro code  0x000026b0     0xa  cexit.o [5]
-  .text                  ro code  0x000026bc     0xc  XXexit.o [5]
-  .rodata                const    0x000026c8    0x18  xprintffull_nomb.o [3]
-  .rodata                const    0x000026e0     0xc  SEGGER_RTT.o [1]
-  .text                  ro code  0x000026ec     0xc  cstartup_M.o [5]
-  .rodata                const    0x000026f8     0x8  main.o [1]
-  .rodata                const    0x00002700     0x8  main.o [1]
-                                - 0x00002708  0x22f8
+  .text                  ro code  0x00001618   0x1a8  DblAddSub.o [4]
+  .text                  ro code  0x000017c0    0xe0  I32DivModFast.o [5]
+  .text                  ro code  0x000018a0   0x184  DblMul.o [4]
+  .text                  ro code  0x00001a24    0xc2  DblDiv.o [4]
+  .text                  ro code  0x00001ae6    0x20  div.o [3]
+  .text                  ro code  0x00001b08     0x2  I64DivZer.o [5]
+  .text                  ro code  0x00001b0c     0x2  IntDivZer.o [5]
+  .text                  ro code  0x00001b10   0x1b8  Indicator.o [1]
+  .text                  ro code  0x00001cc8   0x160  Cpu.o [1]
+  .text                  ro code  0x00001e28    0x54  GPIOA.o [1]
+  .text                  ro code  0x00001e7c    0x2c  PORT.o [1]
+  .text                  ro code  0x00001ea8    0x6c  PIT.o [1]
+  .text                  ro code  0x00001f14    0x28  SysTick.o [1]
+  .text                  ro code  0x00001f3c    0x70  ADC.o [1]
+  .text                  ro code  0x00001fac    0x4c  SPI0.o [1]
+  .text                  ro code  0x00001ff8   0x14c  SEGGER_RTT.o [1]
+  .text                  ro code  0x00002144    0x8c  main.o [1]
+  .text                  ro code  0x000021d0    0x20  App_EEPROM.o [1]
+  .text                  ro code  0x000021f0    0x54  App_ADC.o [1]
+  .text                  ro code  0x00002244    0x2c  Measurements.o [1]
+  .text                  ro code  0x00002270    0x3c  vsnprint.o [3]
+  .text                  ro code  0x000022ac    0x62  DblToFlt.o [4]
+  Initializer bytes      const    0x00002310    0x78  <for Absolute sections 1-1>
+  .rodata                const    0x00002388    0x3c  main.o [1]
+  .text                  ro code  0x000023c4    0x3c  zero_init3.o [5]
+  .text                  ro code  0x00002400    0x30  copy_init3.o [5]
+  .text                  ro code  0x00002430    0x28  data_init.o [5]
+  .iar.init_table        const    0x00002458    0x24  - Linker created -
+  .text                  ro code  0x0000247c    0x1c  xsnprout.o [3]
+  .text                  ro code  0x00002498    0x1a  cmain.o [5]
+  .text                  ro code  0x000024b2     0x8  exit.o [3]
+  .text                  ro code  0x000024bc     0xa  cexit.o [5]
+  .text                  ro code  0x000024c8     0xc  XXexit.o [5]
+  .rodata                const    0x000024d4    0x18  xprintffull_nomb.o [3]
+  .rodata                const    0x000024ec     0xc  SEGGER_RTT.o [1]
+  .text                  ro code  0x000024f8     0xc  cstartup_M.o [5]
+                                - 0x00002504  0x20f4
 
 Absolute sections:                              0x78
   Absolute sections 1-1           0x1ffffc00    0x78  <Init block>
     .data                inited   0x1ffffc00    0x78  SEGGER_RTT.o [1]
                                 - 0x1ffffc78    0x78
 
-"P3":                                          0x5e0
-  P3 s0                           0x20000000    0x14  <Init block>
-    .data                inited   0x20000000     0xc  Indicator.o [1]
-    .data                inited   0x2000000c     0x4  main.o [1]
-    .data                inited   0x20000010     0x4  main.o [1]
-  .bss                   zero     0x20000014   0x100  SEGGER_RTT.o [1]
-  .bss                   zero     0x20000114    0x84  main.o [1]
-  .bss                   zero     0x20000198    0x14  Indicator.o [1]
-  .bss                   zero     0x200001ac    0x10  SEGGER_RTT.o [1]
-  .bss                   zero     0x200001bc     0x4  Indicator.o [1]
-  .bss                   zero     0x200001c0     0x4  Indicator.o [1]
-  .bss                   zero     0x200001c4     0x4  Indicator.o [1]
-  .bss                   zero     0x200001c8     0x4  main.o [1]
-  .bss                   zero     0x200001cc     0x4  main.o [1]
-  .bss                   zero     0x200001d0     0x4  main.o [1]
-  .bss                   zero     0x200001d4     0x4  main.o [1]
-  .bss                   zero     0x200001d8     0x4  main.o [1]
-  CSTACK                          0x200001e0   0x400  <Block>
-    CSTACK               uninit   0x200001e0   0x400  <Block tail>
-                                - 0x200005e0   0x5e0
+"P3":                                          0x5b8
+  .bss                   zero     0x20000000   0x100  SEGGER_RTT.o [1]
+  .bss                   zero     0x20000100    0x84  main.o [1]
+  .bss                   zero     0x20000184    0x10  SEGGER_RTT.o [1]
+  .bss                   zero     0x20000194     0x4  Indicator.o [1]
+  .bss                   zero     0x20000198     0x4  Indicator.o [1]
+  .bss                   zero     0x2000019c     0x4  Indicator.o [1]
+  .bss                   zero     0x200001a0     0x4  main.o [1]
+  .bss                   zero     0x200001a4     0x4  main.o [1]
+  .bss                   zero     0x200001a8     0x4  main.o [1]
+  .bss                   zero     0x200001ac     0x4  main.o [1]
+  .bss                   zero     0x200001b0     0x4  main.o [1]
+  CSTACK                          0x200001b8   0x400  <Block>
+    CSTACK               uninit   0x200001b8   0x400  <Block tail>
+                                - 0x200005b8   0x5b8
 
 
 *******************************************************************************
@@ -167,20 +156,14 @@ Absolute sections:                              0x78
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x1c8:
-          0x20000014  0x1c8
+    1 destination range, total size 0x1b4:
+          0x20000000  0x1b4
 
 Copy (__iar_copy_init3)
     1 source range, total size 0x78:
-          0x000024f0   0x78
+          0x00002310   0x78
     1 destination range, total size 0x78:
           0x1ffffc00   0x78
-
-Copy (__iar_copy_init3)
-    1 source range, total size 0x14:
-          0x000000c0   0x14
-    1 destination range, total size 0x14:
-          0x20000000   0x14
 
 
 *******************************************************************************
@@ -189,20 +172,20 @@ Copy (__iar_copy_init3)
 
   Call Graph Root Category  Max Use  Total Use
   ------------------------  -------  ---------
-  Program entry                 408        408
+  Program entry                 392        392
   Uncalled function              12         20
 
 
 Program entry
-  "__iar_program_start": 0x000026ed
+  "__iar_program_start": 0x000024f9
 
-  Maximum call chain                               408 bytes
+  Maximum call chain                               392 bytes
 
     "__iar_program_start"                            0
     "__cmain"                                        0
-    "main"                                          24
-    "Show_float"                                    16
-    "snprintf"                                      32
+    "main"                                          16
+    "RTT_printf"                                    16
+    "vsnprintf"                                     24
     "_PrintfFullNoMb"                              160
     "_LdtobFullNoMb" in xprintffull_nomb.o [3]      96
     "_GenldFullNoMb" in xprintffull_nomb.o [3]      48
@@ -212,7 +195,7 @@ Program entry
     "__aeabi_idiv0"                                  0
 
 Uncalled function
-  "ADC_Isr": 0x00002369
+  "ADC_Isr": 0x00002201
 
   Maximum call chain                                 8 bytes
 
@@ -220,14 +203,14 @@ Uncalled function
     "Clear_LED"                                      0
 
 Uncalled function
-  "Cpu_Interrupt": 0x00001de1
+  "Cpu_Interrupt": 0x00001cc9
 
   Maximum call chain                                 0 bytes
 
     "Cpu_Interrupt"                                  0
 
 Uncalled function
-  "SysTick_ISR": 0x00001cbb
+  "SysTick_ISR": 0x00001c2b
 
   Maximum call chain                                12 bytes
 
@@ -235,7 +218,7 @@ Uncalled function
     "Set_segments"                                   4
 
 Uncalled function
-  "Cpu_HardFault": 0x000022e9
+  "Cpu_HardFault": 0x0000218f
 
   Maximum call chain                                 0 bytes
 
@@ -255,17 +238,17 @@ C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\Voltage_meter\IAR_Pr
     App_EEPROM.o             32
     Cpu.o                   352       16
     GPIOA.o                  84
-    Indicator.o             584       12       44
-    Measurements.o          164
+    Indicator.o             440                12
+    Measurements.o           44
     PIT.o                   108
     PORT.o                   44
     SEGGER_RTT.o            332      132      272      120
     SPI0.o                   76
     SysTick.o                40
     Vectors.o                        192
-    main.o                  220       84      160
+    main.o                  140       60      152
     ------------------------------------------------------
-    Total:                2 232      436      476      120
+    Total:                1 888      400      436      120
 
 command line: [2]
     ------------------------------------------------------
@@ -274,27 +257,25 @@ command line: [2]
 dl6M_tln.a: [3]
     div.o                    32
     exit.o                    8
-    snprintf.o               72
     vsnprint.o               60
     xprintffull_nomb.o    3 770       24
     xsnprout.o               28
     ------------------------------------------------------
-    Total:                3 970       24
+    Total:                3 898       24
 
 m6M_tl.a: [4]
-    DblAddSub.o             436
+    DblAddSub.o             424
     DblCmpGe.o               50
     DblCmpLe.o               50
     DblDiv.o                194
     DblMul.o                388
     DblToFlt.o               98
     DblToI32.o               82
-    FltToDbl.o               50
     I32ToDbl.o               52
     xdnorm.o                 68
     xdscale.o               284
     ------------------------------------------------------
-    Total:                1 752
+    Total:                1 690
 
 rt6M_tl.a: [5]
     ABImemcpy.o              92
@@ -315,10 +296,10 @@ rt6M_tl.a: [5]
     ------------------------------------------------------
     Total:                  694
 
-    Gaps                     14
-    Linker created                    58    1 024
+    Gaps                     12
+    Linker created                    38    1 024
 ----------------------------------------------------------
-    Grand Total:          8 662      518    1 500      120
+    Grand Total:          8 182      462    1 460      120
 
 
 *******************************************************************************
@@ -327,114 +308,103 @@ rt6M_tl.a: [5]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x00002638          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00002670          --   Gb  - Linker created -
-?main                   0x0000268d         Code  Gb  cmain.o [5]
-ADC_Init                0x00002055   0x70  Code  Gb  ADC.o [1]
-ADC_Isr                 0x00002369   0x2c  Code  Gb  App_ADC.o [1]
-ADC_prepere             0x00002359   0x10  Code  Gb  App_ADC.o [1]
-CSTACK$$Base            0x200001e0          --   Gb  - Linker created -
-CSTACK$$Limit           0x200005e0          --   Gb  - Linker created -
-Clear_K1P               0x00001b4f    0xa  Code  Lc  Indicator.o [1]
-Clear_K2P               0x00001b59    0xa  Code  Lc  Indicator.o [1]
-Clear_K3P               0x00001b63    0xa  Code  Lc  Indicator.o [1]
-Clear_LED               0x00001b27    0xa  Code  Gb  Indicator.o [1]
-Clear_display           0x00001ca7   0x14  Code  Gb  Indicator.o [1]
+.iar.init_table$$Base   0x00002458          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0000247c          --   Gb  - Linker created -
+?main                   0x00002499         Code  Gb  cmain.o [5]
+ADC_Init                0x00001f3d   0x70  Code  Gb  ADC.o [1]
+ADC_Isr                 0x00002201   0x2c  Code  Gb  App_ADC.o [1]
+ADC_prepere             0x000021f1   0x10  Code  Gb  App_ADC.o [1]
+CSTACK$$Base            0x200001b8          --   Gb  - Linker created -
+CSTACK$$Limit           0x200005b8          --   Gb  - Linker created -
+Clear_K1P               0x00001b43    0xa  Code  Lc  Indicator.o [1]
+Clear_K2P               0x00001b4d    0xa  Code  Lc  Indicator.o [1]
+Clear_K3P               0x00001b57    0xa  Code  Lc  Indicator.o [1]
+Clear_LED               0x00001b1b    0xa  Code  Gb  Indicator.o [1]
+Clear_display           0x00001c05   0x14  Code  Gb  Indicator.o [1]
 Config                  0x00000400   0x10  Data  Gb  Cpu.o [1]
-Cpu_HardFault           0x000022e9    0x2  Code  Gb  main.o [1]
-Cpu_Interrupt           0x00001de1    0x2  Code  Gb  Cpu.o [1]
-EEPROM_init             0x00002339   0x14  Code  Gb  App_EEPROM.o [1]
-GPIOA_Init              0x00001f41   0x54  Code  Gb  GPIOA.o [1]
-Get_internal_temperature
-                        0x000023ad   0x54  Code  Gb  Measurements.o [1]
-Get_power_voltage       0x00002401   0x20  Code  Gb  Measurements.o [1]
+Cpu_HardFault           0x0000218f    0x2  Code  Gb  main.o [1]
+Cpu_Interrupt           0x00001cc9    0x2  Code  Gb  Cpu.o [1]
+EEPROM_init             0x000021d1   0x14  Code  Gb  App_EEPROM.o [1]
+Fill_display            0x00001c19   0x12  Code  Gb  Indicator.o [1]
+GPIOA_Init              0x00001e29   0x54  Code  Gb  GPIOA.o [1]
+Get_power_voltage       0x00002245   0x20  Code  Gb  Measurements.o [1]
 Get_unique_identificator
-                        0x000022eb    0xc  Code  Gb  main.o [1]
-INTTEMPER_adcr          0x200001d4    0x4  Data  Gb  main.o [1]
+                        0x00002191    0xc  Code  Gb  main.o [1]
+INTTEMPER_adcr          0x200001ac    0x4  Data  Gb  main.o [1]
 LoadInt                 0x000009cd   0x68  Code  Lc  xprintffull_nomb.o [3]
-Mnemonic_t              0x2000000c    0x4  Data  Gb  main.o [1]
-Mnemonic_v              0x20000010    0x4  Data  Gb  main.o [1]
-NumToDisp               0x00001c11   0x64  Code  Lc  Indicator.o [1]
-PE_low_level_init       0x00001e41   0xa2  Code  Gb  Cpu.o [1]
-PIT_Init                0x00001fc1   0x6c  Code  Gb  PIT.o [1]
-PORT_Init               0x00001f95   0x2c  Code  Gb  PORT.o [1]
-RTT_printf              0x000022f7   0x20  Code  Gb  main.o [1]
-Region$$Table$$Base     0x00002638          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00002670          --   Gb  - Linker created -
-SEGGER_RTT_Write        0x00002113  0x144  Code  Gb  SEGGER_RTT.o [1]
-SPI0_Init               0x000020c5   0x4c  Code  Gb  SPI0.o [1]
-Set_K1P                 0x00001b31    0xa  Code  Lc  Indicator.o [1]
-Set_K2P                 0x00001b3b    0xa  Code  Lc  Indicator.o [1]
-Set_K3P                 0x00001b45    0xa  Code  Lc  Indicator.o [1]
-Set_LED                 0x00001b1d    0xa  Code  Gb  Indicator.o [1]
-Set_segments            0x00001b6d   0xa4  Code  Gb  Indicator.o [1]
-Show_float              0x00001c75   0x1e  Code  Gb  Indicator.o [1]
-Show_mnemonic           0x00001c93   0x14  Code  Gb  Indicator.o [1]
-SysTick_ISR             0x00001cbb   0x80  Code  Gb  Indicator.o [1]
-SysTick_Init            0x0000202d   0x28  Code  Gb  SysTick.o [1]
-TEMPER_adcr             0x200001d0    0x4  Data  Gb  main.o [1]
-VAN_adcr                0x200001c8    0x4  Data  Gb  main.o [1]
-VOLTAGE_adcr            0x200001cc    0x4  Data  Gb  main.o [1]
+PE_low_level_init       0x00001d29   0xa2  Code  Gb  Cpu.o [1]
+PIT_Init                0x00001ea9   0x6c  Code  Gb  PIT.o [1]
+PORT_Init               0x00001e7d   0x2c  Code  Gb  PORT.o [1]
+RTT_printf              0x0000219d   0x20  Code  Gb  main.o [1]
+Region$$Table$$Base     0x00002458          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000247c          --   Gb  - Linker created -
+SEGGER_RTT_Write        0x00001ffb  0x144  Code  Gb  SEGGER_RTT.o [1]
+SPI0_Init               0x00001fad   0x4c  Code  Gb  SPI0.o [1]
+Set_K1P                 0x00001b25    0xa  Code  Lc  Indicator.o [1]
+Set_K2P                 0x00001b2f    0xa  Code  Lc  Indicator.o [1]
+Set_K3P                 0x00001b39    0xa  Code  Lc  Indicator.o [1]
+Set_LED                 0x00001b11    0xa  Code  Gb  Indicator.o [1]
+Set_segments            0x00001b61   0xa4  Code  Gb  Indicator.o [1]
+SysTick_ISR             0x00001c2b   0x7c  Code  Gb  Indicator.o [1]
+SysTick_Init            0x00001f15   0x28  Code  Gb  SysTick.o [1]
+TEMPER_adcr             0x200001a8    0x4  Data  Gb  main.o [1]
+VAN_adcr                0x200001a0    0x4  Data  Gb  main.o [1]
+VOLTAGE_adcr            0x200001a4    0x4  Data  Gb  main.o [1]
 _GenldFullNoMb          0x00000ffd  0x29a  Code  Lc  xprintffull_nomb.o [3]
-_Init                   0x00002111    0x2  Code  Lc  SEGGER_RTT.o [1]
+_Init                   0x00001ff9    0x2  Code  Lc  SEGGER_RTT.o [1]
 _LdtobFullNoMb          0x00000b69  0x480  Code  Lc  xprintffull_nomb.o [3]
 _LitobFullNoMb          0x00000a35  0x12e  Code  Lc  xprintffull_nomb.o [3]
 _PrintfFullNoMb         0x00000411  0x5bc  Code  Gb  xprintffull_nomb.o [3]
 _PutcharsFullNoMb       0x00001297   0x30  Code  Lc  xprintffull_nomb.o [3]
 _SEGGER_RTT             0x1ffffc00   0x78  Data  Lc  SEGGER_RTT.o [1]
-_SNProut                0x00002671   0x1c  Code  Gb  xsnprout.o [3]
+_SNProut                0x0000247d   0x1c  Code  Gb  xsnprout.o [3]
 __aeabi_cdcmple         0x00001411         Code  Gb  DblCmpLe.o [4]
 __aeabi_cdrcmple        0x00001443         Code  Gb  DblCmpGe.o [4]
-__aeabi_d2f             0x0000248d         Code  Gb  DblToFlt.o [4]
+__aeabi_d2f             0x000022ad         Code  Gb  DblToFlt.o [4]
 __aeabi_d2iz            0x00001591         Code  Gb  DblToI32.o [4]
 __aeabi_d2uiz           0x000015b5         Code  Gb  DblToI32.o [4]
-__aeabi_dadd            0x00001619         Code  Gb  DblAddSub.o [4]
-__aeabi_ddiv            0x00001a31         Code  Gb  DblDiv.o [4]
-__aeabi_dmul            0x000018ad         Code  Gb  DblMul.o [4]
-__aeabi_dsub            0x000016df         Code  Gb  DblAddSub.o [4]
-__aeabi_f2d             0x00001d65         Code  Gb  FltToDbl.o [4]
+__aeabi_ddiv            0x00001a25         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x000018a1         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000016d3         Code  Gb  DblAddSub.o [4]
 __aeabi_i2d             0x000015e5         Code  Gb  I32ToDbl.o [4]
-__aeabi_idiv            0x000017f9         Code  Gb  I32DivModFast.o [5]
-__aeabi_idiv0           0x00001b19         Code  Gb  IntDivZer.o [5]
-__aeabi_idivmod         0x000017f9         Code  Gb  I32DivModFast.o [5]
-__aeabi_ldiv0           0x00001b15         Code  Gb  I64DivZer.o [5]
+__aeabi_idiv            0x000017ed         Code  Gb  I32DivModFast.o [5]
+__aeabi_idiv0           0x00001b0d         Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod         0x000017ed         Code  Gb  I32DivModFast.o [5]
+__aeabi_ldiv0           0x00001b09         Code  Gb  I64DivZer.o [5]
 __aeabi_memcpy          0x00001371         Code  Gb  ABImemcpy.o [5]
 __aeabi_ui2d            0x000015f9         Code  Gb  I32ToDbl.o [4]
-__aeabi_uidiv           0x000017ff         Code  Gb  I32DivModFast.o [5]
-__aeabi_uidivmod        0x000017ff         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidiv           0x000017f3         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x000017f3         Code  Gb  I32DivModFast.o [5]
 __aeabi_uldivmod        0x00001307         Code  Gb  I64DivMod.o [5]
-__cmain                 0x0000268d         Code  Gb  cmain.o [5]
-__exit                  0x000026bd         Code  Gb  XXexit.o [5]
+__cmain                 0x00002499         Code  Gb  cmain.o [5]
+__exit                  0x000024c9         Code  Gb  XXexit.o [5]
 __iar_Dnorm             0x000013cd   0x44  Code  Gb  xdnorm.o [4]
 __iar_Dscale            0x00001475  0x11c  Code  Gb  xdscale.o [4]
 __iar_Memchr            0x000012ef   0x18  Code  Gb  memchr.o [5]
 __iar_Strchr            0x000012cb   0x14  Code  Gb  strchr.o [5]
-__iar_copy_init3        0x000025e1   0x30  Code  Gb  copy_init3.o [5]
+__iar_copy_init3        0x00002401   0x30  Code  Gb  copy_init3.o [5]
 __iar_d2uiz             0x000015b9         Code  Gb  DblToI32.o [4]
-__iar_data_init3        0x00002611   0x28  Code  Gb  data_init.o [5]
-__iar_program_start     0x000026ed         Code  Gb  cstartup_M.o [5]
+__iar_data_init3        0x00002431   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x000024f9         Code  Gb  cstartup_M.o [5]
 __iar_ui2d              0x000015fd         Code  Gb  I32ToDbl.o [4]
-__iar_zero_init3        0x000025a5   0x3c  Code  Gb  zero_init3.o [5]
-__low_level_init        0x00001de3   0x5e  Code  Gb  Cpu.o [1]
+__iar_zero_init3        0x000023c5   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00001ccb   0x5e  Code  Gb  Cpu.o [1]
 __vector_table          0x00000000   0xc0  Data  Gb  Vectors.o [1]
-_acDownBuffer           0x200001ac   0x10  Data  Lc  SEGGER_RTT.o [1]
-_acUpBuffer             0x20000014  0x100  Data  Lc  SEGGER_RTT.o [1]
-_call_main              0x00002699         Code  Gb  cmain.o [5]
-_exit                   0x000026b1         Code  Gb  cexit.o [5]
-_main                   0x000026a3         Code  Gb  cmain.o [5]
-ciphs                   0x20000000    0xc  Data  Gb  Indicator.o [1]
-disp_buf                0x200001c0    0x4  Data  Gb  Indicator.o [1]
-div                     0x00001af3   0x20  Code  Gb  div.o [3]
-exit                    0x000026a7    0x8  Code  Gb  exit.o [3]
-main                    0x0000225d   0x8c  Code  Gb  main.o [1]
-nstr                    0x20000198   0x14  Data  Gb  Indicator.o [1]
-pos                     0x200001bc    0x4  Data  Gb  Indicator.o [1]
-rtt_str                 0x20000114   0x84  Data  Gb  main.o [1]
-snprintf                0x00001d99   0x48  Code  Gb  snprintf.o [3]
+_acDownBuffer           0x20000184   0x10  Data  Lc  SEGGER_RTT.o [1]
+_acUpBuffer             0x20000000  0x100  Data  Lc  SEGGER_RTT.o [1]
+_call_main              0x000024a5         Code  Gb  cmain.o [5]
+_exit                   0x000024bd         Code  Gb  cexit.o [5]
+_main                   0x000024af         Code  Gb  cmain.o [5]
+disp_buf                0x20000198    0x4  Data  Gb  Indicator.o [1]
+div                     0x00001ae7   0x20  Code  Gb  div.o [3]
+exit                    0x000024b3    0x8  Code  Gb  exit.o [3]
+main                    0x00002145   0x4a  Code  Gb  main.o [1]
+pos                     0x20000194    0x4  Data  Gb  Indicator.o [1]
+rtt_str                 0x20000100   0x84  Data  Gb  main.o [1]
 strlen                  0x000012df   0x10  Code  Gb  strlen.o [5]
-tdiv                    0x200001c4    0x4  Data  Gb  Indicator.o [1]
-tick_500ms              0x200001d8    0x4  Data  Gb  main.o [1]
-vsnprintf               0x00002451   0x3c  Code  Gb  vsnprint.o [3]
+tdiv                    0x2000019c    0x4  Data  Gb  Indicator.o [1]
+tick_500ms              0x200001b0    0x4  Data  Gb  main.o [1]
+vsnprintf               0x00002271   0x3c  Code  Gb  vsnprint.o [3]
 
 
 [1] = C:\Embedded\Projects\Light-Control-Module\Firmware_Examples\Voltage_meter\IAR_Proj\Debug\Obj
@@ -443,9 +413,9 @@ vsnprintf               0x00002451   0x3c  Code  Gb  vsnprint.o [3]
 [4] = m6M_tl.a
 [5] = rt6M_tl.a
 
-  8 662 bytes of readonly  code memory
-    518 bytes of readonly  data memory
-  1 500 bytes of readwrite data memory (+ 120 absolute)
+  8 182 bytes of readonly  code memory
+    462 bytes of readonly  data memory
+  1 460 bytes of readwrite data memory (+ 120 absolute)
 
 Errors: none
 Warnings: 1

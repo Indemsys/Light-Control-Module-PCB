@@ -23,6 +23,7 @@ Purpose : Implementation of SEGGER real-time terminal which allows
 *
 **********************************************************************
 */
+#include "stdint.h"
 #define SEGGER_RTT_MODE_MASK                  (3 << 0)
 
 #define SEGGER_RTT_MODE_NO_BLOCK_SKIP         (0)
@@ -77,16 +78,16 @@ Purpose : Implementation of SEGGER real-time terminal which allows
 **********************************************************************
 */
 
-int     SEGGER_RTT_Read             (unsigned BufferIndex,       char* pBuffer, unsigned BufferSize);
-int     SEGGER_RTT_Write            (unsigned BufferIndex, const char* pBuffer, unsigned NumBytes);
-int     SEGGER_RTT_WriteString      (unsigned BufferIndex, const char* s);
+int32_t     SEGGER_RTT_Read             (unsigned BufferIndex,       char* pBuffer, unsigned BufferSize);
+int32_t     SEGGER_RTT_Write            (unsigned BufferIndex, const char* pBuffer, unsigned NumBytes);
+int32_t     SEGGER_RTT_WriteString      (unsigned BufferIndex, const char* s);
 
-int     SEGGER_RTT_GetKey           (void);
-int     SEGGER_RTT_WaitKey          (void);
-int     SEGGER_RTT_HasKey           (void);
+int32_t     SEGGER_RTT_GetKey           (void);
+int32_t     SEGGER_RTT_WaitKey          (void);
+int32_t     SEGGER_RTT_HasKey           (void);
 
-int     SEGGER_RTT_ConfigUpBuffer   (unsigned BufferIndex, const char* sName, char* pBuffer, int BufferSize, int Flags);
-int     SEGGER_RTT_ConfigDownBuffer (unsigned BufferIndex, const char* sName, char* pBuffer, int BufferSize, int Flags);
+int32_t     SEGGER_RTT_ConfigUpBuffer   (unsigned BufferIndex, const char* sName, char* pBuffer, int32_t BufferSize, int32_t Flags);
+int32_t     SEGGER_RTT_ConfigDownBuffer (unsigned BufferIndex, const char* sName, char* pBuffer, int32_t BufferSize, int32_t Flags);
 
 void    SEGGER_RTT_Init             (void);
 
@@ -97,7 +98,7 @@ void    SEGGER_RTT_Init             (void);
 **********************************************************************
 */
 void    SEGGER_RTT_SetTerminal        (char TerminalId);
-int     SEGGER_RTT_TerminalOut        (char TerminalId, const char* s);
+int32_t     SEGGER_RTT_TerminalOut        (char TerminalId, const char* s);
 
 /*********************************************************************
 *
@@ -105,6 +106,6 @@ int     SEGGER_RTT_TerminalOut        (char TerminalId, const char* s);
 *
 **********************************************************************
 */
-int SEGGER_RTT_printf(unsigned BufferIndex, const char * sFormat, ...);
+int32_t SEGGER_RTT_printf(unsigned BufferIndex, const char * sFormat, ...);
 
 /*************************** End of file ****************************/

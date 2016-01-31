@@ -19,23 +19,23 @@
 **     (c) Freescale Semiconductor, Inc.
 **     2004 All Rights Reserved
 **
-**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
+**     Copyright : 1997 - 2015 Freescale Semiconductor, Inc.
 **     All Rights Reserved.
-**     
+**
 **     Redistribution and use in source and binary forms, with or without modification,
 **     are permitted provided that the following conditions are met:
-**     
+**
 **     o Redistributions of source code must retain the above copyright notice, this list
 **       of conditions and the following disclaimer.
-**     
+**
 **     o Redistributions in binary form must reproduce the above copyright notice, this
 **       list of conditions and the following disclaimer in the documentation and/or
 **       other materials provided with the distribution.
-**     
+**
 **     o Neither the name of Freescale Semiconductor, Inc. nor the names of its
 **       contributors may be used to endorse or promote products derived from this
 **       software without specific prior written permission.
-**     
+**
 **     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 **     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 **     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -46,7 +46,7 @@
 **     ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 **     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 **     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-**     
+**
 **     http: www.freescale.com
 **     mail: support@freescale.com
 ** ###################################################################*/
@@ -55,11 +55,11 @@
 ** @version 01.04
 ** @brief
 **
-*/         
+*/
 /*!
 **  @addtogroup Cpu_module Cpu module documentation
 **  @{
-*/         
+*/
 
 #ifndef __Cpu_H
 #define __Cpu_H
@@ -134,7 +134,7 @@ extern const TCpuClockConfiguration PE_CpuClockConfigurations[CPU_CLOCK_CONFIG_N
     void * __ptr;
     tIsrFunc __fun[0x2F];
   } tVectorTable;
-  
+
   extern const tVectorTable __vector_table;
   extern const tVectorTable __vect_table;
 
@@ -150,8 +150,8 @@ extern volatile uint8_t SR_lock;
 **     Method      :  PE_low_level_init (component MKE02Z64LC2)
 **
 **     Description :
-**         Initializes beans and provides common register initialization. 
-**         The method is called automatically as a part of the 
+**         Initializes beans and provides common register initialization.
+**         The method is called automatically as a part of the
 **         application initialization code.
 **         This method is internal. It is used by Processor Expert only.
 ** ===================================================================
@@ -170,7 +170,7 @@ PE_ISR(Cpu_Interrupt);
 */
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
-int __low_level_init(void);
+int32_t __low_level_init(void);
 /*lint -restore Enable MISRA rule (6.3) checking. */
 /*
 ** ===================================================================

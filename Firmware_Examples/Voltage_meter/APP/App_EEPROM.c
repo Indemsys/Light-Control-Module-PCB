@@ -36,7 +36,7 @@ void EEPROM_init(void)
 
  \return __ramfunc void
  ------------------------------------------------------------------------------*/
-__ramfunc int EEPROM_execute(void)
+__ramfunc uint32_t EEPROM_execute(void)
 {
   FTMRH_FSTAT = BIT(7); // «апускаем выполнение команды
   while ((FTMRH_FSTAT & BIT(7)) == 0); // ќжидаем завершени€
@@ -46,9 +46,9 @@ __ramfunc int EEPROM_execute(void)
 /*------------------------------------------------------------------------------
  ѕроверка стерта ли вс€ область EEPROM
 
- \return int возвращает ноль если все стерто и ошибок нет
+ \return int32_t возвращает ноль если все стерто и ошибок нет
  ------------------------------------------------------------------------------*/
-int EEPROM_is_errased(void)
+uint32_t EEPROM_is_errased(void)
 {
   // ќжидаем готовность бита CCIF
   while ((FTMRH_FSTAT & BIT(7)) == 0);
@@ -70,9 +70,9 @@ int EEPROM_is_errased(void)
 /*------------------------------------------------------------------------------
  ѕроверка стерта ли вс€ область EEPROM
 
- \return int возвращает ноль если все стерто и ошибок нет
+ \return int32_t возвращает ноль если все стерто и ошибок нет
  ------------------------------------------------------------------------------*/
-int EEPROM_is_sector_errased(unsigned int addr)
+uint32_t EEPROM_is_sector_errased(uint32_t addr)
 {
   // ќжидаем готовность бита CCIF
   while ((FTMRH_FSTAT & BIT(7)) == 0);
@@ -100,7 +100,7 @@ int EEPROM_is_sector_errased(unsigned int addr)
 
   !!! ѕриводит к сбросу микроконтроллера, требует тестировани€
  ------------------------------------------------------------------------------*/
-int EEPROM_erase_all(void)
+uint32_t EEPROM_erase_all(void)
 {
   // ќжидаем готовность бита CCIF
   while ((FTMRH_FSTAT & BIT(7)) == 0);
@@ -133,7 +133,7 @@ int EEPROM_erase_all(void)
 
 
  ------------------------------------------------------------------------------*/
-int EEPROM_erase_sector(unsigned int addr)
+uint32_t EEPROM_erase_sector(uint32_t addr)
 {
   // ќжидаем готовность бита CCIF
   while ((FTMRH_FSTAT & BIT(7)) == 0);
@@ -156,7 +156,7 @@ int EEPROM_erase_sector(unsigned int addr)
 
   ƒанные в EEPROM хран€тс€ в пор€дке little endian, сначала младший байт потом стращий
  ------------------------------------------------------------------------------*/
-int EEPROM_program_sector(unsigned int addr, unsigned short data)
+uint32_t EEPROM_program_sector(uint32_t addr, uint16_t data)
 {
   // ќжидаем готовность бита CCIF
   while ((FTMRH_FSTAT & BIT(7)) == 0);
@@ -188,15 +188,15 @@ int EEPROM_program_sector(unsigned int addr, unsigned short data)
 
  \param addr
 
- \return int
+ \return int32_t
  ------------------------------------------------------------------------------*/
-unsigned short EEPROM_read_sector(unsigned int addr)
+uint16_t EEPROM_read_sector(uint32_t addr)
 {
-  unsigned char bh;
-  unsigned char bl;
+  uint8_t bh;
+  uint8_t bl;
   addr &= ~BIT(0);
-  bl = *(unsigned char *)addr;
-  bh = *(unsigned char *)(addr + 1);
+  bl = *(uint8_t *)addr;
+  bh = *(uint8_t *)(addr + 1);
   return (bh << 8) + bl;
 }
 
@@ -204,13 +204,13 @@ unsigned short EEPROM_read_sector(unsigned int addr)
  \param buf
  \param len
 
- \return int - ¬озвращает 0 в случае успеха
+ \return int32_t - ¬озвращает 0 в случае успеха
  ------------------------------------------------------------------------------*/
-int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
+uint32_t EEPROM_write(uint32_t addr, uint32_t buf, uint32_t len)
 {
-  int            res;
+  uint32_t  res;
 
-  unsigned short sdata;
+  uint16_t sdata;
 
   if ((addr < EEPROM_START) || (addr >= (EEPROM_START + EEPROM_SIZE)) || (len == 0))
   {
@@ -220,6 +220,7 @@ int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
   // ≈сли адрес не четный, то сместить его на один байт дл€ выравнивани€ и обработать первый байт
   if (addr & 1)
   {
+    sdata = 0xFFFF;
     if (EEPROM_is_sector_errased(addr) != 0) // ѕроверим чистый ли сектор (2-а байта)
     {
       sdata = EEPROM_read_sector(addr); // —охраним старые данные (2-а байта)
@@ -227,7 +228,7 @@ int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
       if (res != 0) return res;
     }
     // ћладший байт надо сохранить, так как он в EEPROM записываетс€ перед старшим
-    sdata = (sdata & 0x00FF) | ((*(unsigned char *)buf) << 8); // —овмещаем с данными не принадлежащими записываемой области
+    sdata = (sdata & 0x00FF) | ((*(uint8_t *)buf) << 8); // —овмещаем с данными не принадлежащими записываемой области
     res = EEPROM_program_sector(addr, sdata);
     if (res != 0) return res;
     len--;
@@ -238,6 +239,7 @@ int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
 
   while (len > 0)
   {
+    sdata = 0xFFFF;
     if (EEPROM_is_sector_errased(addr) != 0) // ѕроверим чистый ли сектор (2-а байта)
     {
       sdata = EEPROM_read_sector(addr); // —охраним старые данные (2-а байта)
@@ -247,7 +249,7 @@ int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
     if (len == 1)
     {
       // —тарший байт надо сохранить, так как он в EEPROM записываетс€ после младшего
-      sdata = (sdata & 0xFF00) | (*(unsigned char *)buf); // —овмещаем с данными не принадлежащими записываемой области
+      sdata = (sdata & 0xFF00) | (*(uint8_t *)buf); // —овмещаем с данными не принадлежащими записываемой области
       res = EEPROM_program_sector(addr, sdata);
       addr++;
       buf++;
@@ -255,9 +257,9 @@ int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
     }
     else
     {
-      sdata = (*(unsigned char *)buf);
+      sdata = (*(uint8_t *)buf);
       buf++;
-      sdata += (*(unsigned char *)buf) << 8;
+      sdata += (*(uint8_t *)buf) << 8;
       buf++;
       res = EEPROM_program_sector(addr, sdata);
       addr += 2;
@@ -276,12 +278,12 @@ int EEPROM_write(unsigned int addr, unsigned int buf, unsigned int len)
  \param len
 
  ------------------------------------------------------------------------------*/
-void EEPROM_read(unsigned int addr, unsigned int buf, unsigned int len)
+void EEPROM_read(uint32_t addr, uint32_t buf, uint32_t len)
 {
-  int i;
+  int32_t i;
   for (i = 0; i < len; i++)
   {
-    *(unsigned char *)buf = *(unsigned char *)addr;
+    *(uint8_t *)buf = *(uint8_t *)addr;
     addr++;
     buf++;
   }
@@ -293,11 +295,11 @@ void EEPROM_read(unsigned int addr, unsigned int buf, unsigned int len)
  ------------------------------------------------------------------------------*/
 void Dump_EEPROM(void)
 {
-  unsigned char *buf;
-  int n;
-  int i;
+  uint8_t *buf;
+  int32_t n;
+  int32_t i;
 
-  buf = (unsigned char *)EEPROM_START;
+  buf = (uint8_t *)EEPROM_START;
 
   RTT_printf("\r\n");
   n = 0;
